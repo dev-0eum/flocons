@@ -123,6 +123,11 @@ async function main() {
       err(`${loc(i, w)} "imageUrl"는 string 또는 null 이어야 합니다.`);
     }
 
+    // 선택 필드: imagePrompt
+    if ('imagePrompt' in w && w.imagePrompt !== null && !isString(w.imagePrompt)) {
+      err(`${loc(i, w)} "imagePrompt"는 string 또는 null 이어야 합니다.`);
+    }
+
     // 선택 필드: tags
     if ('tags' in w) {
       if (!Array.isArray(w.tags)) {

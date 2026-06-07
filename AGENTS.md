@@ -68,11 +68,11 @@ Mob = 사람 + 여러 전문 AI 에이전트가 한 작업을 다관점으로 �
 | 단계 | 리드 | 멤버 | 승인 체크포인트 |
 |---|---|---|---|
 | **Inception** | `app-pm` | `app-pm` + `back-dev` + `front-dev` + `db-dev` + `cloud-dev`(아키텍처/실현가능성 의견). `code-review`가 계획 리뷰. | 사람이 Unit of Work 백로그 + 기술 스택 승인 |
-| **Construction** (Unit별) | Unit 성격에 따라 결정 (UI → `front-dev`, 로직/서비스 → `back-dev`, 데이터/영속화 → `db-dev`) | 리드 + 관련 dev 에이전트 + `qa-dev`(테스트) + `code-review`(리뷰 게이트) | 체크포인트 A(설계 승인), 체크포인트 B(Unit 완료 승인) |
+| **Construction** (Unit별) | Unit 성격에 따라 결정 (UI → `front-dev`, 로직/서비스 → `back-dev`, 데이터/영속화 → `db-dev`) | 리드 + 관련 dev 에이전트 + `content-gen`(콘텐츠/데이터 Unit에서 단어·예문·이미지 프롬프트 생성) + `qa-dev`(테스트) + `code-review`(리뷰 게이트) | 체크포인트 A(설계 승인), 체크포인트 B(Unit 완료 승인) |
 | **Operations** | `cloud-dev` | `cloud-dev` + `qa-dev` + `code-review` + 필요 시 `back-dev` | 실제 인프라/CI 변경 전 사람 승인 |
 
 **에이전트 로스터** (정확한 name으로만 지칭):
-`app-pm` · `back-dev` · `front-dev` · `db-dev` · `cloud-dev` · `qa-dev` · `code-review`
+`app-pm` · `back-dev` · `front-dev` · `db-dev` · `cloud-dev` · `qa-dev` · `code-review` · `content-gen`
 
 ## 검증 게이트 / 커밋·푸시
 
@@ -99,6 +99,7 @@ Mob = 사람 + 여러 전문 AI 에이전트가 한 작업을 다관점으로 �
 
 - `flocons-content`는 정규 Word 스키마([docs/DESIGN.md](docs/DESIGN.md) §4 근거)와 프랑스어 정확성 규칙(관사-성 일치, 엘리지옹, 품사 태그), 한국어 번역 규약을 따라 스키마를 만족하는 JSON 배열을 만들고, 부속 스크립트 [.claude/skills/flocons-content/scripts/validate.mjs](.claude/skills/flocons-content/scripts/validate.mjs)와 스키마 [.claude/skills/flocons-content/references/word.schema.json](.claude/skills/flocons-content/references/word.schema.json)로 검증한다.
 - `ai-dlc-navigator`는 **항상 먼저 STATUS를 읽고**, "AI proposes, human disposes"를 준수하여 STATUS를 임의로 변경하거나 체크포인트를 넘기지 않으며, 실제 단계 작업은 해당 슬래시 커맨드(`/ai-dlc`·`/inception`·`/construction <unit-id>`·`/operations`)에 위임한다.
+- `content-gen` 에이전트는 콘텐츠/데이터 Unit에서 단어·예문·한국어 번역·이미지 프롬프트를 정규 Word 스키마로 생성·검증할 때 `flocons-content` 스킬을 규칙서(SSOT)로 사용한다.
 
 ## MCP / 외부 도구 (Context7)
 

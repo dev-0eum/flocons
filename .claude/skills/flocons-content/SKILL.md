@@ -29,12 +29,14 @@ interface Word {
   exampleFr: string;          // 프랑스어 예문 (대상 단어 포함)
   exampleKr: string;          // 위 FR 예문의 정확한 한국어
   imageUrl?: string | null;   // 없으면 카테고리 플레이스홀더 (선택)
+  imagePrompt?: string | null;// 이미지 생성 모델용 프롬프트(영어 권장) (선택)
   tags?: string[];            // 분류/주제 태그 (선택)
 }
 ```
 
 - 필수 필드: `id`, `lemma`, `article`(null 허용), `gender`(null 허용), `pos`, `krMeaning`, `level`, `exampleFr`, `exampleKr`.
-- 선택 필드: `imageUrl`(string | null), `tags`(string[]).
+- 선택 필드: `imageUrl`(string | null), `imagePrompt`(string | null), `tags`(string[]).
+  - `imagePrompt`: 이미지 생성 모델용 텍스트 프롬프트. 키가 있으면 `AIImageProvider`가 이 프롬프트로 이미지를 렌더하고, 없으면 무시하고 카테고리 플레이스홀더를 쓴다. 자세한 작성 규칙은 아래 「이미지 프롬프트」 섹션 참조.
 - 정확한 JSON Schema 정의는 `references/word.schema.json` 참조.
 
 ---
@@ -74,6 +76,27 @@ interface Word {
 - `exampleFr`는 자연스럽고 문법적으로 정확한 프랑스어이며, **대상 단어(lemma)를 문맥 속에서 실제로 사용**한다.
 - `exampleKr`는 그 FR 문장의 정확한 한국어(§3).
 - 한 문장 권장. 고유명사/시사·논쟁적 소재는 피하고 일상·학습 친화적 맥락 사용.
+
+---
+
+## 이미지 프롬프트 (imagePrompt)
+
+`imagePrompt`는 단어 카드 이미지를 생성하기 위한 **이미지 생성 모델용 텍스트 프롬프트**다. 이 스킬/에이전트는 프롬프트(텍스트)만 만들고 **실제 이미지(픽셀)는 렌더하지 않는다.** 이미지 키가 있을 때 `AIImageProvider`가 이 프롬프트로 이미지를 렌더하며, 키가 없으면 프롬프트를 무시하고 카테고리 플레이스홀더를 쓴다(이미지 생성에는 별도 API 키가 필요).
+
+하우스 스타일:
+- **영어 권장.** 1~2문장으로 간결하게.
+- 단어의 의미를 추상적 정의가 아니라 **구체적 장면/사물**로 묘사한다 (예: `crime` → 막연한 "범죄"가 아니라 식별 가능한 장면).
+- 일관된 분위기 키워드를 덧붙인다: 예) `cinematic`, `atmospheric lighting`, `photographic`. 그리고 `no text`, `no watermark`를 포함해 글자·워터마크를 배제한다.
+- **금지**: 실존 인물, 브랜드/로고, 폭력적·성적·불안전 소재, 저작권 침해 소지가 있는 묘사.
+- 추상어(예: 일부 부사·접속사·전치사)처럼 시각화가 부적절하면 `imagePrompt`를 `null`로 두고 플레이스홀더를 쓴다.
+
+예시:
+```json
+{
+  "lemma": "crime",
+  "imagePrompt": "A dimly lit empty city alley at night with police tape, cinematic, atmospheric lighting, photographic, no text, no watermark"
+}
+```
 
 ---
 

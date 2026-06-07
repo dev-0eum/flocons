@@ -49,6 +49,7 @@ interface Word {
   exampleFr: string;     // "La police enquête sur un crime dans le quartier."
   exampleKr: string;     // "경찰이 동네에서 일어난 범죄를 수사하고 있어요."
   imageUrl?: string | null; // 없으면 카테고리 플레이스홀더
+  imagePrompt?: string | null; // 선택. 이미지 생성 모델용 프롬프트(영어 권장). 키 있으면 AIImageProvider가 렌더, 없으면 무시
   tags?: string[];
 }
 
@@ -142,6 +143,7 @@ flocons/
 - 키가 없으므로 **초기 정적 데이터셋을 직접 큐레이션**한다 (Claude가 작성: 관사·품사·한국어 뜻·예문 FR/KR).
 - v1: A1 핵심어 약 150개로 시작 → 이후 A2/B1 확장.
 - 이미지: v1은 카테고리 플레이스홀더, 이미지 키 생기면 AI 이미지로 교체.
+- `content-gen` 에이전트는 각 카드의 `imagePrompt`(텍스트)를 생성해 둔다. 실제 이미지 픽셀은 **이미지 생성용 별도 API 키가 있을 때 `AIImageProvider`가 렌더**하며, 그 전에는 카테고리 플레이스홀더를 쓴다(텍스트 콘텐츠와 달리 이미지 생성에는 별도 키·비용이 필요).
 
 ## 11. 비목표 / 가정 (변경 가능 — 하네스 시작 전 검토용)
 
