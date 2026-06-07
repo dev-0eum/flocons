@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+
+# expo
+.expo/
+dist/
+web-build/
+*.orig.*
+
+# native (managed workflow regenerates)
+/ios
+/android
+
+# secrets — NEVER commit API keys
+.env
+.env.*
+*.key
+*.pem
+
+# logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# test/coverage
+coverage/

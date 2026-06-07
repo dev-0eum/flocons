@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://flocons.app/schemas/word.schema.json",
+  "title": "flocons Word dataset",
+  "description": "프랑스어 단어 카드 콘텐츠. docs/DESIGN.md §4 Word 인터페이스. 데이터셋 파일은 Word 객체의 배열이다.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/Word" },
+  "$defs": {
+    "Word": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "lemma",
+        "article",
+        "gender",
+        "pos",
+        "krMeaning",
+        "level",
+        "exampleFr",
+        "exampleKr"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "안정적 유일 ID. 규약: fr-<level소문자>-<lemma>. 예: fr-a1-crime"
+        },
+        "lemma": {
+          "type": "string",
+          "minLength": 1,
+          "description": "표제어(관사 없는 형태). 예: crime"
+        },
+        "article": {
+          "type": ["string", "null"],
+          "description": "le | la | l' | les | null. 명사가 아니거나 성이 없으면 null"
+        },
+        "gender": {
+          "type": ["string", "null"],
+          "enum": ["m", "f", null],
+          "description": "남성 m / 여성 f / 해당 없음 null"
+        },
+        "pos": {
+          "type": "string",
+          "enum": ["n", "v", "adj", "adv", "prep", "pron", "conj", "num", "det", "intj", "phrase"],
+          "description": "품사: n 명사, v 동사, adj 형용사, adv 부사, prep 전치사, pron 대명사, conj 접속사, num 수사, det 한정사, intj 감탄사, phrase 표현/구"
+        },
+        "krMeaning": {
+          "type": "string",
+          "minLength": 1,
+          "description": "한국어 뜻. 예: 범죄"
+        },
+        "level": {
+          "type": "string",
+          "enum": ["A1", "A2", "B1", "B2", "C1"],
+          "description": "CEFR 레벨"
+        },
+        "exampleFr": {
+          "type": "string",
+          "minLength": 1,
+          "description": "대상 단어를 문맥 속에서 사용하는 프랑스어 예문"
+        },
+        "exampleKr": {
+          "type": "string",
+          "minLength": 1,
+          "description": "exampleFr의 정확한 한국어(의역, 의미 보존)"
+        },
+        "imageUrl": {
+          "type": ["string", "null"],
+          "description": "선택. 없으면 카테고리 플레이스홀더"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "description": "선택. 분류/주제 태그"
+        }
+      }
+    }
+  }
+}
