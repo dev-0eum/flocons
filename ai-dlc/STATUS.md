@@ -13,9 +13,9 @@
 | 항목 | 값 |
 |---|---|
 | **현재 단계** | Construction |
-| **현재 상태** | 🔵 In Progress — `UoW-02-content-layer` 구현+게이트+리뷰 완료, ⏸️ 체크포인트 B 승인 대기 |
-| **대기 중인 체크포인트** | `UoW-02-content-layer` **완료 승인 (체크포인트 B)** — 사람 승인+푸시 |
-| **다음 액션** | 완료 승인 → 커밋·푸시(사용자) → `/construction UoW-03-learn-deck` |
+| **현재 상태** | 🔵 In Progress — `UoW-03-learn-deck` 구현+게이트+리뷰 완료, ⏸️ 체크포인트 B 승인 대기 |
+| **대기 중인 체크포인트** | `UoW-03-learn-deck` **완료 승인 (체크포인트 B)** — 사람 승인+푸시 |
+| **다음 액션** | 완료 승인 → 커밋·푸시(사용자) → `/construction UoW-04-tts` |
 
 > 원칙: **AI proposes, human disposes.** 모든 단계는 체크포인트에서 멈추고 사람 승인을 기다린다.
 
@@ -53,8 +53,8 @@
 |---|---|---|---|---|---|---|
 | UoW-00-scaffold | 스캐폴드 & 툴링 | back-dev | ✅ Approved | [기록](construction/UoW-00-scaffold.md) | 2026-06-09 | 0eum |
 | UoW-01-design-system | 디자인 시스템 & 베이스 컴포넌트 | front-dev | ✅ Approved | [기록](construction/UoW-01-design-system.md) | 2026-06-09 | 0eum |
-| UoW-02-content-layer | 콘텐츠 계층 + A1 정적 데이터셋 | db-dev (+content-gen) | 🔵 In Progress | [기록](construction/UoW-02-content-layer.md) | 2026-06-09 | — |
-| UoW-03-learn-deck | 학습 덱 화면(스와이프) | front-dev | ⬜ Pending | — | — | — |
+| UoW-02-content-layer | 콘텐츠 계층 + A1 정적 데이터셋 | db-dev (+content-gen) | ✅ Approved | [기록](construction/UoW-02-content-layer.md) | 2026-06-09 | 0eum |
+| UoW-03-learn-deck | 학습 덱 화면(스와이프) | front-dev | 🔵 In Progress | [기록](construction/UoW-03-learn-deck.md) | 2026-06-09 | — |
 | UoW-04-tts | 발음(expo-speech fr-FR) | back-dev | ⬜ Pending | — | — | — |
 | UoW-05-srs | SRS Leitner + 영속화 | back-dev (+db-dev) | ⬜ Pending | — | — | — |
 | UoW-06-review-stats | 복습 큐 + 통계 | front-dev (+back-dev) | ⬜ Pending | — | — | — |
@@ -73,7 +73,7 @@
 
 | 단계 | 체크포인트 | 상태 | 설명 |
 |---|---|---|---|
-| Construction | UoW-02 설계 승인 (체크포인트 A) | ⏸️ Awaiting Approval | `UoW-02-content-layer` 논리 설계(Word/CardState 타입·ContentProvider·StaticContentProvider·A1 시드·validateWords)를 제출. 승인 시 구현→게이트→체크포인트 B. |
+| Construction | UoW-03 완료 승인 (체크포인트 B) | ⏸️ Awaiting Approval | `UoW-03-learn-deck` 구현+게이트(typecheck/lint/test 32/32·expo export)+code-review(머지가능) 완료. 사람 승인+푸시 시 STATUS ✅. |
 
 > Inception은 ✅ 승인 완료(2026-06-09). 이후 각 Unit은 체크포인트 A·B에서 사람 승인.
 
@@ -88,3 +88,4 @@
 | 2026-06-09 | Construction(스택) | **Expo SDK 56 → 55 다운그레이드**(ADR-010): SDK56이 막 릴리스돼 iOS Expo Go 미지원 → 55.0.26 정렬. 개발 대상 **iOS만**(android 제거), web=개발 미리보기, 배포 타깃=RN/iOS(Operations). | 0eum |
 | 2026-06-09 | Construction | **UoW-00-scaffold ✅ 완료** (체크포인트 B). 게이트 4종 green, code-review 머지가능. (`.git` 사고로 재구성 후 게이트 재확인.) 커밋·푸시는 사용자 수행. 다음: `UoW-01`. | 0eum |
 | 2026-06-09 | Construction | **UoW-01-design-system ✅ 완료** (체크포인트 B). 테마 토큰 + 베이스 컴포넌트 5종(props-only), 게이트 4종 green(test 14/14), code-review Approved. 사용자 푸시 완료. 다음: `UoW-02-content-layer`. | 0eum |
+| 2026-06-09 | Construction | **UoW-02-content-layer ✅ 완료** (체크포인트 B). Word/CardState 타입 + ContentProvider/StaticContentProvider + validateWords + A1 65단어. 게이트 4종 green(test 25/25), code-review Approved. 사용자 푸시 완료. 다음: `UoW-03-learn-deck`. | 0eum |

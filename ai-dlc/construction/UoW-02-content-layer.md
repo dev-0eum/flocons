@@ -12,7 +12,7 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M2 |
 | **리드** | **db-dev** (데이터 스키마·시드 데이터셋·영속 계약) |
 | **멤버** | **content-gen**(A1 단어 데이터 생성, `flocons-content` 스킬 규칙) · back-dev(ContentProvider 인터페이스) · qa-dev(유효성 테스트) · code-review |
-| **상태** | 🔵 In Progress (체크포인트 A ✅ — 구현 중) |
+| **상태** | ✅ Approved (체크포인트 B — 완료, 푸시됨) |
 | **시작/완료** | 2026-06-09 / (미정) |
 | **의존성** | UoW-00 (✅ 완료) |
 
@@ -88,6 +88,6 @@
 ## 5) Unit 완료
 ### ⏸️ 체크포인트 B — Unit 완료 승인
 - [x] 게이트 4종 통과 · [x] code-review 머지 가능
-- 결정: ⏸️ Awaiting Approval (사람 승인 대기) → 승인 시 STATUS ✅ + 커밋·푸시(사용자)
+- 결정: ✅ Approved (0eum, 2026-06-09) — 사용자 커밋·푸시 완료
 ### 커밋 / 푸시 (사용자 수행)
 - 제안 메시지: `feat: content layer (Word/CardState types, ContentProvider, StaticContentProvider) + A1 seed [UoW-02]`

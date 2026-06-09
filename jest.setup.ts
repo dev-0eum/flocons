@@ -1,5 +1,8 @@
 // flocons jest 셋업 — 네이티브 모듈 mock 토대 (UoW-04/05/08에서 실제 사용)
 // 추측 대신 각 라이브러리의 공식 jest mock 패턴을 사용한다.
+// reanimated 4 / gesture-handler는 jest에서 로드하지 않는다(worklets 네이티브 미초기화 문제).
+// SwipeDeck을 쓰는 화면 테스트는 SwipeDeck을 패스스루로 mock하고, 스와이프 제스처는
+// 번들(expo export) + 수동으로 검증한다(Q-C3). 덱 분류/undo 로직은 src/lib/deck.ts 단위 테스트로 커버.
 
 jest.mock('expo-secure-store', () => ({
   setItemAsync: jest.fn(async () => undefined),

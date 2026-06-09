@@ -1,0 +1,66 @@
+import type { ReactNode } from 'react';
+import { fireEvent, render } from '@testing-library/react-native';
+
+import LearnScreen from '../app/learn';
+
+// SwipeDeck은 reanimated/gesture 의존 → jest에서 패스스루로 mock(자식만 렌더).
+// 스와이프 제스처 자체는 expo export(번들) + 수동으로 검증(Q-C3).
+jest.mock('@/components/SwipeDeck', () => ({
+  SwipeDeck: ({ children }: { children: ReactNode }) => children,
+}));
+
+// StaticContentProvider를 2단어 덱으로 모킹해 전체 흐름(로드→분류→완료·undo)을 검증.
+jest.mock('@/content', () => {
+  const actual = jest.requireActual('@/content');
+  class FakeProvider {
+    getWords() {
+      return Promise.resolve([
+        {
+          id: 'w1',
+          lemma: 'un',
+          article: 'le',
+          gender: 'm',
+          pos: 'n',
+          krMeaning: '하나',
+          level: 'A1',
+          exampleFr: "Il y a un livre.",
+          exampleKr: '책이 한 권 있어요.',
+        },
+        {
+          id: 'w2',
+          lemma: 'deux',
+          article: null,
+          gender: null,
+          pos: 'num',
+          krMeaning: '둘',
+          level: 'A1',
+          exampleFr: "J'ai deux amis.",
+          exampleKr: '친구가 두 명 있어요.',
+        },
+      ]);
+    }
+  }
+  return { ...actual, StaticContentProvider: FakeProvider };
+});
+
+describe('LearnScreen (학습 덱)', () => {
+  it('loads the deck, classifies through to done, and supports undo', async () => {
+    const { getByLabelText, findByText } = render(<LearnScreen />);
+
+    // 로딩 후 첫 카드(하나)
+    expect(await findByText('하나')).toBeTruthy();
+
+    // 학습할게요 → 다음 카드(둘)
+    fireEvent.press(getByLabelText('학습할게요'));
+    expect(await findByText('둘')).toBeTruthy();
+
+    // undo → 다시 첫 카드(하나)
+    fireEvent.press(getByLabelText('되돌리기'));
+    expect(await findByText('하나')).toBeTruthy();
+
+    // 두 장 모두 분류 → 완료 상태
+    fireEvent.press(getByLabelText('알고 있어요'));
+    fireEvent.press(getByLabelText('학습할게요'));
+    expect(await findByText(/마쳤어요/)).toBeTruthy();
+  });
+});
