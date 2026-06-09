@@ -13,9 +13,9 @@
 | 항목 | 값 |
 |---|---|
 | **현재 단계** | Construction |
-| **현재 상태** | 🔵 In Progress — `UoW-00-scaffold` ✅ 완료, 다음 Unit 대기 |
-| **대기 중인 체크포인트** | `UoW-01-design-system` 설계 승인 (체크포인트 A) |
-| **다음 액션** | `/construction UoW-01-design-system` · (선행: UoW-00 커밋·푸시는 사용자가 수행) |
+| **현재 상태** | 🔵 In Progress — `UoW-01-design-system` 설계 ✅, **구현 중** |
+| **대기 중인 체크포인트** | `UoW-01-design-system` **완료 승인 (체크포인트 B)** — 구현+게이트+리뷰 후 |
+| **다음 액션** | 구현 → 검증 게이트(typecheck/lint/test/expo export) → code-review → 체크포인트 B |
 
 > 원칙: **AI proposes, human disposes.** 모든 단계는 체크포인트에서 멈추고 사람 승인을 기다린다.
 
@@ -52,7 +52,7 @@
 | Unit ID | 제목 | 리드 | 상태 | 기록 | 마지막 갱신 | 승인자 |
 |---|---|---|---|---|---|---|
 | UoW-00-scaffold | 스캐폴드 & 툴링 | back-dev | ✅ Approved | [기록](construction/UoW-00-scaffold.md) | 2026-06-09 | 0eum |
-| UoW-01-design-system | 디자인 시스템 & 베이스 컴포넌트 | front-dev | ⬜ Pending | — | — | — |
+| UoW-01-design-system | 디자인 시스템 & 베이스 컴포넌트 | front-dev | 🔵 In Progress | [기록](construction/UoW-01-design-system.md) | 2026-06-09 | — |
 | UoW-02-content-layer | 콘텐츠 계층 + A1 정적 데이터셋 | db-dev (+content-gen) | ⬜ Pending | — | — | — |
 | UoW-03-learn-deck | 학습 덱 화면(스와이프) | front-dev | ⬜ Pending | — | — | — |
 | UoW-04-tts | 발음(expo-speech fr-FR) | back-dev | ⬜ Pending | — | — | — |
@@ -73,7 +73,7 @@
 
 | 단계 | 체크포인트 | 상태 | 설명 |
 |---|---|---|---|
-| Construction | UoW-01 설계 승인 (체크포인트 A) | ⬜ Pending | `/construction UoW-01-design-system` 실행 시 논리 설계를 제안하고 체크포인트 A에서 멈춰 승인을 요청. 이후 구현→게이트→체크포인트 B. |
+| Construction | UoW-01 완료 승인 (체크포인트 B) | ⏸️ Awaiting Approval | `UoW-01-design-system` 구현+게이트(typecheck/lint/test 14/14·expo export)+code-review(머지가능) 완료. 사람이 완료 승인하면 STATUS ✅ + 커밋·푸시(사용자). |
 
 > Inception은 ✅ 승인 완료(2026-06-09). 이후 각 Unit은 체크포인트 A·B에서 사람 승인.
 
