@@ -1,6 +1,6 @@
 # 00 · 기술 스택 제안서 (Tech Stack Proposal)
 
-> **단계**: Inception · **산출물 유형**: 아키텍처 결정 (기술 스택) · **상태**: ⬜ Pending — Inception 미시작 (`/inception` 실행 시 ⏸️ Awaiting Approval 로 제출됨)
+> **단계**: Inception · **산출물 유형**: 아키텍처 결정 (기술 스택) · **상태**: ✅ Approved (2026-06-09, 0eum) — Inception 체크포인트 승인. 세부 결정·근거는 [inception/04-architecture-decision.md](inception/04-architecture-decision.md)(ADR-001~010). **expo-haptics(Q2)·Expo SDK 55 핀(ADR-010)** 반영.
 > **원칙**: 이 문서는 **AI가 제안(propose)** 한 초안이다. 구속력 있는 확정은 **사람의 승인(dispose)** 이후에만 발생한다. 승인 전에는 STATUS를 ✅ Approved 로 바꾸지 않으며, Inception 다음 산출물/Construction 으로 진행하지 않는다.
 
 관련 문서: [docs/DESIGN.md](../docs/DESIGN.md) · [docs/ROADMAP.md](../docs/ROADMAP.md) · [docs/HARNESS.md](../docs/HARNESS.md) · [ai-dlc/STATUS.md](STATUS.md) · [ai-dlc/README.md](README.md)
@@ -13,7 +13,7 @@
 
 | 영역 | 선택 | 이유 | 대안 (검토했으나 미채택) |
 |---|---|---|---|
-| 런타임 | **Expo (latest SDK) + TypeScript** | 아이폰 Expo Go 즉시 실행, iOS/Android 공용, 네이티브 빌드 부담 최소. 개인 사용 v1에 충분. | 베어 React Native (네이티브 설정 부담↑), Flutter (스택/언어 상이) |
+| 런타임 | **Expo SDK 55 (핀) + TypeScript** | 아이폰 Expo Go 즉시 실행, 네이티브 빌드 부담 최소. **SDK 56은 릴리스 직후라 iOS Expo Go 미지원 → 55.0.26 핀**(ADR-010). 개발 대상 iOS(web 검증용). | 베어 React Native, Flutter, SDK 56(Expo Go 미호환) |
 | 라우팅 | **expo-router** | 파일 기반 라우팅이 [docs/DESIGN.md §3](../docs/DESIGN.md) 의 화면 구조(`/`, `/learn`, `/review`, `/bookmarks`, `/stats`, `/settings`)와 1:1로 매핑되어 단순. | React Navigation 수동 구성 (보일러플레이트↑) |
 | 상태 관리 | **Zustand + persist (AsyncStorage)** | 가볍고 보일러플레이트가 적음. `CardState` 영속/복원에 persist 미들웨어가 자연스러움. 개인 앱 규모에 충분. | Redux Toolkit (과함), React Context only (영속/구독 비용↑) |
 | 제스처 / 애니메이션 | **react-native-gesture-handler + reanimated** | 스와이프형 단어 카드(좌/우 = 학습/알고있음)의 60fps 제스처·전환에 사실상 표준. | PanResponder + Animated (성능/표현력 한계) |

@@ -105,7 +105,7 @@ interface ContentProvider {
 
 | 영역 | 선택 | 비고 |
 |---|---|---|
-| 런타임 | Expo (latest SDK) + TypeScript | 아이폰 Expo Go 실행, iOS/Android 공용 |
+| 런타임 | Expo SDK 55 (핀) + TypeScript | 아이폰 Expo Go 실행. SDK 56은 릴리스 직후라 iOS Expo Go 미지원 → 55 핀(ADR-010). 개발 대상 iOS, web은 검증용 |
 | 라우팅 | expo-router | 파일 기반 |
 | 상태 | Zustand + persist(AsyncStorage) | 가볍고 충분 |
 | 제스처/애니메이션 | react-native-gesture-handler + reanimated | 스와이프 카드 |
@@ -149,4 +149,5 @@ flocons/
 
 - (가정) 상태관리 Zustand, SRS는 Leitner, 내비 expo-router, v1 이미지 플레이스홀더, 라이트 테마 우선.
 - (비목표 v1) 계정/클라우드 동기화, 소셜, 결제, 안드로이드 전용 최적화.
+- **(v1 스코프, 2026-06-09 결정) 개발/빌드 대상은 iOS만** — Android는 사용자 지시 시 착수. web 번들은 시뮬레이터 없는 자동 검증 용도로만(제품 타깃 아님). 배포는 RN/iOS(EAS, Operations).
 - 위 가정 중 바꾸고 싶은 게 있으면 본 문서를 수정한 뒤 하네스를 시작한다.

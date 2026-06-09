@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "flocons",
+    "slug": "flocons",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "flocons",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
