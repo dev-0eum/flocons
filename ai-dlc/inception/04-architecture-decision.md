@@ -33,7 +33,7 @@
 
 ## ADR-005 — TTS는 expo-speech, UI는 콜백만
 - 상태: ✅ Approved · 관련 Unit: UoW-04
-- 결정: `lib/tts.ts`(speakWord/speakExample, `fr-FR` 고정, rate/voice 주입). UI 컴포넌트는 콜백만 받고 expo-speech를 직접 import하지 않음(테스트·교체 용이).
+- 결정: `lib/tts.ts`(`speak(text, opts)`/`stop()`, `fr-FR` 고정, rate/voice는 인자 — UoW-04 Q-D3). UI 컴포넌트는 콜백만 받고 expo-speech를 직접 import하지 않음(테스트·교체 용이).
 
 ## ADR-006 — AI enrich 캐시 키 = wordId+level+providerVersion
 - 상태: ✅ Approved · 관련 Unit: UoW-09

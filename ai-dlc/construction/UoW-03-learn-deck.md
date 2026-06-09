@@ -12,7 +12,7 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M3 |
 | **리드** | **front-dev** (화면·제스처·애니메이션) |
 | **멤버** | back-dev(덱 상태 로직) · qa-dev(인터랙션/로직 테스트) · code-review |
-| **상태** | 🔵 In Progress (체크포인트 A ✅ — 구현 중) |
+| **상태** | ✅ Approved (체크포인트 B — 완료, 푸시됨 `0d9079a`) |
 | **시작/완료** | 2026-06-09 / (미정) |
 | **의존성** | UoW-01 (✅ 디자인 시스템) · UoW-02 (✅ 콘텐츠) |
 
@@ -88,6 +88,6 @@
 ## 5) Unit 완료
 ### ⏸️ 체크포인트 B — Unit 완료 승인
 - [x] 게이트 4종 통과 · [x] code-review 머지 가능
-- 결정: ⏸️ Awaiting Approval (사람 승인 대기) → 승인 시 STATUS ✅ + 커밋·푸시(사용자)
+- 결정: ✅ Approved (0eum, 2026-06-09) — 사용자 커밋·푸시 완료 (`0d9079a`)
 ### 커밋 / 푸시 (사용자 수행)
 - 제안 메시지: `feat: learn deck screen with swipe-to-classify (reanimated + gesture-handler) [UoW-03]`

@@ -14,6 +14,7 @@ import {
   progress,
 } from '@/lib/deck';
 import { toWordCardData } from '@/lib/toWordCardData';
+import { speak } from '@/lib/tts';
 import { colors, spacing } from '@/theme';
 
 // 레벨은 A1 고정 (레벨 선택 UI는 UoW-11). 영속/SRS는 UoW-05.
@@ -44,6 +45,7 @@ export default function LearnScreen() {
   }
 
   const prog = progress(state);
+  const headword = word.article ? `${word.article} ${word.lemma}` : word.lemma;
 
   return (
     <SafeAreaView style={styles.container} edges={['top', 'bottom']}>
@@ -58,7 +60,11 @@ export default function LearnScreen() {
           onSwipeLeft={() => dispatch({ type: 'classify', value: 'known' })}
           onSwipeRight={() => dispatch({ type: 'classify', value: 'learn' })}
         >
-          <WordCard data={toWordCardData(word)} />
+          <WordCard
+            data={toWordCardData(word)}
+            onPlayWord={() => speak(headword)}
+            onPlayExample={() => speak(word.exampleFr)}
+          />
         </SwipeDeck>
       </View>
       <View style={styles.actions}>

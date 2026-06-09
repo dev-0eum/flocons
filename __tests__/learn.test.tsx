@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { fireEvent, render } from '@testing-library/react-native';
+import * as Speech from 'expo-speech';
 
 import LearnScreen from '../app/learn';
 
@@ -49,6 +50,10 @@ describe('LearnScreen (학습 덱)', () => {
 
     // 로딩 후 첫 카드(하나)
     expect(await findByText('하나')).toBeTruthy();
+
+    // 발음 버튼 → tts.speak(fr-FR)로 관사+표제어 재생
+    fireEvent.press(getByLabelText('단어 발음 듣기'));
+    expect(Speech.speak).toHaveBeenCalledWith('le un', expect.objectContaining({ language: 'fr-FR' }));
 
     // 학습할게요 → 다음 카드(둘)
     fireEvent.press(getByLabelText('학습할게요'));
