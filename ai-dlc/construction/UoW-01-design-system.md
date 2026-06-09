@@ -12,7 +12,7 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M1 |
 | **리드** | **front-dev** (UI/테마/컴포넌트/접근성) |
 | **멤버** | qa-dev(렌더/스냅샷 테스트) · code-review(리뷰 게이트) |
-| **상태** | 🔵 In Progress (체크포인트 A ✅ — 구현 중) |
+| **상태** | ✅ Approved (체크포인트 B — 완료, 푸시됨) |
 | **시작/완료** | 2026-06-09 / (미정) |
 | **의존성** | UoW-00 (✅ 완료) |
 
@@ -95,6 +95,6 @@ UoW-03(학습 덱)·이후 화면이 조립해 쓸 **테마 토큰 + 프리젠�
 ## 5) Unit 완료
 ### ⏸️ 체크포인트 B — Unit 완료 승인
 - [x] 게이트 4종 통과 · [x] code-review 머지 가능
-- 결정: ⏸️ Awaiting Approval (사람 승인 대기) → 승인 시 STATUS ✅ + 커밋·푸시(사용자)
+- 결정: ✅ Approved (0eum, 2026-06-09) — 사용자 커밋·푸시 완료
 ### 커밋 / 푸시 (사용자 수행)
 - 제안 메시지: `feat: design system + base components (theme, WordCard, TopBar, ActionButtons) [UoW-01]`
