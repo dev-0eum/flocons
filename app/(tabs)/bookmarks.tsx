@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { StateView } from '@/components';
-import { StaticContentProvider, type Word } from '@/content';
+import type { Word } from '@/content';
+import { currentProvider } from '@/lib/content';
 import { toggleBookmark } from '@/store/cardStore';
 import { useCards } from '@/store/hooks';
 import { articleColor, colors, radius, spacing, typography } from '@/theme';
@@ -19,7 +20,7 @@ export default function BookmarksScreen() {
 
   useEffect(() => {
     let mounted = true;
-    new StaticContentProvider().getWords(LEVEL).then((loaded) => {
+    currentProvider().getWords(LEVEL).then((loaded) => {
       if (mounted) setWords(loaded);
     });
     return () => {

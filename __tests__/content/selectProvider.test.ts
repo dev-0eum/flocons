@@ -1,4 +1,4 @@
-import { StaticContentProvider, createProvider, selectProviderKind } from '@/content';
+import { AIContentProvider, StaticContentProvider, createProvider, selectProviderKind } from '@/content';
 
 describe('selectProviderKind (DESIGN §5 선택 규칙)', () => {
   it('키 있음 → ai', () => {
@@ -16,12 +16,12 @@ describe('selectProviderKind (DESIGN §5 선택 규칙)', () => {
   });
 });
 
-describe('createProvider (UoW-08 골격)', () => {
+describe('createProvider', () => {
   it('static → StaticContentProvider', () => {
     expect(createProvider('static')).toBeInstanceOf(StaticContentProvider);
   });
 
-  it('ai → UoW-09 전까지 Static 반환 (골격 — Q-I5)', () => {
-    expect(createProvider('ai')).toBeInstanceOf(StaticContentProvider);
+  it('ai → AIContentProvider (UoW-09: Anthropic enrich + Static 폴백)', () => {
+    expect(createProvider('ai')).toBeInstanceOf(AIContentProvider);
   });
 });

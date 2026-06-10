@@ -12,8 +12,8 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M8 |
 | **리드** | **front-dev** (/settings UI) |
 | **멤버** | back-dev(secureKeys·selectProvider) + db-dev(settingsStore 영속) + qa-dev + code-review |
-| **상태** | ⏸️ Awaiting Approval (체크포인트 B) |
-| **시작일 / 완료일** | 2026-06-10 / (미정) |
+| **상태** | ✅ Approved (체크포인트 B — 2026-06-10) |
+| **시작일 / 완료일** | 2026-06-10 / 2026-06-10 |
 
 > 의존성: UoW-00 ✅ · UoW-01 ✅ · DoD 요약: 키는 secure-store에만(평문 무노출) · hasKey 갱신 · 키 삭제 시 Static 회귀 · 게이트 4종 green.
 
@@ -154,14 +154,14 @@
 ## 5) Unit 완료
 
 ### ⏸️ 체크포인트 B — Unit 완료 승인
-- [ ] 검증 게이트 4종 통과 확인
-- [ ] code-review 머지 가능
-- 결정: <✅ Approved | 🔁 Changes Requested>
-- 승인자: <이름> · 날짜: <YYYY-MM-DD>
+- [x] 검증 게이트 4종 통과 확인
+- [x] code-review 머지 가능
+- 결정: ✅ Approved
+- 승인자: 0eum · 날짜: 2026-06-10
 
 ### 커밋 / 푸시 기록 ([docs/HARNESS.md](../../docs/HARNESS.md) §4 규약)
-- [ ] STATUS 갱신 · [ ] 커밋 · [ ] 푸시
-- 커밋 해시: <짧은 해시>
+- [x] STATUS 갱신 · [x] 커밋 · [x] 푸시 (사용자 수행)
+- 커밋 해시: `4178df0` (`feat: settings screen with secure API key storage and provider selection skeleton [UoW-08]`)
 
 ### 마무리
-- 후속 작업 / 다음 Unit: <...>
+- 후속 작업 / 다음 Unit: `UoW-09-ai-provider`. 이월: `/settings` 진입 트리거 배선(UoW-11).

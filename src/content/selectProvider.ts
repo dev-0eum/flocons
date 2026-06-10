@@ -1,8 +1,11 @@
+import { getKey } from '@/lib/secureKeys';
+
+import { AIContentProvider } from './AIContentProvider';
 import type { ContentProvider } from './ContentProvider';
+import { AnthropicEnrichClient } from './enrichClient';
 import { StaticContentProvider } from './StaticContentProvider';
 
-// Provider 선택 규칙 (DESIGN §5): 키 있음 → AI(실패 시 Static 폴백), 없음 → Static.
-// UoW-08은 선택 골격만 확정한다 — 'ai' kind의 실제 AIContentProvider·폴백은 UoW-09에서 교체.
+// Provider 선택 규칙 (DESIGN §5): 키 있음 → AI(enrich 실패 시 Static 폴백), 없음 → Static.
 
 export type ProviderKind = 'ai' | 'static';
 
@@ -11,11 +14,13 @@ export function selectProviderKind(flags: { hasAnthropicKey: boolean }): Provide
   return flags.hasAnthropicKey ? 'ai' : 'static';
 }
 
-/** 종류 → Provider 인스턴스. 'ai'는 UoW-09 전까지 Static을 반환하는 골격(Q-I5). */
+/** 종류 → Provider 인스턴스 (UoW-09: 'ai' = Anthropic enrich + Static 폴백). */
 export function createProvider(kind: ProviderKind): ContentProvider {
   if (kind === 'ai') {
-    // TODO(UoW-09): AIContentProvider + 실패 시 Static 폴백으로 교체.
-    return new StaticContentProvider();
+    return new AIContentProvider(
+      new AnthropicEnrichClient({ getApiKey: () => getKey('anthropic') }),
+      new StaticContentProvider(),
+    );
   }
   return new StaticContentProvider();
 }

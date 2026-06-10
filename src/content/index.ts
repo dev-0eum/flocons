@@ -5,3 +5,6 @@ export { validateWords } from './validateWords';
 export type { ValidationResult } from './validateWords';
 export { createProvider, selectProviderKind } from './selectProvider';
 export type { ProviderKind } from './selectProvider';
+export { AIContentProvider, enrichCacheKey } from './AIContentProvider';
+export { AI_MODEL, AnthropicEnrichClient, NoApiKeyError, PROVIDER_VERSION } from './enrichClient';
+export type { EnrichClient, EnrichedExample } from './enrichClient';

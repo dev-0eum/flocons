@@ -3,7 +3,8 @@ import { useEffect, useState } from 'react';
 
 import { StateView } from '@/components';
 import { DeckSession } from '@/components/DeckSession';
-import { StaticContentProvider, type Word } from '@/content';
+import type { Word } from '@/content';
+import { currentProvider } from '@/lib/content';
 import { bookmarkedWordIds, dueWordIds } from '@/store/cardStore';
 
 // 복습: 기본은 SRS 마감(due) 카드만, `?mode=bookmarks`면 북마크 전체 (DESIGN §3, UoW-06/07).
@@ -19,7 +20,7 @@ export default function ReviewScreen() {
     let mounted = true;
     // 마운트 시 now 1회 고정 — 복습 도중 새로 due가 된 카드가 끼어들지 않는다(Q-F2).
     const now = Date.now();
-    new StaticContentProvider().getWords(LEVEL).then((words) => {
+    currentProvider().getWords(LEVEL).then((words) => {
       if (!mounted) return;
       const ids = new Set(isBookmarkMode ? bookmarkedWordIds() : dueWordIds(now));
       setQueue(words.filter((w) => ids.has(w.id)));

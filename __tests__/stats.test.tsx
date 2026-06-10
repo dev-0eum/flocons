@@ -10,19 +10,16 @@ jest.mock('expo-router', () => ({
   router: { push: jest.fn() },
 }));
 
-// StaticContentProvider를 2단어 덱으로 모킹 — 레벨 진척 분모(total=2)를 고정.
-jest.mock('@/content', () => {
-  const actual = jest.requireActual('@/content');
-  class FakeProvider {
-    getWords() {
-      return Promise.resolve([
+// provider를 2단어 덱으로 모킹 — 레벨 진척 분모(total=2)를 고정 (UoW-09: currentProvider 경유).
+jest.mock('@/lib/content', () => ({
+  currentProvider: () => ({
+    getWords: () =>
+      Promise.resolve([
         { id: 'w1', lemma: 'un', level: 'A1' },
         { id: 'w2', lemma: 'deux', level: 'A1' },
-      ]);
-    }
-  }
-  return { ...actual, StaticContentProvider: FakeProvider };
-});
+      ]),
+  }),
+}));
 
 beforeEach(() => {
   resetCards();

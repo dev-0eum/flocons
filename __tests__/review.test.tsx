@@ -16,12 +16,11 @@ jest.mock('expo-router', () => ({
   useLocalSearchParams: () => mockParams,
 }));
 
-// StaticContentProvider를 2단어 덱으로 모킹 — due 필터를 검증.
-jest.mock('@/content', () => {
-  const actual = jest.requireActual('@/content');
-  class FakeProvider {
-    getWords() {
-      return Promise.resolve([
+// provider를 2단어 덱으로 모킹 — due 필터를 검증 (UoW-09: 화면은 currentProvider 경유).
+jest.mock('@/lib/content', () => ({
+  currentProvider: () => ({
+    getWords: () =>
+      Promise.resolve([
         {
           id: 'w1',
           lemma: 'un',
@@ -44,11 +43,9 @@ jest.mock('@/content', () => {
           exampleFr: "J'ai deux amis.",
           exampleKr: '친구가 두 명 있어요.',
         },
-      ]);
-    }
-  }
-  return { ...actual, StaticContentProvider: FakeProvider };
-});
+      ]),
+  }),
+}));
 
 beforeEach(() => {
   resetCards();

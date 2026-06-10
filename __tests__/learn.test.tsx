@@ -12,12 +12,11 @@ jest.mock('@/components/SwipeDeck', () => ({
   SwipeDeck: ({ children }: { children: ReactNode }) => children,
 }));
 
-// StaticContentProvider를 2단어 덱으로 모킹해 전체 흐름(로드→분류→완료·undo)을 검증.
-jest.mock('@/content', () => {
-  const actual = jest.requireActual('@/content');
-  class FakeProvider {
-    getWords() {
-      return Promise.resolve([
+// provider를 2단어 덱으로 모킹해 전체 흐름(로드→분류→완료·undo)을 검증 (UoW-09: 화면은 currentProvider 경유).
+jest.mock('@/lib/content', () => ({
+  currentProvider: () => ({
+    getWords: () =>
+      Promise.resolve([
         {
           id: 'w1',
           lemma: 'un',
@@ -40,11 +39,9 @@ jest.mock('@/content', () => {
           exampleFr: "J'ai deux amis.",
           exampleKr: '친구가 두 명 있어요.',
         },
-      ]);
-    }
-  }
-  return { ...actual, StaticContentProvider: FakeProvider };
-});
+      ]),
+  }),
+}));
 
 // DeckSession이 전역 모듈 스토어(cardStore·studyLog)에 기록하므로 스위트 간 격리.
 beforeEach(() => {

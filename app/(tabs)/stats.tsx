@@ -2,7 +2,7 @@ import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-import { StaticContentProvider } from '@/content';
+import { currentProvider } from '@/lib/content';
 import { countByStatus, dueCount, levelProgress, streakDays, studiedCount } from '@/srs/stats';
 import { useCards, useStudyDays } from '@/store/hooks';
 import { colors, radius, spacing, typography } from '@/theme';
@@ -18,7 +18,7 @@ export default function StatsScreen() {
 
   useEffect(() => {
     let mounted = true;
-    new StaticContentProvider().getWords(LEVEL).then((words) => {
+    currentProvider().getWords(LEVEL).then((words) => {
       if (mounted) setTotalWords(words.length);
     });
     return () => {

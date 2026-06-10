@@ -13,9 +13,9 @@
 | 항목 | 값 |
 |---|---|
 | **현재 단계** | Construction |
-| **현재 상태** | ⏸️ Awaiting Approval — `UoW-08-settings-keys` 완료 승인(체크포인트 B) 대기 |
-| **대기 중인 체크포인트** | `UoW-08-settings-keys` **완료 승인 (체크포인트 B)** — 게이트 4종 green + code-review 머지 가능 |
-| **다음 액션** | 체크포인트 B 승인 → STATUS ✅ → 커밋 → `/construction UoW-09-ai-provider` |
+| **현재 상태** | ⏸️ Awaiting Approval — `UoW-09-ai-provider` 완료 승인(체크포인트 B) 대기 |
+| **대기 중인 체크포인트** | `UoW-09-ai-provider` **완료 승인 (체크포인트 B)** — 게이트 4종 green + code-review 머지 가능 |
+| **다음 액션** | 체크포인트 B 승인 → STATUS ✅ → 커밋 → `/construction UoW-10-images` |
 
 > 원칙: **AI proposes, human disposes.** 모든 단계는 체크포인트에서 멈추고 사람 승인을 기다린다.
 
@@ -59,8 +59,8 @@
 | UoW-05-srs | SRS Leitner + 영속화 | back-dev (+db-dev) | ✅ Approved | [기록](construction/UoW-05-srs.md) | 2026-06-10 | 0eum |
 | UoW-06-review-stats | 복습 큐 + 통계 | front-dev (+back-dev) | ✅ Approved | [기록](construction/UoW-06-review-stats.md) | 2026-06-10 | 0eum |
 | UoW-07-bookmarks | 북마크 토글/목록 | front-dev (+db-dev) | ✅ Approved | [기록](construction/UoW-07-bookmarks.md) | 2026-06-10 | 0eum |
-| UoW-08-settings-keys | 설정 + 키 입력(secure-store) | front-dev (+back/db-dev) | 🔵 In Progress | [기록](construction/UoW-08-settings-keys.md) | 2026-06-10 | — |
-| UoW-09-ai-provider | AIContentProvider(Anthropic) + 폴백 | back-dev | ⬜ Pending | — | — | — |
+| UoW-08-settings-keys | 설정 + 키 입력(secure-store) | front-dev (+back/db-dev) | ✅ Approved | [기록](construction/UoW-08-settings-keys.md) | 2026-06-10 | 0eum |
+| UoW-09-ai-provider | AIContentProvider(Anthropic) + 폴백 | back-dev | 🔵 In Progress | [기록](construction/UoW-09-ai-provider.md) | 2026-06-10 | — |
 | UoW-10-images | 플레이스홀더 + AIImageProvider | back-dev (+content-gen) | ⬜ Pending | — | — | — |
 | UoW-11-onboarding-polish | 온보딩 + 햅틱/접근성 | front-dev | ⬜ Pending | — | — | — |
 | UoW-12-expand | A2/B1 확장 + README | db-dev (+content-gen) | ⬜ Pending | — | — | — |
@@ -73,8 +73,8 @@
 
 | 단계 | 체크포인트 | 상태 | 설명 |
 |---|---|---|---|
-| Construction | UoW-08 설계 승인 (체크포인트 A) | ✅ Approved (2026-06-10) | Q-I1~I5 권장값대로 승인. |
-| Construction | UoW-08 완료 승인 (체크포인트 B) | ⏸️ Awaiting Approval | 구현+테스트(게이트 4종 green, 24 suites/120 tests)+code-review 머지 가능(보안 검증 포함). 승인 시 STATUS ✅ → 커밋. |
+| Construction | UoW-09 설계 승인 (체크포인트 A) | ✅ Approved (2026-06-10) | Q-J1~J5 권장값대로 승인 — 모델 `claude-haiku-4-5`, ADR-009 = 공식 SDK(@anthropic-ai/sdk)+fetch 주입 확정. |
+| Construction | UoW-09 완료 승인 (체크포인트 B) | ⏸️ Awaiting Approval | 구현+테스트(게이트 4종 green, 26 suites/131 tests)+code-review 머지 가능(metro 스텁 타당성 소스 검증 포함). 승인 시 STATUS ✅ → 커밋. |
 
 > Inception은 ✅ 승인 완료(2026-06-09). 이후 각 Unit은 체크포인트 A·B에서 사람 승인.
 
@@ -95,3 +95,4 @@
 | 2026-06-10 | Construction | **UoW-05-srs ✅ 완료** (체크포인트 B, `ebfb1ab` — 사용자 직접 커밋). leitner 순수 엔진 + cardStore + /learn 배선. **zustand 제거**(v5 타입이 tsc 무한 추론 유발) → 모듈 상태+subscribe로 대체(ADR-002 수정, 사용자 결정 A). 게이트 4종 green 재확인(2026-06-10, test 52/52). code-review 에이전트 리뷰는 사용자 결정으로 생략. iCloud `.nosync` 환경 구성(tsconfig preserveSymlinks·jest roots 등) 포함. 다음: `UoW-06-review-stats`. | 0eum |
 | 2026-06-10 | Construction | **UoW-06-review-stats ✅ 완료** (체크포인트 B, `e99b644` — 사용자 커밋·푸시). /review due 큐 + /stats(streak·단어 수·진척) + studyLog 영속 + DeckSession 추출. 게이트 4종 green(test 85/85), code-review 머지 가능(블로커 0). 환경: iCloud 충돌 루프로 `.nosync` 심볼릭 링크 폐기 → 실제 node_modules 복원(근본 해결은 프로젝트 iCloud 밖 이동 — 제안됨). 다음: `UoW-07-bookmarks`. | 0eum |
 | 2026-06-10 | Construction | **UoW-07-bookmarks ✅ 완료** (체크포인트 B, `476af6f` — 사용자 커밋·푸시). 북마크 토글(DeckSession 배선)·/bookmarks 목록·`/review?mode=bookmarks` 복습. due 판정에 `reps>0` 추가(Q-H3). 게이트 4종 green(test 100/100), code-review 머지 가능(블로커 0). 다음: `UoW-08-settings-keys`. | 0eum |
+| 2026-06-10 | Construction | **UoW-08-settings-keys ✅ 완료** (체크포인트 B, `4178df0` — 사용자 커밋·푸시). /settings(속도·레벨·키 입력·초기화) + secureKeys(secure-store 유일 접점) + settingsStore(hasKey 비직렬화·파생) + selectProvider 골격. colors.danger 토큰 추가(리뷰 반영). 게이트 4종 green(test 120/120), code-review 머지 가능(보안 검증 — 키 유출 경로 없음). 이월: /settings 진입 트리거(UoW-11). 다음: `UoW-09-ai-provider`. | 0eum |
