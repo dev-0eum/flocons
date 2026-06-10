@@ -59,9 +59,12 @@ describe('LearnScreen (학습 덱)', () => {
     // 로딩 후 첫 카드(하나)
     expect(await findByText('하나')).toBeTruthy();
 
-    // 발음 버튼 → tts.speak(fr-FR)로 관사+표제어 재생
+    // 발음 버튼 → tts.speak(fr-FR)로 관사+표제어 재생 (rate는 settingsStore 기본 1.0 — UoW-08)
     fireEvent.press(getByLabelText('단어 발음 듣기'));
-    expect(Speech.speak).toHaveBeenCalledWith('le un', expect.objectContaining({ language: 'fr-FR' }));
+    expect(Speech.speak).toHaveBeenCalledWith(
+      'le un',
+      expect.objectContaining({ language: 'fr-FR', rate: 1.0 }),
+    );
 
     // 북마크 토글 → 영속 반영 (UoW-07 — DeckSession 배선)
     fireEvent.press(getByLabelText('북마크 추가'));

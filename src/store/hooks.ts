@@ -2,6 +2,7 @@ import { useSyncExternalStore } from 'react';
 
 import type { CardState } from '@/content';
 import { getCards, subscribeCards } from './cardStore';
+import { type SettingsState, getSettings, subscribeSettings } from './settingsStore';
 import { getStudyDays, subscribeStudyLog } from './studyLog';
 
 // 스토어 → React 구독 (UoW-06). 모듈 상태 스토어(UoW-05 결정 A)를 useSyncExternalStore로
@@ -15,4 +16,9 @@ export function useCards(): Record<string, CardState> {
 /** studyLog의 학습일 스냅샷 구독. */
 export function useStudyDays(): ReadonlySet<string> {
   return useSyncExternalStore(subscribeStudyLog, getStudyDays, getStudyDays);
+}
+
+/** settingsStore의 설정 스냅샷 구독. */
+export function useSettings(): SettingsState {
+  return useSyncExternalStore(subscribeSettings, getSettings, getSettings);
 }

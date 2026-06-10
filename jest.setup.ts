@@ -4,11 +4,20 @@
 // SwipeDeck을 쓰는 화면 테스트는 SwipeDeck을 패스스루로 mock하고, 스와이프 제스처는
 // 번들(expo export) + 수동으로 검증한다(Q-C3). 덱 분류/undo 로직은 src/lib/deck.ts 단위 테스트로 커버.
 
-jest.mock('expo-secure-store', () => ({
-  setItemAsync: jest.fn(async () => undefined),
-  getItemAsync: jest.fn(async () => null),
-  deleteItemAsync: jest.fn(async () => undefined),
-}));
+// expo-secure-store: in-memory Map 기반 mock (UoW-08 — secureKeys 라운드트립 테스트용).
+// 키 격리는 각 테스트의 beforeEach에서 deleteKey로 수행한다.
+jest.mock('expo-secure-store', () => {
+  const store = new Map<string, string>();
+  return {
+    setItemAsync: jest.fn(async (key: string, value: string) => {
+      store.set(key, value);
+    }),
+    getItemAsync: jest.fn(async (key: string) => store.get(key) ?? null),
+    deleteItemAsync: jest.fn(async (key: string) => {
+      store.delete(key);
+    }),
+  };
+});
 
 jest.mock('@react-native-async-storage/async-storage', () =>
   require('@react-native-async-storage/async-storage/jest/async-storage-mock'),

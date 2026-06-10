@@ -3,6 +3,7 @@ import { Stack } from 'expo-router';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { rehydrateCardStore } from '@/store/cardStore';
+import { rehydrateSettings } from '@/store/settingsStore';
 import { rehydrateStudyLog } from '@/store/studyLog';
 
 /**
@@ -11,10 +12,11 @@ import { rehydrateStudyLog } from '@/store/studyLog';
  * GestureHandlerRootView로 감싸 스와이프 제스처(UoW-03)를 활성화.
  */
 export default function RootLayout() {
-  // 앱 시작 시 영속 학습 상태(SRS·학습일 로그) 복원 (UoW-05/06).
+  // 앱 시작 시 영속 상태(SRS·학습일 로그·설정/키 플래그) 복원 (UoW-05/06/08).
   useEffect(() => {
     void rehydrateCardStore();
     void rehydrateStudyLog();
+    void rehydrateSettings();
   }, []);
 
   return (

@@ -10,9 +10,11 @@ describe('UoW-00 scaffold smoke', () => {
     expect(getByText('hello')).toBeTruthy();
   });
 
-  it('native module (expo-secure-store) is mocked in jest', async () => {
+  it('native module (expo-secure-store) is mocked in jest (UoW-08: in-memory 라운드트립)', async () => {
     await SecureStore.setItemAsync('k', 'v');
     expect(SecureStore.setItemAsync).toHaveBeenCalledWith('k', 'v');
+    await expect(SecureStore.getItemAsync('k')).resolves.toBe('v');
+    await SecureStore.deleteItemAsync('k');
     await expect(SecureStore.getItemAsync('k')).resolves.toBeNull();
   });
 });
