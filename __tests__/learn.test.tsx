@@ -2,6 +2,8 @@ import type { ReactNode } from 'react';
 import { fireEvent, render } from '@testing-library/react-native';
 import * as Speech from 'expo-speech';
 
+import { resetCards } from '@/store/cardStore';
+import { resetStudyLog } from '@/store/studyLog';
 import LearnScreen from '../app/learn';
 
 // SwipeDeck은 reanimated/gesture 의존 → jest에서 패스스루로 mock(자식만 렌더).
@@ -42,6 +44,12 @@ jest.mock('@/content', () => {
     }
   }
   return { ...actual, StaticContentProvider: FakeProvider };
+});
+
+// DeckSession이 전역 모듈 스토어(cardStore·studyLog)에 기록하므로 스위트 간 격리.
+beforeEach(() => {
+  resetCards();
+  resetStudyLog();
 });
 
 describe('LearnScreen (학습 덱)', () => {
