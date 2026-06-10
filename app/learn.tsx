@@ -6,6 +6,7 @@ import { ActionButtons, StateView, TopBar, WordCard } from '@/components';
 import { SwipeDeck } from '@/components/SwipeDeck';
 import { StaticContentProvider } from '@/content';
 import {
+  type Classification,
   currentWord,
   deckReducer,
   excludedCount,
@@ -15,6 +16,7 @@ import {
 } from '@/lib/deck';
 import { toWordCardData } from '@/lib/toWordCardData';
 import { speak } from '@/lib/tts';
+import { classifyCard } from '@/store/cardStore';
 import { colors, spacing } from '@/theme';
 
 // 레벨은 A1 고정 (레벨 선택 UI는 UoW-11). 영속/SRS는 UoW-05.
@@ -47,6 +49,13 @@ export default function LearnScreen() {
   const prog = progress(state);
   const headword = word.article ? `${word.article} ${word.lemma}` : word.lemma;
 
+  // 분류: 영속 SRS 반영(현재 카드) + 세션 덱 진행.
+  // (undo는 세션만 되돌린다 — 영속 SRS는 재분류 시 갱신. 알려진 한계: 재분류 시 box 중복 승급 가능.)
+  const handleClassify = (value: Classification) => {
+    classifyCard(word.id, value, Date.now());
+    dispatch({ type: 'classify', value });
+  };
+
   return (
     <SafeAreaView style={styles.container} edges={['top', 'bottom']}>
       <TopBar
@@ -57,8 +66,8 @@ export default function LearnScreen() {
       />
       <View style={styles.deck}>
         <SwipeDeck
-          onSwipeLeft={() => dispatch({ type: 'classify', value: 'known' })}
-          onSwipeRight={() => dispatch({ type: 'classify', value: 'learn' })}
+          onSwipeLeft={() => handleClassify('known')}
+          onSwipeRight={() => handleClassify('learn')}
         >
           <WordCard
             data={toWordCardData(word)}
@@ -69,8 +78,8 @@ export default function LearnScreen() {
       </View>
       <View style={styles.actions}>
         <ActionButtons
-          onKnow={() => dispatch({ type: 'classify', value: 'known' })}
-          onLearn={() => dispatch({ type: 'classify', value: 'learn' })}
+          onKnow={() => handleClassify('known')}
+          onLearn={() => handleClassify('learn')}
         />
       </View>
     </SafeAreaView>

@@ -13,9 +13,9 @@
 | 항목 | 값 |
 |---|---|
 | **현재 단계** | Construction |
-| **현재 상태** | 🔵 In Progress — `UoW-04-tts` 구현+게이트+리뷰 완료, ⏸️ 체크포인트 B 승인 대기 |
-| **대기 중인 체크포인트** | `UoW-04-tts` **완료 승인 (체크포인트 B)** — 사람 승인+푸시 |
-| **다음 액션** | 완료 승인 → 커밋·푸시(사용자) → `/construction UoW-05-srs` |
+| **현재 상태** | 🔵 In Progress — `UoW-05-srs` 설계 제안, ⏸️ 체크포인트 A 승인 대기 |
+| **대기 중인 체크포인트** | `UoW-05-srs` **설계 승인 (체크포인트 A)** — 사람 승인 대기 |
+| **다음 액션** | 설계 승인 → 구현(Leitner·cardStore·영속) → 검증 게이트 → 체크포인트 B |
 
 > 원칙: **AI proposes, human disposes.** 모든 단계는 체크포인트에서 멈추고 사람 승인을 기다린다.
 
@@ -55,8 +55,8 @@
 | UoW-01-design-system | 디자인 시스템 & 베이스 컴포넌트 | front-dev | ✅ Approved | [기록](construction/UoW-01-design-system.md) | 2026-06-09 | 0eum |
 | UoW-02-content-layer | 콘텐츠 계층 + A1 정적 데이터셋 | db-dev (+content-gen) | ✅ Approved | [기록](construction/UoW-02-content-layer.md) | 2026-06-09 | 0eum |
 | UoW-03-learn-deck | 학습 덱 화면(스와이프) | front-dev | ✅ Approved | [기록](construction/UoW-03-learn-deck.md) | 2026-06-09 | 0eum |
-| UoW-04-tts | 발음(expo-speech fr-FR) | back-dev | 🔵 In Progress | [기록](construction/UoW-04-tts.md) | 2026-06-09 | — |
-| UoW-05-srs | SRS Leitner + 영속화 | back-dev (+db-dev) | ⬜ Pending | — | — | — |
+| UoW-04-tts | 발음(expo-speech fr-FR) | back-dev | ✅ Approved | [기록](construction/UoW-04-tts.md) | 2026-06-09 | 0eum |
+| UoW-05-srs | SRS Leitner + 영속화 | back-dev (+db-dev) | 🔵 In Progress | [기록](construction/UoW-05-srs.md) | 2026-06-09 | — |
 | UoW-06-review-stats | 복습 큐 + 통계 | front-dev (+back-dev) | ⬜ Pending | — | — | — |
 | UoW-07-bookmarks | 북마크 토글/목록 | front-dev (+db-dev) | ⬜ Pending | — | — | — |
 | UoW-08-settings-keys | 설정 + 키 입력(secure-store) | front-dev (+back/db-dev) | ⬜ Pending | — | — | — |
@@ -73,7 +73,7 @@
 
 | 단계 | 체크포인트 | 상태 | 설명 |
 |---|---|---|---|
-| Construction | UoW-04 완료 승인 (체크포인트 B) | ⏸️ Awaiting Approval | `UoW-04-tts` 구현+게이트(typecheck/lint/test 35/35·expo export)+code-review(머지가능) 완료. 사람 승인+푸시 시 STATUS ✅. |
+| Construction | UoW-05 설계 승인 (체크포인트 A) | ⏸️ Awaiting Approval | `UoW-05-srs` 논리 설계(Leitner 순수 엔진 + cardStore zustand persist + /learn 영속 배선)를 제출. 승인 시 구현→게이트→체크포인트 B. |
 
 > Inception은 ✅ 승인 완료(2026-06-09). 이후 각 Unit은 체크포인트 A·B에서 사람 승인.
 
@@ -90,3 +90,4 @@
 | 2026-06-09 | Construction | **UoW-01-design-system ✅ 완료** (체크포인트 B). 테마 토큰 + 베이스 컴포넌트 5종(props-only), 게이트 4종 green(test 14/14), code-review Approved. 사용자 푸시 완료. 다음: `UoW-02-content-layer`. | 0eum |
 | 2026-06-09 | Construction | **UoW-02-content-layer ✅ 완료** (체크포인트 B). Word/CardState 타입 + ContentProvider/StaticContentProvider + validateWords + A1 65단어. 게이트 4종 green(test 25/25), code-review Approved. 사용자 푸시 완료. 다음: `UoW-03-learn-deck`. | 0eum |
 | 2026-06-09 | Construction | **UoW-03-learn-deck ✅ 완료** (체크포인트 B, `0d9079a`). 스와이프 카드(reanimated 4+gesture)·덱 reducer·/learn 조립. 게이트 4종 green(test 32/32), code-review Approved. 사용자 푸시 완료. 다음: `UoW-04-tts`. | 0eum |
+| 2026-06-09 | Construction | **UoW-04-tts ✅ 완료** (체크포인트 B, `10345f3`). lib/tts(expo-speech fr-FR) + /learn 발음 버튼 배선. 게이트 4종 green(test 35/35), code-review Approved. 사용자 푸시 완료. 다음: `UoW-05-srs`. | 0eum |

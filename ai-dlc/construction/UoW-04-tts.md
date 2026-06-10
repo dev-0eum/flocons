@@ -11,7 +11,7 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M4 |
 | **리드** | **back-dev** (lib/ 서비스) |
 | **멤버** | front-dev(학습 화면 배선) · qa-dev · code-review |
-| **상태** | 🔵 In Progress (체크포인트 A ✅ — 구현 중) |
+| **상태** | ✅ Approved (체크포인트 B — 완료, 푸시됨 `10345f3`) |
 | **시작/완료** | 2026-06-09 / (미정) |
 | **의존성** | UoW-00 (✅) · (배선은 UoW-03 /learn ✅ 위에) |
 
@@ -73,6 +73,6 @@ WordCard 발음 버튼 → `/learn` 콜백 → `tts.speak(headword | exampleFr)`
 ## 5) Unit 완료
 ### ⏸️ 체크포인트 B — Unit 완료 승인
 - [x] 게이트 4종 통과 · [x] code-review 머지 가능
-- 결정: ⏸️ Awaiting Approval (사람 승인 대기) → 승인 시 STATUS ✅ + 커밋·푸시(사용자)
+- 결정: ✅ Approved (0eum, 2026-06-09) — 사용자 커밋·푸시 완료 (`10345f3`)
 ### 커밋 / 푸시 (사용자 수행)
 - 제안 메시지: `feat: TTS pronunciation via expo-speech (fr-FR) wired into learn deck [UoW-04]`
