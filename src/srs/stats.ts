@@ -21,9 +21,9 @@ export function studiedCount(cards: Record<string, CardState>): number {
   return Object.values(cards).filter((c) => c.reps > 0).length;
 }
 
-/** now 기준 복습 예정(dueAt <= now)인 카드 수. */
+/** now 기준 복습 예정(dueAt <= now)인 카드 수 — 분류 이력 있는(reps>0) 카드만 (Q-H3, cardStore.dueWordIds와 동일 기준). */
 export function dueCount(cards: Record<string, CardState>, now: number): number {
-  return Object.values(cards).filter((c) => c.dueAt <= now).length;
+  return Object.values(cards).filter((c) => c.reps > 0 && c.dueAt <= now).length;
 }
 
 /** 레벨 진척(0~1): known / 전체 단어 수. 분모 0이면 0. 0~1로 클램프. */

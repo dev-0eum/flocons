@@ -16,7 +16,8 @@ import {
 } from '@/lib/deck';
 import { toWordCardData } from '@/lib/toWordCardData';
 import { speak } from '@/lib/tts';
-import { classifyCard } from '@/store/cardStore';
+import { classifyCard, toggleBookmark } from '@/store/cardStore';
+import { useCards } from '@/store/hooks';
 import { recordStudyDay } from '@/store/studyLog';
 import { colors, spacing } from '@/theme';
 
@@ -34,6 +35,7 @@ export interface DeckSessionProps {
  */
 export function DeckSession({ words, doneMessage }: DeckSessionProps) {
   const [state, dispatch] = useReducer(deckReducer, words, initDeck);
+  const cards = useCards(); // 북마크 토글 반영 구독 (UoW-07)
 
   const word = currentWord(state);
   if (isDone(state) || !word) {
@@ -65,6 +67,8 @@ export function DeckSession({ words, doneMessage }: DeckSessionProps) {
         >
           <WordCard
             data={toWordCardData(word)}
+            bookmarked={cards[word.id]?.bookmarked ?? false}
+            onToggleBookmark={() => toggleBookmark(word.id)}
             onPlayWord={() => speak(headword)}
             onPlayExample={() => speak(word.exampleFr)}
           />

@@ -47,6 +47,14 @@ export function classifyCard(wordId: string, classification: Classification, now
   emit();
 }
 
+/** 북마크 토글·영속. 카드가 없으면 생성하되 SRS 값은 건드리지 않는다(Q-H3). */
+export function toggleBookmark(wordId: string): void {
+  const prev = cards[wordId] ?? newCardState(wordId);
+  cards = { ...cards, [wordId]: { ...prev, bookmarked: !prev.bookmarked } };
+  persistNow();
+  emit();
+}
+
 /** 학습 데이터 초기화(키/콘텐츠 무관 — Q4). 저장본도 삭제. */
 export function resetCards(): void {
   cards = {};
@@ -78,10 +86,17 @@ export const getCards = (): Record<string, CardState> => cards;
 /** 특정 단어의 CardState(없으면 undefined). */
 export const getCard = (wordId: string): CardState | undefined => cards[wordId];
 
-/** now 기준 복습 예정(dueAt <= now)인 단어 id 목록. */
+/** now 기준 복습 예정(dueAt <= now)인 단어 id — 분류 이력 있는(reps>0) 카드만. 북마크만 한 카드(dueAt 0)가 새지 않게(Q-H3). */
 export function dueWordIds(now: number): string[] {
   return Object.values(cards)
-    .filter((c) => c.dueAt <= now)
+    .filter((c) => c.reps > 0 && c.dueAt <= now)
+    .map((c) => c.wordId);
+}
+
+/** 북마크된 단어 id 목록 (dueWordIds와 대칭 — /bookmarks·북마크 복습용). */
+export function bookmarkedWordIds(): string[] {
+  return Object.values(cards)
+    .filter((c) => c.bookmarked)
     .map((c) => c.wordId);
 }
 

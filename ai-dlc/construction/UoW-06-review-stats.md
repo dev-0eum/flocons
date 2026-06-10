@@ -12,8 +12,8 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M6 |
 | **리드** | **front-dev** (화면·조립) |
 | **멤버** | back-dev(stats·studyLog 순수 로직) + qa-dev + code-review |
-| **상태** | ⏸️ Awaiting Approval (체크포인트 B) |
-| **시작일 / 완료일** | 2026-06-10 / (미정) |
+| **상태** | ✅ Approved (체크포인트 B — 2026-06-10) |
+| **시작일 / 완료일** | 2026-06-10 / 2026-06-10 |
 
 > 의존성: UoW-03 ✅(덱 UI) · UoW-05 ✅(cardStore·dueWordIds) · DoD 요약: `/review`가 due 카드만 큐잉(0건 시 빈/완료 상태) · `/stats`가 streak·학습 단어 수·레벨 진척을 정확히 표시 · 날짜 경계/타임존 테스트 · 게이트 4종 green.
 
@@ -162,14 +162,14 @@
 ## 5) Unit 완료
 
 ### ⏸️ 체크포인트 B — Unit 완료 승인
-- [ ] 검증 게이트 4종 통과 확인
-- [ ] code-review 머지 가능
-- 결정: <✅ Approved | 🔁 Changes Requested>
-- 승인자: <이름> · 날짜: <YYYY-MM-DD>
+- [x] 검증 게이트 4종 통과 확인
+- [x] code-review 머지 가능
+- 결정: ✅ Approved
+- 승인자: 0eum · 날짜: 2026-06-10
 
 ### 커밋 / 푸시 기록 ([docs/HARNESS.md](../../docs/HARNESS.md) §4 규약)
-- [ ] STATUS 갱신 · [ ] 커밋 · [ ] 푸시
-- 커밋 해시: <짧은 해시>
+- [x] STATUS 갱신 · [x] 커밋 · [x] 푸시 (사용자 수행)
+- 커밋 해시: `e99b644` (`feat: review queue (due cards) + stats screen with streak log [UoW-06]`)
 
 ### 마무리
-- 후속 작업 / 다음 Unit: <...>
+- 후속 작업 / 다음 Unit: `UoW-07-bookmarks`. 이월 항목: 화면별 getWords 로드 보일러플레이트 통합(UoW-11), undo의 영속 SRS 미롤백(알려진 한계).

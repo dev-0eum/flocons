@@ -38,14 +38,18 @@ describe('stats — countByStatus / studiedCount', () => {
 
 describe('stats — dueCount (경계: dueAt == now 포함)', () => {
   const cards = {
-    a: card({ wordId: 'a', dueAt: 1000 }),
-    b: card({ wordId: 'b', dueAt: 1001 }),
+    a: card({ wordId: 'a', dueAt: 1000, reps: 1 }),
+    b: card({ wordId: 'b', dueAt: 1001, reps: 1 }),
   };
 
   it('dueAt <= now 인 카드만 센다', () => {
     expect(dueCount(cards, 999)).toBe(0);
     expect(dueCount(cards, 1000)).toBe(1);
     expect(dueCount(cards, 1001)).toBe(2);
+  });
+
+  it('분류 이력 없는(reps==0) 카드는 제외 — 북마크만 한 카드 (Q-H3)', () => {
+    expect(dueCount({ x: card({ wordId: 'x', dueAt: 0, reps: 0, bookmarked: true }) }, 1000)).toBe(0);
   });
 });
 

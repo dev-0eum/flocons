@@ -3,6 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {
   STORAGE_KEY,
   STORE_VERSION,
+  bookmarkedWordIds,
   classifyCard,
   dueWordIds,
   getCard,
@@ -10,6 +11,7 @@ import {
   rehydrateCardStore,
   resetCards,
   subscribeCards,
+  toggleBookmark,
 } from '@/store/cardStore';
 
 const DAY = 86_400_000;
@@ -72,6 +74,50 @@ describe('cardStore — dueWordIds', () => {
     classifyCard('later', 'known', 1000); // dueAt 1000+1일
     expect(dueWordIds(1000).sort()).toEqual(['due1']);
     expect(dueWordIds(1000 + DAY).sort()).toEqual(['due1', 'later']);
+  });
+});
+
+describe('cardStore — toggleBookmark / bookmarkedWordIds (UoW-07)', () => {
+  it('미분류 단어 북마크 → CardState 생성하되 SRS 무영향 (Q-H3)', () => {
+    toggleBookmark('w1');
+    const c = getCard('w1')!;
+    expect(c.bookmarked).toBe(true);
+    expect(c.status).toBe('new');
+    expect(c.reps).toBe(0);
+  });
+
+  it('재토글로 해제된다', () => {
+    toggleBookmark('w1');
+    toggleBookmark('w1');
+    expect(getCard('w1')!.bookmarked).toBe(false);
+  });
+
+  it('bookmarkedWordIds는 북마크된 단어만 반환', () => {
+    toggleBookmark('w1');
+    classifyCard('w2', 'learn', 1000);
+    expect(bookmarkedWordIds()).toEqual(['w1']);
+  });
+
+  it('분류해도 bookmarked가 보존된다', () => {
+    toggleBookmark('w1');
+    classifyCard('w1', 'known', 1000);
+    expect(getCard('w1')!.bookmarked).toBe(true);
+  });
+
+  it('북마크만 한 카드(reps==0)는 due 큐에 잡히지 않는다 (Q-H3)', () => {
+    toggleBookmark('w1');
+    expect(dueWordIds(Date.now())).toEqual([]);
+  });
+
+  it('토글도 영속된다 (라운드트립)', async () => {
+    toggleBookmark('w1');
+    await flush();
+    const raw = await AsyncStorage.getItem(STORAGE_KEY);
+    resetCards();
+    await flush();
+    await AsyncStorage.setItem(STORAGE_KEY, raw as string);
+    await rehydrateCardStore();
+    expect(getCard('w1')!.bookmarked).toBe(true);
   });
 });
 

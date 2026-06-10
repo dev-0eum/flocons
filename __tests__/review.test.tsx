@@ -1,13 +1,19 @@
 import type { ReactNode } from 'react';
 import { fireEvent, render } from '@testing-library/react-native';
 
-import { classifyCard, getCard, resetCards } from '@/store/cardStore';
+import { classifyCard, getCard, resetCards, toggleBookmark } from '@/store/cardStore';
 import { resetStudyLog } from '@/store/studyLog';
 import ReviewScreen from '../app/review';
 
 // SwipeDeck은 reanimated/gesture 의존 → jest에서 패스스루로 mock (learn.test와 동일 — Q-C3).
 jest.mock('@/components/SwipeDeck', () => ({
   SwipeDeck: ({ children }: { children: ReactNode }) => children,
+}));
+
+// 라우트 파라미터 mock — 테스트별로 mockParams 교체 (mode=bookmarks 분기 검증).
+let mockParams: Record<string, string> = {};
+jest.mock('expo-router', () => ({
+  useLocalSearchParams: () => mockParams,
 }));
 
 // StaticContentProvider를 2단어 덱으로 모킹 — due 필터를 검증.
@@ -47,6 +53,7 @@ jest.mock('@/content', () => {
 beforeEach(() => {
   resetCards();
   resetStudyLog();
+  mockParams = {};
 });
 
 describe('ReviewScreen (복습 큐)', () => {
@@ -70,5 +77,36 @@ describe('ReviewScreen (복습 큐)', () => {
     fireEvent.press(getByLabelText('알고 있어요'));
     expect(await findByText(/복습을 마쳤어요/)).toBeTruthy();
     expect(getCard('w1')!.box).toBe(1); // box0 → 승급
+  });
+
+  it('북마크만 한 카드(미분류)는 기본 due 큐에 잡히지 않는다 (Q-H3)', async () => {
+    toggleBookmark('w1');
+    const { findByText } = render(<ReviewScreen />);
+    expect(await findByText('지금 복습할 카드가 없어요.')).toBeTruthy();
+  });
+});
+
+describe('ReviewScreen — mode=bookmarks (북마크 복습, UoW-07)', () => {
+  it('북마크 전체를 큐잉한다 (due 무관 — Q-H2)', async () => {
+    mockParams = { mode: 'bookmarks' };
+    toggleBookmark('w2'); // 미분류·북마크만 — due 아님에도 북마크 복습엔 포함
+    const { findByText, queryByText } = render(<ReviewScreen />);
+    expect(await findByText('둘')).toBeTruthy();
+    expect(queryByText('하나')).toBeNull();
+  });
+
+  it('북마크 0건이면 전용 빈 상태', async () => {
+    mockParams = { mode: 'bookmarks' };
+    const { findByText } = render(<ReviewScreen />);
+    expect(await findByText('북마크한 단어가 없어요.')).toBeTruthy();
+  });
+
+  it('큐 소진 시 북마크 전용 완료 문구', async () => {
+    mockParams = { mode: 'bookmarks' };
+    toggleBookmark('w1');
+    const { findByText, getByLabelText } = render(<ReviewScreen />);
+    await findByText('하나');
+    fireEvent.press(getByLabelText('알고 있어요'));
+    expect(await findByText(/북마크 복습을 마쳤어요/)).toBeTruthy();
   });
 });
