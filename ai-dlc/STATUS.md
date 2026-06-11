@@ -12,10 +12,10 @@
 
 | 항목 | 값 |
 |---|---|
-| **현재 단계** | Construction |
-| **현재 상태** | ⏸️ Awaiting Approval — `UoW-12-expand`(마지막 Unit) 완료 승인(체크포인트 B) 대기 |
-| **대기 중인 체크포인트** | `UoW-12-expand` **완료 승인 (체크포인트 B)** — 승인 시 **Construction 단계 완료** |
-| **다음 액션** | 체크포인트 B 승인 → STATUS ✅(Unit+Construction) → 커밋 → Operations (`/operations`) |
+| **현재 단계** | Construction 완료 → Operations 대기 |
+| **현재 상태** | ✅ **Construction 완료** (UoW-00~12 전부 ✅, 2026-06-11) — Operations ⬜ Pending |
+| **대기 중인 체크포인트** | (없음 — Operations는 `/operations` 실행 시 시작, 실제 변경 전 사람 승인) |
+| **다음 액션** | `/operations` — EAS 빌드·CI/CD·관측성·런북 (cloud-dev 리드) |
 
 > 원칙: **AI proposes, human disposes.** 모든 단계는 체크포인트에서 멈추고 사람 승인을 기다린다.
 
@@ -40,7 +40,7 @@
 | 단계 | 상태 | 리드 mob | 마지막 갱신 | 승인자 |
 |---|---|---|---|---|
 | Inception | ✅ Approved | app-pm | 2026-06-09 | 0eum |
-| Construction | 🔵 In Progress | Unit 성격별 (UI→front-dev / 로직→back-dev / 데이터→db-dev) | 2026-06-09 | — |
+| Construction | ✅ Approved (UoW-00~12 전부 완료) | Unit 성격별 (UI→front-dev / 로직→back-dev / 데이터→db-dev) | 2026-06-11 | 0eum |
 | Operations | ⬜ Pending | cloud-dev | (미정) | (미정) |
 
 ---
@@ -63,7 +63,7 @@
 | UoW-09-ai-provider | AIContentProvider(Anthropic) + 폴백 | back-dev | ✅ Approved | [기록](construction/UoW-09-ai-provider.md) | 2026-06-11 | 0eum |
 | UoW-10-images | 플레이스홀더 + AIImageProvider | back-dev (+content-gen) | ✅ Approved | [기록](construction/UoW-10-images.md) | 2026-06-11 | 0eum |
 | UoW-11-onboarding-polish | 온보딩 + 햅틱/접근성 | front-dev | ✅ Approved | [기록](construction/UoW-11-onboarding-polish.md) | 2026-06-11 | 0eum |
-| UoW-12-expand | A2/B1 확장 + README | db-dev (+content-gen) | 🔵 In Progress | [기록](construction/UoW-12-expand.md) | 2026-06-11 | — |
+| UoW-12-expand | A2/B1 확장 + README | db-dev (+content-gen) | ✅ Approved | [기록](construction/UoW-12-expand.md) | 2026-06-11 | 0eum |
 
 > UoW-00은 검증 게이트 4종(typecheck/lint/test/expo export) green + code-review 머지가능으로 ✅. **커밋·푸시는 사용자가 직접 수행**(`.git` 사고 후 정책).
 
@@ -99,3 +99,4 @@
 | 2026-06-11 | Construction | **UoW-09-ai-provider ✅ 완료** (체크포인트 B, `95adc04` — 사용자 커밋·푸시). @anthropic-ai/sdk 0.104(ADR-009 확정, 모델 claude-haiku-4-5) + AnthropicEnrichClient(구조화 출력, fetch 주입) + AIContentProvider(캐시 ADR-006, 전실패 Static 폴백) + 4개 화면 currentProvider() 전환. SDK의 node:* 참조로 Metro 번들 실패 → metro.config.js origin 스코프 스텁(리뷰어 소스 검증). 게이트 4종 green(test 131/131), code-review 머지 가능(블로커 0). 다음: `UoW-10-images`. | 0eum |
 | 2026-06-11 | Construction | **UoW-10-images ✅ 완료** (체크포인트 B, `f29440d` — 사용자 커밋·푸시). 카테고리 플레이스홀더(imagePalette 8색·tags 해시·이니셜) + AIImageProvider 골격(해상 순서·URL 캐시·전실패 폴백, 실벤더 보류 Q-K1). 게이트 4종 green(test 143/143), code-review 머지 가능(블로커 0). 다음: `UoW-11-onboarding-polish`. | 0eum |
 | 2026-06-11 | Construction | **UoW-11-onboarding-polish ✅ 완료** (체크포인트 B, `710cfee` — 사용자 커밋·푸시). 홈(진척·due·설정 진입)·온보딩(1페이지+영속 플래그)·레벨 연동(useWords)·햅틱(expo-haptics)·a11y 커스텀 액션·완료 액션·enrich ↻ UI — 이월 3건 흡수. 게이트 4종 green(test 155/155), code-review 머지 가능(블로커 0, 권고 3건 반영). 후속 백로그: SR play/bookmark 액션. 다음: `UoW-12-expand`(마지막). | 0eum |
+| 2026-06-11 | Construction | **UoW-12-expand ✅ 완료** (체크포인트 B, `ded4de2` — 사용자 커밋·푸시) — **Construction 단계 완료 (UoW-00~12 전부 ✅)**. A2/B1 각 60단어(content-gen, validate 0, A1 id 고정 스냅샷 가드)·README·커버리지(93.5/84/97/96.3%)·SQLite 이관 보류 결론. 게이트 4종 green(test 165/165), code-review 머지 가능(콘텐츠 3건 수정 반영). 다음: Operations(`/operations`). | 0eum |

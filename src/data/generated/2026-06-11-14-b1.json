@@ -1,0 +1,922 @@
+[
+  {
+    "id": "fr-b1-debat",
+    "lemma": "débat",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "토론, 논쟁",
+    "level": "B1",
+    "exampleFr": "Le débat sur l'environnement était si animé que personne ne voulait partir.",
+    "exampleKr": "환경에 관한 토론이 어찌나 열띠었는지 아무도 자리를 뜨려 하지 않았다.",
+    "imagePrompt": "A lively panel discussion on a small stage, two speakers gesturing at podiums while an audience listens, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "의견",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-enquete",
+    "lemma": "enquête",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "조사, 수사",
+    "level": "B1",
+    "exampleFr": "Les journalistes ont mené une enquête qui a duré plusieurs mois.",
+    "exampleKr": "기자들은 여러 달에 걸친 조사를 진행했다.",
+    "imagePrompt": "A desk covered with documents and photographs under a warm lamp, a magnifying glass resting on top, investigative mood, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "미디어"
+    ]
+  },
+  {
+    "id": "fr-b1-temoin",
+    "lemma": "témoin",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "증인, 목격자",
+    "level": "B1",
+    "exampleFr": "Le témoin a raconté ce qu'il avait vu le soir de l'accident.",
+    "exampleKr": "목격자는 사고가 난 날 저녁에 본 것을 이야기했다.",
+    "imagePrompt": "A person speaking earnestly at a wooden table in a quiet formal room, soft window light, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-reunion",
+    "lemma": "réunion",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "회의",
+    "level": "B1",
+    "exampleFr": "La réunion que nous avions prévue ce matin a été reportée à demain.",
+    "exampleKr": "오늘 아침에 예정되어 있던 회의가 내일로 미뤄졌다.",
+    "imagePrompt": "Colleagues gathered around a bright meeting room table with laptops and coffee cups, morning light through large windows, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-candidat",
+    "lemma": "candidat",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "지원자, 후보",
+    "level": "B1",
+    "exampleFr": "Le candidat qui parlait trois langues a impressionné tout le monde.",
+    "exampleKr": "3개 국어를 구사하는 지원자가 모두에게 깊은 인상을 남겼다.",
+    "imagePrompt": "A confident young person in business attire waiting on a chair outside an office door, holding a folder, soft natural light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-entretien",
+    "lemma": "entretien",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "면접, 면담",
+    "level": "B1",
+    "exampleFr": "Pendant l'entretien, on m'a demandé pourquoi je voulais changer de poste.",
+    "exampleKr": "면접에서 나는 왜 자리를 옮기고 싶은지 질문을 받았다.",
+    "imagePrompt": "Two people talking across a tidy desk in a bright office, one taking notes, professional atmosphere, photographic, cinematic lighting, no text, no watermark",
+    "tags": [
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-competence",
+    "lemma": "compétence",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "역량, 능력",
+    "level": "B1",
+    "exampleFr": "Pour ce poste, la compétence la plus importante est de savoir travailler en équipe.",
+    "exampleKr": "이 직책에서 가장 중요한 역량은 팀으로 일할 줄 아는 것이다.",
+    "imagePrompt": "Skilled hands assembling a complex wooden puzzle on a workbench, focused craftsmanship, warm light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-formation",
+    "lemma": "formation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "교육, 연수",
+    "level": "B1",
+    "exampleFr": "L'entreprise propose une formation pour que les employés apprennent les nouveaux outils.",
+    "exampleKr": "회사는 직원들이 새 도구를 익힐 수 있도록 연수를 제공한다.",
+    "imagePrompt": "A small workshop where adults practice on laptops while a trainer points at a whiteboard, bright classroom, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "직장",
+      "교육"
+    ]
+  },
+  {
+    "id": "fr-b1-chomage",
+    "lemma": "chômage",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "실업",
+    "level": "B1",
+    "exampleFr": "Après deux ans de chômage, il a enfin retrouvé un emploi qui lui plaît.",
+    "exampleKr": "2년의 실업 기간 끝에 그는 마침내 마음에 드는 일자리를 다시 찾았다.",
+    "imagePrompt": "A man sitting on a bench in a quiet park reading papers, overcast morning, thoughtful mood, photographic, cinematic, atmospheric lighting, no text, no watermark",
+    "tags": [
+      "직장",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-greve",
+    "lemma": "grève",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "파업",
+    "level": "B1",
+    "exampleFr": "À cause de la grève des transports, je suis allé au travail à pied.",
+    "exampleKr": "교통 파업 때문에 나는 걸어서 출근했다.",
+    "imagePrompt": "An empty train platform with a stopped train, while crowds of commuters walk along the city street outside, early morning light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "사회",
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-publicite",
+    "lemma": "publicité",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "광고",
+    "level": "B1",
+    "exampleFr": "Cette publicité passe si souvent à la télévision que tout le monde connaît la chanson.",
+    "exampleKr": "이 광고는 텔레비전에 하도 자주 나와서 모두가 그 노래를 안다.",
+    "imagePrompt": "A glowing billboard above a busy city crossing at dusk, colorful reflections on wet pavement, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "미디어"
+    ]
+  },
+  {
+    "id": "fr-b1-emission",
+    "lemma": "émission",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "(텔레비전·라디오) 방송 프로그램",
+    "level": "B1",
+    "exampleFr": "L'émission que j'écoutais hier soir parlait des langues étrangères.",
+    "exampleKr": "어젯밤 내가 듣던 방송은 외국어를 주제로 다뤘다.",
+    "imagePrompt": "A cozy radio studio with a large microphone, headphones and a glowing control panel at night, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "미디어"
+    ]
+  },
+  {
+    "id": "fr-b1-reseau",
+    "lemma": "réseau",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "네트워크, 망",
+    "level": "B1",
+    "exampleFr": "Les jeunes passent beaucoup de temps sur les réseaux sociaux, ce qui inquiète certains parents.",
+    "exampleKr": "젊은이들은 소셜 네트워크에서 많은 시간을 보내는데, 이 점이 일부 부모들을 걱정시킨다.",
+    "imagePrompt": "Glowing nodes connected by threads of light forming a web over a dark city map, abstract digital art, cinematic, atmospheric lighting, no text, no watermark",
+    "tags": [
+      "미디어",
+      "기술"
+    ]
+  },
+  {
+    "id": "fr-b1-dechet",
+    "lemma": "déchet",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "쓰레기, 폐기물",
+    "level": "B1",
+    "exampleFr": "Chaque famille devrait trier ses déchets pour protéger la nature.",
+    "exampleKr": "자연을 보호하려면 각 가정이 쓰레기를 분리해야 한다.",
+    "imagePrompt": "Colorful recycling bins lined up in a clean courtyard with sorted bottles and paper, bright daylight, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "환경"
+    ]
+  },
+  {
+    "id": "fr-b1-recyclage",
+    "lemma": "recyclage",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "재활용",
+    "level": "B1",
+    "exampleFr": "Le recyclage du papier et du verre est devenu une habitude dans notre quartier.",
+    "exampleKr": "종이와 유리 재활용은 우리 동네에서 하나의 습관이 되었다.",
+    "imagePrompt": "Stacks of folded cardboard and glass bottles neatly sorted at a small neighborhood recycling station, morning light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "환경"
+    ]
+  },
+  {
+    "id": "fr-b1-economiser",
+    "lemma": "économiser",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "절약하다, 저축하다",
+    "level": "B1",
+    "exampleFr": "Elle économise un peu chaque mois pour partir étudier à l'étranger.",
+    "exampleKr": "그녀는 외국으로 공부하러 가기 위해 매달 조금씩 저축한다.",
+    "imagePrompt": "A glass jar half full of coins on a tidy desk next to a small notebook, soft daylight, photographic, no text, no watermark",
+    "tags": [
+      "경제",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b1-secheresse",
+    "lemma": "sécheresse",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "가뭄",
+    "level": "B1",
+    "exampleFr": "À cause de la sécheresse, les agriculteurs ont perdu une partie de leur récolte.",
+    "exampleKr": "가뭄 때문에 농부들은 수확물의 일부를 잃었다.",
+    "imagePrompt": "Cracked dry earth in a field under a hazy sun with a few withered plants, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "환경"
+    ]
+  },
+  {
+    "id": "fr-b1-benevole",
+    "lemma": "bénévole",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "자원봉사자",
+    "level": "B1",
+    "exampleFr": "Chaque hiver, il travaille comme bénévole dans un centre d'accueil.",
+    "exampleKr": "매년 겨울 그는 보호 쉼터에서 자원봉사자로 일한다.",
+    "imagePrompt": "A volunteer in a simple apron serving warm soup at a community shelter, kind atmosphere, warm lighting, photographic, no text, no watermark",
+    "tags": [
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-citoyen",
+    "lemma": "citoyen",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "시민",
+    "level": "B1",
+    "exampleFr": "Chaque citoyen a le droit d'exprimer son opinion librement.",
+    "exampleKr": "모든 시민은 자신의 의견을 자유롭게 표현할 권리가 있다.",
+    "imagePrompt": "A diverse crowd of people placing folded papers into a transparent box in a bright public hall, civic atmosphere, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-loi",
+    "lemma": "loi",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "법, 법률",
+    "level": "B1",
+    "exampleFr": "Une nouvelle loi oblige les magasins à réduire leurs emballages en plastique.",
+    "exampleKr": "새로운 법은 상점들이 플라스틱 포장을 줄이도록 의무화한다.",
+    "imagePrompt": "A heavy open book with a wooden gavel resting beside it on a polished desk, classic library light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-responsabilite",
+    "lemma": "responsabilité",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "책임",
+    "level": "B1",
+    "exampleFr": "Diriger cette équipe est une responsabilité qu'elle prend très au sérieux.",
+    "exampleKr": "이 팀을 이끄는 것은 그녀가 매우 진지하게 받아들이는 책임이다.",
+    "imagePrompt": "An adult hand carefully holding a small green plant in a pot, protective gesture, soft warm light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "추상",
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-avantage",
+    "lemma": "avantage",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "장점, 이점",
+    "level": "B1",
+    "exampleFr": "Travailler à la maison présente des avantages, mais il faut savoir s'organiser.",
+    "exampleKr": "재택근무에는 장점이 있지만, 스스로 일정을 관리할 줄 알아야 한다.",
+    "imagePrompt": "A bright home desk by a window with a laptop, a coffee mug and a cat sleeping nearby, peaceful morning, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "추상",
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-inconvenient",
+    "lemma": "inconvénient",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "단점, 불편한 점",
+    "level": "B1",
+    "exampleFr": "Le seul inconvénient de cet appartement, c'est qu'il est loin du centre-ville.",
+    "exampleKr": "이 아파트의 유일한 단점은 시내에서 멀다는 것이다.",
+    "imagePrompt": "A lone person waiting with shopping bags at a remote bus stop on the edge of town at dusk, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "추상",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b1-preuve",
+    "lemma": "preuve",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "증거",
+    "level": "B1",
+    "exampleFr": "Il affirme qu'il a raison, mais il n'a aucune preuve pour le montrer.",
+    "exampleKr": "그는 자기가 옳다고 주장하지만, 그것을 보여 줄 증거가 전혀 없다.",
+    "imagePrompt": "A magnifying glass held over a fingerprint on a glass surface, dramatic side light, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b1-doute",
+    "lemma": "doute",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "의심, 의문",
+    "level": "B1",
+    "exampleFr": "J'ai un doute sur l'heure du rendez-vous, donc je vais vérifier le message.",
+    "exampleKr": "약속 시간이 확실치 않아서 메시지를 다시 확인해 보려고 한다.",
+    "imagePrompt": "A person standing at a fork in a forest path, looking from one side to the other, misty morning, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b1-honte",
+    "lemma": "honte",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "수치심, 부끄러움",
+    "level": "B1",
+    "exampleFr": "Il avait tellement honte de son erreur qu'il n'osait plus regarder ses collègues.",
+    "exampleKr": "그는 자신의 실수가 너무 부끄러워서 동료들을 더는 쳐다보지 못했다.",
+    "imagePrompt": "A person covering their face with one hand at an office desk with papers scattered around, muted colors, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-espoir",
+    "lemma": "espoir",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "희망",
+    "level": "B1",
+    "exampleFr": "Malgré les difficultés, elle garde l'espoir de réussir son examen.",
+    "exampleKr": "어려움에도 불구하고 그녀는 시험에 합격하리라는 희망을 잃지 않는다.",
+    "imagePrompt": "A narrow beam of sunlight breaking through dark clouds over a calm sea, a small boat sailing toward the light, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "감정",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b1-inquietude",
+    "lemma": "inquiétude",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "걱정, 불안",
+    "level": "B1",
+    "exampleFr": "Son inquiétude a disparu dès qu'elle a reçu des nouvelles de sa fille.",
+    "exampleKr": "딸의 소식을 받자마자 그녀의 걱정은 사라졌다.",
+    "imagePrompt": "A woman looking out a rainy window at night while holding a phone, soft blue light, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-volonte",
+    "lemma": "volonté",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "의지",
+    "level": "B1",
+    "exampleFr": "Avec de la volonté, on peut apprendre une langue étrangère à tout âge.",
+    "exampleKr": "의지만 있으면 나이에 상관없이 외국어를 배울 수 있다.",
+    "imagePrompt": "A runner climbing a steep hill road at dawn with a determined posture, golden light, cinematic, atmospheric, photographic, no text, no watermark",
+    "tags": [
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b1-echec",
+    "lemma": "échec",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "실패",
+    "level": "B1",
+    "exampleFr": "Cet échec lui a appris qu'il fallait mieux préparer ses projets.",
+    "exampleKr": "그 실패는 그에게 계획을 더 철저히 준비해야 한다는 것을 가르쳐 주었다.",
+    "imagePrompt": "A fallen chess king on a wooden board in dramatic side light, quiet tension, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b1-convaincre",
+    "lemma": "convaincre",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "설득하다",
+    "level": "B1",
+    "exampleFr": "Elle a réussi à convaincre son chef de changer la date de la réunion.",
+    "exampleKr": "그녀는 회의 날짜를 바꾸도록 상사를 설득하는 데 성공했다.",
+    "imagePrompt": "A person presenting an idea with open hands to an attentive listener across a table, warm office light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "의견",
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-exprimer",
+    "lemma": "exprimer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "표현하다",
+    "level": "B1",
+    "exampleFr": "Il est important d'exprimer ce qu'on ressent au lieu de tout garder pour soi.",
+    "exampleKr": "모든 것을 혼자 담아 두지 말고 느끼는 바를 표현하는 것이 중요하다.",
+    "imagePrompt": "An artist painting bold colorful strokes on a large canvas in a sunlit studio, expressive mood, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "의견",
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-critiquer",
+    "lemma": "critiquer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "비판하다",
+    "level": "B1",
+    "exampleFr": "Il est facile de critiquer les autres, mais il est plus difficile de proposer des solutions.",
+    "exampleKr": "남을 비판하기는 쉽지만 해결책을 제안하기는 더 어렵다.",
+    "imagePrompt": "A visitor pointing at a painting in a gallery while discussing it with a friend, thoughtful mood, soft gallery light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "의견"
+    ]
+  },
+  {
+    "id": "fr-b1-soutenir",
+    "lemma": "soutenir",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "지지하다, 응원하다",
+    "level": "B1",
+    "exampleFr": "Mes amis m'ont soutenu quand je traversais une période difficile.",
+    "exampleKr": "내가 힘든 시기를 보낼 때 친구들이 나를 지지해 주었다.",
+    "imagePrompt": "One friend placing a reassuring hand on another's shoulder on a park bench, warm evening light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "사회",
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-ameliorer",
+    "lemma": "améliorer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "개선하다, 향상시키다",
+    "level": "B1",
+    "exampleFr": "Pour améliorer mon français, je regarde des films sans sous-titres.",
+    "exampleKr": "프랑스어 실력을 향상시키려고 나는 자막 없이 영화를 본다.",
+    "imagePrompt": "A staircase of wooden blocks rising step by step with a small green plant on the top step, hopeful light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "추상",
+      "교육"
+    ]
+  },
+  {
+    "id": "fr-b1-reduire",
+    "lemma": "réduire",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "줄이다",
+    "level": "B1",
+    "exampleFr": "La ville veut réduire le bruit en limitant la circulation la nuit.",
+    "exampleKr": "시는 야간 차량 통행을 제한해서 소음을 줄이려고 한다.",
+    "imagePrompt": "A quiet city street at night with only a few cars and softly glowing streetlights, calm atmosphere, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "환경",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-augmenter",
+    "lemma": "augmenter",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "늘리다, 증가하다",
+    "level": "B1",
+    "exampleFr": "Le prix des billets a augmenté, ce qui a surpris les voyageurs.",
+    "exampleKr": "표 값이 올라서 여행객들이 놀랐다.",
+    "imagePrompt": "Stacks of coins growing taller from left to right on a wooden table, clean studio light, photographic, no text, no watermark",
+    "tags": [
+      "경제"
+    ]
+  },
+  {
+    "id": "fr-b1-embaucher",
+    "lemma": "embaucher",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "고용하다, 채용하다",
+    "level": "B1",
+    "exampleFr": "Le restaurant embauche deux serveurs supplémentaires pour l'été.",
+    "exampleKr": "그 식당은 여름철에 대비해 종업원 두 명을 추가로 채용한다.",
+    "imagePrompt": "A warm handshake between two people in a small café office with paperwork on the table, welcoming mood, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-gerer",
+    "lemma": "gérer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "관리하다, 운영하다",
+    "level": "B1",
+    "exampleFr": "Depuis que je gère mon temps avec un agenda, je suis beaucoup moins stressé.",
+    "exampleKr": "수첩으로 시간을 관리하기 시작한 뒤로 스트레스가 훨씬 줄었다.",
+    "imagePrompt": "A tidy desk with a paper planner, blank sticky notes and a cup of tea, organized calm atmosphere, soft daylight, photographic, no text, no watermark",
+    "tags": [
+      "직장",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b1-negocier",
+    "lemma": "négocier",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "협상하다",
+    "level": "B1",
+    "exampleFr": "Avant de signer le contrat, elle a négocié de meilleures conditions de travail.",
+    "exampleKr": "계약서에 서명하기 전에 그녀는 더 나은 근무 조건을 협상했다.",
+    "imagePrompt": "Two people across a table calmly exchanging documents in a neutral meeting room, professional light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "직장"
+    ]
+  },
+  {
+    "id": "fr-b1-proteger",
+    "lemma": "protéger",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "보호하다",
+    "level": "B1",
+    "exampleFr": "Nous devons protéger les forêts pour que les animaux gardent leur habitat.",
+    "exampleKr": "동물들이 서식지를 지킬 수 있도록 우리는 숲을 보호해야 한다.",
+    "imagePrompt": "Cupped hands sheltering a tiny seedling in a lush forest clearing, gentle sunlight, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "환경"
+    ]
+  },
+  {
+    "id": "fr-b1-gaspiller",
+    "lemma": "gaspiller",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "낭비하다",
+    "level": "B1",
+    "exampleFr": "Il ne faut pas gaspiller l'eau, même si elle ne coûte pas cher ici.",
+    "exampleKr": "여기서는 물값이 싸더라도 물을 낭비해서는 안 된다.",
+    "imagePrompt": "A running faucet left open with water overflowing a glass in a kitchen sink, cautionary mood, soft light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "환경"
+    ]
+  },
+  {
+    "id": "fr-b1-atteindre",
+    "lemma": "atteindre",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "도달하다, 이루다",
+    "level": "B1",
+    "exampleFr": "Après des années d'efforts, il a enfin atteint son objectif.",
+    "exampleKr": "수년간의 노력 끝에 그는 마침내 목표에 도달했다.",
+    "imagePrompt": "A hiker reaching the summit of a mountain at sunrise with arms raised toward the glowing horizon, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b1-constater",
+    "lemma": "constater",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "확인하다, 알아차리다",
+    "level": "B1",
+    "exampleFr": "En rentrant, j'ai constaté que la fenêtre était restée ouverte toute la journée.",
+    "exampleKr": "집에 돌아와서 나는 창문이 하루 종일 열려 있었다는 것을 알아차렸다.",
+    "imagePrompt": "A person noticing an open window with curtains moving in the breeze in a quiet apartment, late afternoon light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b1-se-plaindre",
+    "lemma": "se plaindre",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "불평하다",
+    "level": "B1",
+    "exampleFr": "Il passe son temps à se plaindre au lieu de chercher une solution.",
+    "exampleKr": "그는 해결책을 찾는 대신 불평만 하며 시간을 보낸다.",
+    "imagePrompt": "A person sighing with arms crossed at a café table while a friend listens patiently, muted afternoon light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "감정",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b1-s-engager",
+    "lemma": "s'engager",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "참여하다, 헌신하다",
+    "level": "B1",
+    "exampleFr": "Beaucoup de jeunes s'engagent dans des associations pour aider les autres.",
+    "exampleKr": "많은 젊은이들이 다른 사람들을 돕기 위해 단체 활동에 참여한다.",
+    "imagePrompt": "Volunteers in simple aprons sorting food boxes together in a community hall, warm cooperative atmosphere, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-responsable",
+    "lemma": "responsable",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "책임감 있는, 책임이 있는",
+    "level": "B1",
+    "exampleFr": "C'est une employée responsable à qui on peut confier des projets importants.",
+    "exampleKr": "그녀는 중요한 프로젝트를 맡길 수 있는 책임감 있는 직원이다.",
+    "imagePrompt": "A focused worker carefully checking items on a warehouse shelf with a calm confident posture, clean daylight, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "직장",
+      "성격"
+    ]
+  },
+  {
+    "id": "fr-b1-disponible",
+    "lemma": "disponible",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "시간이 되는, 이용 가능한",
+    "level": "B1",
+    "exampleFr": "Le médecin n'est pas disponible aujourd'hui, mais vous pouvez venir demain matin.",
+    "exampleKr": "의사 선생님이 오늘은 시간이 안 되지만, 내일 아침에는 오셔도 된다.",
+    "imagePrompt": "A welcoming open office door revealing a tidy desk and an empty chair inside, inviting light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b1-exigeant",
+    "lemma": "exigeant",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "까다로운, 요구가 많은",
+    "level": "B1",
+    "exampleFr": "Notre nouveau directeur est exigeant, mais il nous aide vraiment à progresser.",
+    "exampleKr": "새 부장님은 까다롭지만 우리가 성장하도록 정말 도와주신다.",
+    "imagePrompt": "A chef inspecting a dish very closely in a professional kitchen with an intense focused expression, dramatic kitchen light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "직장",
+      "성격"
+    ]
+  },
+  {
+    "id": "fr-b1-fier",
+    "lemma": "fier",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "자랑스러운",
+    "level": "B1",
+    "exampleFr": "Il était fier d'avoir terminé son premier marathon malgré la pluie.",
+    "exampleKr": "그는 빗속에서도 첫 마라톤을 완주한 것이 자랑스러웠다.",
+    "imagePrompt": "A tired but smiling runner holding a finisher medal in the rain, uplifting mood, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-decu",
+    "lemma": "déçu",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "실망한",
+    "level": "B1",
+    "exampleFr": "Il était déçu parce que le concert qu'il attendait depuis des mois a été annulé.",
+    "exampleKr": "그는 몇 달 동안 기다리던 콘서트가 취소되어 실망했다.",
+    "imagePrompt": "A person standing alone before the dark closed doors of a concert hall at night with lowered shoulders, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-quotidien",
+    "lemma": "quotidien",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "일상의, 매일의",
+    "level": "B1",
+    "exampleFr": "Ce blog raconte la vie quotidienne d'une famille à la campagne.",
+    "exampleKr": "이 블로그는 시골에 사는 한 가족의 일상생활을 이야기한다.",
+    "imagePrompt": null,
+    "tags": [
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b1-apparemment",
+    "lemma": "apparemment",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "보아하니, 듣자 하니",
+    "level": "B1",
+    "exampleFr": "Apparemment, le musée sera fermé tout le mois pour des travaux.",
+    "exampleKr": "보아하니 박물관이 공사 때문에 한 달 내내 문을 닫을 모양이다.",
+    "imagePrompt": null,
+    "tags": [
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b1-volontiers",
+    "lemma": "volontiers",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "기꺼이",
+    "level": "B1",
+    "exampleFr": "Si tu as besoin d'aide pour déménager, je viendrai volontiers.",
+    "exampleKr": "이사할 때 도움이 필요하면 기꺼이 갈게.",
+    "imagePrompt": null,
+    "tags": [
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b1-forcement",
+    "lemma": "forcément",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "반드시, 필연적으로",
+    "level": "B1",
+    "exampleFr": "Un produit cher n'est pas forcément de meilleure qualité.",
+    "exampleKr": "비싼 제품이라고 해서 반드시 품질이 더 좋은 것은 아니다.",
+    "imagePrompt": null,
+    "tags": [
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b1-puisque",
+    "lemma": "puisque",
+    "article": null,
+    "gender": null,
+    "pos": "conj",
+    "krMeaning": "~이니까, ~이므로",
+    "level": "B1",
+    "exampleFr": "Puisque tu connais bien la ville, c'est toi qui choisis le restaurant.",
+    "exampleKr": "네가 이 도시를 잘 아니까 식당은 네가 골라.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어"
+    ]
+  },
+  {
+    "id": "fr-b1-bien-que",
+    "lemma": "bien que",
+    "article": null,
+    "gender": null,
+    "pos": "conj",
+    "krMeaning": "~임에도 불구하고",
+    "level": "B1",
+    "exampleFr": "Bien qu'il soit fatigué, il continue à travailler sur son projet.",
+    "exampleKr": "그는 피곤한데도 자신의 프로젝트 작업을 계속한다.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어"
+    ]
+  },
+  {
+    "id": "fr-b1-malgre",
+    "lemma": "malgré",
+    "article": null,
+    "gender": null,
+    "pos": "prep",
+    "krMeaning": "~에도 불구하고",
+    "level": "B1",
+    "exampleFr": "Malgré le mauvais temps, le match a eu lieu comme prévu.",
+    "exampleKr": "궂은 날씨에도 불구하고 경기는 예정대로 열렸다.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어"
+    ]
+  },
+  {
+    "id": "fr-b1-dont",
+    "lemma": "dont",
+    "article": null,
+    "gender": null,
+    "pos": "pron",
+    "krMeaning": "(관계대명사) ~의, ~에 대한",
+    "level": "B1",
+    "exampleFr": "C'est le livre dont tout le monde parle en ce moment.",
+    "exampleKr": "이것이 요즘 모두가 이야기하는 그 책이다.",
+    "imagePrompt": null,
+    "tags": [
+      "문법"
+    ]
+  },
+  {
+    "id": "fr-b1-se-rendre-compte",
+    "lemma": "se rendre compte",
+    "article": null,
+    "gender": null,
+    "pos": "phrase",
+    "krMeaning": "깨닫다, 알아차리다",
+    "level": "B1",
+    "exampleFr": "Elle s'est rendu compte qu'elle avait oublié ses clés dans le bus.",
+    "exampleKr": "그녀는 버스에 열쇠를 두고 내렸다는 것을 깨달았다.",
+    "imagePrompt": "A person at a bus stop suddenly checking their empty pockets with a surprised expression, late afternoon light, photographic, cinematic, no text, no watermark",
+    "tags": [
+      "추상",
+      "일상"
+    ]
+  }
+]

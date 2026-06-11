@@ -12,8 +12,8 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M12 |
 | **리드** | **db-dev** (데이터셋·영속 재평가) |
 | **멤버** | content-gen(A2/B1 생성 — flocons-content 스킬 SSOT) + qa-dev(커버리지) + code-review |
-| **상태** | ⏸️ Awaiting Approval (체크포인트 B) |
-| **시작일 / 완료일** | 2026-06-11 / (미정) |
+| **상태** | ✅ Approved (체크포인트 B — 2026-06-11) |
+| **시작일 / 완료일** | 2026-06-11 / 2026-06-11 |
 
 > 의존성: UoW-02 ✅(스키마·validate·A1) · DoD 요약: a2/b1 validate 오류 0 · A1 id 보존 · 커버리지 점검 · README 실행/검증법 · 게이트 4종 green. **Construction 마지막 Unit.**
 
@@ -127,14 +127,15 @@ A2/B1 시드 데이터셋을 A1과 동일한 품질 규약으로 추가해 레�
 ## 5) Unit 완료
 
 ### ⏸️ 체크포인트 B — Unit 완료 승인
-- [ ] 검증 게이트 4종 통과 확인
-- [ ] code-review 머지 가능
-- 결정: <✅ Approved | 🔁 Changes Requested>
-- 승인자: <이름> · 날짜: <YYYY-MM-DD>
+- [x] 검증 게이트 4종 통과 확인
+- [x] code-review 머지 가능
+- 결정: ✅ Approved
+- 승인자: 0eum · 날짜: 2026-06-11
 
 ### 커밋 / 푸시 기록 ([docs/HARNESS.md](../../docs/HARNESS.md) §4 규약)
-- [ ] STATUS 갱신 · [ ] 커밋 · [ ] 푸시
-- 커밋 해시: <짧은 해시>
+- [x] STATUS 갱신 · [x] 커밋 · [x] 푸시 (사용자 수행)
+- 커밋 해시: `ded4de2` (`feat: A2/B1 seed datasets (120 words), README, coverage check [UoW-12]`)
 
 ### 마무리
-- 후속 작업: Construction 완료 → Operations 단계 (`/operations`)
+- **Construction 단계 완료** (UoW-00~12 전부 ✅) → 다음: Operations (`/operations`)
+- 후속 백로그(미착수): README 스크린샷(실기 캡처), SR 커스텀 액션 play/bookmark, TopBar 메뉴 배선, 이미지 실벤더 연동, Expo Go 실기 AI 경로 확인
