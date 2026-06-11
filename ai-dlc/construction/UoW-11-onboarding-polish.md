@@ -12,8 +12,8 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M11 |
 | **리드** | **front-dev** (화면·UX) |
 | **멤버** | back-dev(haptics 래퍼·enrich 배선·useWords) + qa-dev + code-review |
-| **상태** | ⏸️ Awaiting Approval (체크포인트 B) |
-| **시작일 / 완료일** | 2026-06-11 / (미정) |
+| **상태** | ✅ Approved (체크포인트 B — 2026-06-11) |
+| **시작일 / 완료일** | 2026-06-11 / 2026-06-11 |
 
 > 의존성: UoW-01 ✅ · UoW-03 ✅ · UoW-06 ✅ · UoW-08 ✅ (+09/10 산출 활용) · DoD 요약: 온보딩→레벨로 시작 · 햅틱·폰트 스케일·대비·accessibilityAction · 빈/완료 화면 · 게이트 4종 green.
 
@@ -157,14 +157,14 @@
 ## 5) Unit 완료
 
 ### ⏸️ 체크포인트 B — Unit 완료 승인
-- [ ] 검증 게이트 4종 통과 확인
-- [ ] code-review 머지 가능
-- 결정: <✅ Approved | 🔁 Changes Requested>
-- 승인자: <이름> · 날짜: <YYYY-MM-DD>
+- [x] 검증 게이트 4종 통과 확인
+- [x] code-review 머지 가능
+- 결정: ✅ Approved
+- 승인자: 0eum · 날짜: 2026-06-11
 
 ### 커밋 / 푸시 기록 ([docs/HARNESS.md](../../docs/HARNESS.md) §4 규약)
-- [ ] STATUS 갱신 · [ ] 커밋 · [ ] 푸시
-- 커밋 해시: <짧은 해시>
+- [x] STATUS 갱신 · [x] 커밋 · [x] 푸시 (사용자 수행)
+- 커밋 해시: `710cfee` (`feat: home/onboarding, level integration, haptics, a11y actions, done actions, enrich UI [UoW-11]`)
 
 ### 마무리
-- 후속 작업 / 다음 Unit: <...>
+- 후속 작업 / 다음 Unit: `UoW-12-expand` (마지막). 이월(후속 백로그): SR 커스텀 액션에 play/bookmark 추가, TopBar 메뉴 배선, 이미지 실벤더 연동.

@@ -10,7 +10,16 @@ describe('StaticContentProvider', () => {
     expect(words[0].level).toBe('A1');
   });
 
+  it('returns the A2/B1 word decks (UoW-12)', async () => {
+    const a2 = await provider.getWords('A2');
+    const b1 = await provider.getWords('B1');
+    expect(a2.length).toBe(60);
+    expect(a2[0].level).toBe('A2');
+    expect(b1.length).toBe(60);
+    expect(b1[0].level).toBe('B1');
+  });
+
   it('returns an empty array for a level without a bundled dataset', async () => {
-    expect(await provider.getWords('B1')).toEqual([]);
+    expect(await provider.getWords('B2')).toEqual([]);
   });
 });

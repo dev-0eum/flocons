@@ -1,0 +1,922 @@
+[
+  {
+    "id": "fr-b1-gouvernement",
+    "lemma": "gouvernement",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "정부",
+    "level": "B1",
+    "exampleFr": "Le gouvernement a annoncé de nouvelles mesures économiques.",
+    "exampleKr": "정부가 새로운 경제 조치를 발표했어요.",
+    "imagePrompt": "A government parliament building exterior with national flags, formal and authoritative atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-societe",
+    "lemma": "société",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "사회, 회사",
+    "level": "B1",
+    "exampleFr": "La société dans laquelle nous vivons évolue rapidement.",
+    "exampleKr": "우리가 사는 사회는 빠르게 변하고 있어요.",
+    "imagePrompt": "A diverse crowd of people walking in a busy city plaza, urban and dynamic atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-economie",
+    "lemma": "économie",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "경제",
+    "level": "B1",
+    "exampleFr": "L'économie du pays est en pleine croissance.",
+    "exampleKr": "그 나라의 경제는 한창 성장하고 있어요.",
+    "imagePrompt": "Financial charts and graphs on a modern monitor screen, business atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "사회·정치",
+      "직업·일"
+    ]
+  },
+  {
+    "id": "fr-b1-environnement",
+    "lemma": "environnement",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "환경",
+    "level": "B1",
+    "exampleFr": "Il est important de protéger l'environnement pour les générations futures.",
+    "exampleKr": "미래 세대를 위해 환경을 보호하는 것이 중요해요.",
+    "imagePrompt": "A lush green forest with sunlight filtering through trees, pristine natural environment, photographic, no text, no watermark",
+    "tags": [
+      "자연",
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-pollution",
+    "lemma": "pollution",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "오염",
+    "level": "B1",
+    "exampleFr": "La pollution de l'air est un problème majeur dans les grandes villes.",
+    "exampleKr": "대기 오염은 대도시에서 큰 문제예요.",
+    "imagePrompt": "Smoky industrial chimneys against a hazy city skyline, environmental concern, photographic, no text, no watermark",
+    "tags": [
+      "자연",
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-culture",
+    "lemma": "culture",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "문화",
+    "level": "B1",
+    "exampleFr": "La culture française est connue dans le monde entier.",
+    "exampleKr": "프랑스 문화는 전 세계에 알려져 있어요.",
+    "imagePrompt": "A museum gallery with classical artwork and sculptures on display, sophisticated cultural atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "예술",
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-histoire",
+    "lemma": "histoire",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "역사, 이야기",
+    "level": "B1",
+    "exampleFr": "J'ai lu un livre sur l'histoire de la Révolution française.",
+    "exampleKr": "저는 프랑스 혁명 역사에 관한 책을 읽었어요.",
+    "imagePrompt": "Ancient stone architecture and ruins bathed in golden afternoon light, historical and evocative atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "공부",
+      "예술"
+    ]
+  },
+  {
+    "id": "fr-b1-technologie",
+    "lemma": "technologie",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "기술, 테크놀로지",
+    "level": "B1",
+    "exampleFr": "Les nouvelles technologies changent notre façon de travailler.",
+    "exampleKr": "새로운 기술은 우리의 일하는 방식을 바꾸고 있어요.",
+    "imagePrompt": "A futuristic tech workspace with multiple screens and devices, modern and innovative atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "기술"
+    ]
+  },
+  {
+    "id": "fr-b1-internet",
+    "lemma": "internet",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "인터넷",
+    "level": "B1",
+    "exampleFr": "Sans Internet, il serait difficile de travailler aujourd'hui.",
+    "exampleKr": "인터넷 없이는 요즘 일하기가 어려울 거예요.",
+    "imagePrompt": "A person using a laptop with digital network connection visualization, modern and connected atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "기술"
+    ]
+  },
+  {
+    "id": "fr-b1-information",
+    "lemma": "information",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "정보, 뉴스",
+    "level": "B1",
+    "exampleFr": "Il est essentiel de vérifier les informations avant de les partager.",
+    "exampleKr": "공유하기 전에 정보를 확인하는 것이 중요해요.",
+    "imagePrompt": "A person reading news on a tablet device at a coffee shop, modern and informed atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "기술",
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-recherche",
+    "lemma": "recherche",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "연구, 조사, 검색",
+    "level": "B1",
+    "exampleFr": "Elle consacre sa vie à la recherche médicale.",
+    "exampleKr": "그녀는 의학 연구에 일생을 바치고 있어요.",
+    "imagePrompt": "A scientist working in a bright laboratory with equipment and samples, focused and professional, photographic, no text, no watermark",
+    "tags": [
+      "공부",
+      "직업·일"
+    ]
+  },
+  {
+    "id": "fr-b1-probleme",
+    "lemma": "problème",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "문제",
+    "level": "B1",
+    "exampleFr": "Nous devons trouver une solution à ce problème urgent.",
+    "exampleKr": "우리는 이 긴급한 문제의 해결책을 찾아야 해요.",
+    "imagePrompt": "A person deep in thought with hands on temples, abstract problem-solving concept, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-solution",
+    "lemma": "solution",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "해결책",
+    "level": "B1",
+    "exampleFr": "Il faut trouver une solution durable à la crise climatique.",
+    "exampleKr": "기후 위기에 지속 가능한 해결책을 찾아야 해요.",
+    "imagePrompt": "A lightbulb glowing above an open notebook symbolizing an idea or solution, creative and bright, photographic, no text, no watermark",
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-avenir",
+    "lemma": "avenir",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "미래",
+    "level": "B1",
+    "exampleFr": "Les jeunes construisent l'avenir de notre pays.",
+    "exampleKr": "젊은이들이 우리나라의 미래를 만들어 가고 있어요.",
+    "imagePrompt": "A bright sunrise over a horizon symbolizing hope and the future, cinematic and inspiring, photographic, no text, no watermark",
+    "tags": [
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-opinion",
+    "lemma": "opinion",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "의견",
+    "level": "B1",
+    "exampleFr": "Chacun a le droit d'exprimer son opinion.",
+    "exampleKr": "모든 사람은 자신의 의견을 표현할 권리가 있어요.",
+    "imagePrompt": "People engaged in a discussion around a table, open dialogue and collaborative atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "사회·정치",
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-experience",
+    "lemma": "expérience",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "경험",
+    "level": "B1",
+    "exampleFr": "Cette expérience m'a beaucoup appris sur moi-même.",
+    "exampleKr": "이 경험은 저 자신에 대해 많은 것을 알게 해줬어요.",
+    "imagePrompt": "A person reflecting thoughtfully while looking out a window, introspective and serene atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-relation",
+    "lemma": "relation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "관계",
+    "level": "B1",
+    "exampleFr": "Il est important de maintenir de bonnes relations avec ses collègues.",
+    "exampleKr": "동료들과 좋은 관계를 유지하는 것이 중요해요.",
+    "imagePrompt": "Two people shaking hands warmly in a professional setting, positive and respectful atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "사람",
+      "직업·일"
+    ]
+  },
+  {
+    "id": "fr-b1-confiance",
+    "lemma": "confiance",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "신뢰, 자신감",
+    "level": "B1",
+    "exampleFr": "La confiance est la base de toute relation solide.",
+    "exampleKr": "신뢰는 모든 탄탄한 관계의 기초예요.",
+    "imagePrompt": null,
+    "tags": [
+      "사람",
+      "관계"
+    ]
+  },
+  {
+    "id": "fr-b1-liberte",
+    "lemma": "liberté",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "자유",
+    "level": "B1",
+    "exampleFr": "La liberté d'expression est un droit fondamental.",
+    "exampleKr": "표현의 자유는 기본권이에요.",
+    "imagePrompt": "An open door leading to a bright landscape symbolizing freedom and possibility, cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-droit",
+    "lemma": "droit",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "권리, 법",
+    "level": "B1",
+    "exampleFr": "Tout le monde a le droit à l'éducation.",
+    "exampleKr": "모든 사람은 교육받을 권리가 있어요.",
+    "imagePrompt": "A scale of justice in a formal legal setting, authoritative and balanced, photographic, no text, no watermark",
+    "tags": [
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-choix",
+    "lemma": "choix",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "선택",
+    "level": "B1",
+    "exampleFr": "Nous avons fait le choix de déménager à la campagne.",
+    "exampleKr": "우리는 시골로 이사하기로 결정했어요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-objectif",
+    "lemma": "objectif",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "목표",
+    "level": "B1",
+    "exampleFr": "Mon objectif est de parler couramment le français d'ici un an.",
+    "exampleKr": "저의 목표는 1년 안에 프랑스어를 유창하게 하는 거예요.",
+    "imagePrompt": "A dartboard with a dart hitting the bullseye, focused achievement concept, photographic, no text, no watermark",
+    "tags": [
+      "생활",
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-reussite",
+    "lemma": "réussite",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "성공, 성취",
+    "level": "B1",
+    "exampleFr": "Sa réussite professionnelle est le résultat de beaucoup de travail.",
+    "exampleKr": "그의 직업적 성공은 많은 노력의 결과예요.",
+    "imagePrompt": "A person raising their arms in celebration at the top of a hill, triumphant and joyful atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "직업·일",
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-effort",
+    "lemma": "effort",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "노력",
+    "level": "B1",
+    "exampleFr": "Il faut faire des efforts pour progresser.",
+    "exampleKr": "발전하려면 노력해야 해요.",
+    "imagePrompt": null,
+    "tags": [
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-habitude",
+    "lemma": "habitude",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "습관",
+    "level": "B1",
+    "exampleFr": "J'ai pris l'habitude de lire avant de dormir.",
+    "exampleKr": "저는 자기 전에 책을 읽는 습관이 생겼어요.",
+    "imagePrompt": "A person reading a book in bed under a warm lamp, cozy and peaceful nighttime routine, photographic, no text, no watermark",
+    "tags": [
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-surprise",
+    "lemma": "surprise",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "놀라움, 깜짝 선물",
+    "level": "B1",
+    "exampleFr": "Quelle bonne surprise de te voir ici !",
+    "exampleKr": "여기서 너를 만나다니 정말 뜻밖이에요!",
+    "imagePrompt": "A person opening a wrapped gift with a joyful surprised expression, bright and warm atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-emotion",
+    "lemma": "émotion",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "감정",
+    "level": "B1",
+    "exampleFr": "Ce film a suscité beaucoup d'émotions chez les spectateurs.",
+    "exampleKr": "이 영화는 관객들에게 많은 감동을 줬어요.",
+    "imagePrompt": null,
+    "tags": [
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-memoire",
+    "lemma": "mémoire",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "기억, 기억력",
+    "level": "B1",
+    "exampleFr": "J'ai une bonne mémoire pour les langues.",
+    "exampleKr": "저는 언어에 대한 기억력이 좋아요.",
+    "imagePrompt": null,
+    "tags": [
+      "공부"
+    ]
+  },
+  {
+    "id": "fr-b1-reve",
+    "lemma": "rêve",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "꿈",
+    "level": "B1",
+    "exampleFr": "Depuis l'enfance, mon rêve est de devenir musicien.",
+    "exampleKr": "어릴 때부터 제 꿈은 음악가가 되는 것이에요.",
+    "imagePrompt": "A child looking up at a starry night sky with wonder, dreamy and inspirational atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "감정",
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-comportement",
+    "lemma": "comportement",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "행동, 태도",
+    "level": "B1",
+    "exampleFr": "Son comportement en public était très respectueux.",
+    "exampleKr": "그의 공공장소에서의 행동은 매우 예의 바랐어요.",
+    "imagePrompt": null,
+    "tags": [
+      "사람"
+    ]
+  },
+  {
+    "id": "fr-b1-paysage",
+    "lemma": "paysage",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "풍경, 경관",
+    "level": "B1",
+    "exampleFr": "Le paysage de la Bretagne est magnifique en été.",
+    "exampleKr": "브르타뉴의 여름 풍경은 정말 아름다워요.",
+    "imagePrompt": "A breathtaking coastal landscape with cliffs, sea and green hills under a dramatic sky, photographic, no text, no watermark",
+    "tags": [
+      "자연",
+      "여행"
+    ]
+  },
+  {
+    "id": "fr-b1-region",
+    "lemma": "région",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "지역",
+    "level": "B1",
+    "exampleFr": "Je viens d'une région viticole dans le sud de la France.",
+    "exampleKr": "저는 프랑스 남부의 포도 재배 지역 출신이에요.",
+    "imagePrompt": "A scenic vineyard landscape in the south of France with rolling hills and blue sky, photographic, no text, no watermark",
+    "tags": [
+      "여행",
+      "자연"
+    ]
+  },
+  {
+    "id": "fr-b1-population",
+    "lemma": "population",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "인구, 주민",
+    "level": "B1",
+    "exampleFr": "La population mondiale augmente chaque année.",
+    "exampleKr": "세계 인구는 매년 증가하고 있어요.",
+    "imagePrompt": "An aerial view of a densely populated city with many buildings and streets, photographic, no text, no watermark",
+    "tags": [
+      "사회·정치"
+    ]
+  },
+  {
+    "id": "fr-b1-siecle",
+    "lemma": "siècle",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "세기, 100년",
+    "level": "B1",
+    "exampleFr": "Au vingtième siècle, les technologies ont évolué rapidement.",
+    "exampleKr": "20세기에는 기술이 빠르게 발전했어요.",
+    "imagePrompt": null,
+    "tags": [
+      "시간"
+    ]
+  },
+  {
+    "id": "fr-b1-appartement",
+    "lemma": "appartement",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "아파트",
+    "level": "B1",
+    "exampleFr": "Nous cherchons un appartement à louer près du centre.",
+    "exampleKr": "우리는 시내 근처에 임대할 아파트를 찾고 있어요.",
+    "imagePrompt": "A modern apartment building exterior with balconies in an urban neighborhood, photographic, no text, no watermark",
+    "tags": [
+      "집·사물",
+      "장소"
+    ]
+  },
+  {
+    "id": "fr-b1-loyer",
+    "lemma": "loyer",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "집세, 임대료",
+    "level": "B1",
+    "exampleFr": "Le loyer de cet appartement est trop élevé pour mon budget.",
+    "exampleKr": "이 아파트의 집세는 제 예산에 비해 너무 비싸요.",
+    "imagePrompt": null,
+    "tags": [
+      "집·사물",
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-salaire",
+    "lemma": "salaire",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "월급, 임금",
+    "level": "B1",
+    "exampleFr": "Son salaire a augmenté après la promotion.",
+    "exampleKr": "그는 승진 후 월급이 올랐어요.",
+    "imagePrompt": null,
+    "tags": [
+      "직업·일"
+    ]
+  },
+  {
+    "id": "fr-b1-metier",
+    "lemma": "métier",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "직업, 직종",
+    "level": "B1",
+    "exampleFr": "Elle a choisi un métier qui correspond à sa passion.",
+    "exampleKr": "그녀는 자신의 열정에 맞는 직업을 선택했어요.",
+    "imagePrompt": "A craftsperson working with their hands at a workshop bench, skilled and focused, photographic, no text, no watermark",
+    "tags": [
+      "직업·일"
+    ]
+  },
+  {
+    "id": "fr-b1-entreprise",
+    "lemma": "entreprise",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "기업, 회사",
+    "level": "B1",
+    "exampleFr": "Il a créé sa propre entreprise il y a cinq ans.",
+    "exampleKr": "그는 5년 전에 자신의 회사를 창업했어요.",
+    "imagePrompt": "A modern office building exterior with a corporate look, professional and clean, photographic, no text, no watermark",
+    "tags": [
+      "직업·일"
+    ]
+  },
+  {
+    "id": "fr-b1-projet",
+    "lemma": "projet",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "프로젝트, 계획",
+    "level": "B1",
+    "exampleFr": "Notre équipe travaille sur un projet ambitieux.",
+    "exampleKr": "우리 팀은 야심찬 프로젝트를 진행하고 있어요.",
+    "imagePrompt": "A team meeting around a table with project plans and documents, collaborative and dynamic atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "직업·일"
+    ]
+  },
+  {
+    "id": "fr-b1-resultat",
+    "lemma": "résultat",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "결과",
+    "level": "B1",
+    "exampleFr": "Les résultats de l'examen seront publiés la semaine prochaine.",
+    "exampleKr": "시험 결과는 다음 주에 발표될 거예요.",
+    "imagePrompt": null,
+    "tags": [
+      "공부",
+      "직업·일"
+    ]
+  },
+  {
+    "id": "fr-b1-participer",
+    "lemma": "participer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "참가하다, 참여하다",
+    "level": "B1",
+    "exampleFr": "Tout le monde est encouragé à participer au débat.",
+    "exampleKr": "모든 사람이 토론에 참여하도록 권장돼요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사"
+    ]
+  },
+  {
+    "id": "fr-b1-expliquer",
+    "lemma": "expliquer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "설명하다",
+    "level": "B1",
+    "exampleFr": "Pourriez-vous m'expliquer comment fonctionne ce système ?",
+    "exampleKr": "이 시스템이 어떻게 작동하는지 설명해 주시겠어요?",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사"
+    ]
+  },
+  {
+    "id": "fr-b1-proposer",
+    "lemma": "proposer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "제안하다",
+    "level": "B1",
+    "exampleFr": "Je vous propose de nous retrouver à dix-huit heures.",
+    "exampleKr": "18시에 만나는 것을 제안드려요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사"
+    ]
+  },
+  {
+    "id": "fr-b1-permettre",
+    "lemma": "permettre",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "허락하다, 가능하게 하다",
+    "level": "B1",
+    "exampleFr": "Cette application permet de trouver des informations rapidement.",
+    "exampleKr": "이 앱을 통해 빠르게 정보를 찾을 수 있어요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사"
+    ]
+  },
+  {
+    "id": "fr-b1-comprendre",
+    "lemma": "comprendre",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "이해하다",
+    "level": "B1",
+    "exampleFr": "Je commence à comprendre les subtilités de la grammaire française.",
+    "exampleKr": "저는 프랑스어 문법의 미묘한 점을 이해하기 시작했어요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사",
+      "공부"
+    ]
+  },
+  {
+    "id": "fr-b1-connaitre",
+    "lemma": "connaître",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "알다, 알고 있다",
+    "level": "B1",
+    "exampleFr": "Est-ce que tu connais la région de Provence ?",
+    "exampleKr": "프로방스 지방을 알고 있어요?",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사"
+    ]
+  },
+  {
+    "id": "fr-b1-changer",
+    "lemma": "changer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "바꾸다, 변하다",
+    "level": "B1",
+    "exampleFr": "Beaucoup de choses ont changé depuis que je vis à l'étranger.",
+    "exampleKr": "해외에서 살기 시작한 이후 많은 것이 바뀌었어요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사"
+    ]
+  },
+  {
+    "id": "fr-b1-sembler",
+    "lemma": "sembler",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "~처럼 보이다, ~인 것 같다",
+    "level": "B1",
+    "exampleFr": "Il semble que la situation soit en train de s'améliorer.",
+    "exampleKr": "상황이 개선되고 있는 것처럼 보여요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사"
+    ]
+  },
+  {
+    "id": "fr-b1-remarquer",
+    "lemma": "remarquer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "알아채다, 주목하다",
+    "level": "B1",
+    "exampleFr": "J'ai remarqué que tu semblais fatigué ces derniers jours.",
+    "exampleKr": "요즘 네가 피곤해 보인다는 것을 알아챘어요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 동사"
+    ]
+  },
+  {
+    "id": "fr-b1-complexe",
+    "lemma": "complexe",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "복잡한",
+    "level": "B1",
+    "exampleFr": "Cette situation est plus complexe qu'elle n'y paraît.",
+    "exampleKr": "이 상황은 보기보다 더 복잡해요.",
+    "imagePrompt": null,
+    "tags": [
+      "형용사"
+    ]
+  },
+  {
+    "id": "fr-b1-efficace",
+    "lemma": "efficace",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "효과적인, 효율적인",
+    "level": "B1",
+    "exampleFr": "Cette méthode d'apprentissage est très efficace.",
+    "exampleKr": "이 학습 방법은 매우 효과적이에요.",
+    "imagePrompt": null,
+    "tags": [
+      "형용사"
+    ]
+  },
+  {
+    "id": "fr-b1-fiable",
+    "lemma": "fiable",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "신뢰할 수 있는",
+    "level": "B1",
+    "exampleFr": "Il est important d'utiliser des sources fiables pour s'informer.",
+    "exampleKr": "정보를 얻기 위해 신뢰할 수 있는 출처를 사용하는 것이 중요해요.",
+    "imagePrompt": null,
+    "tags": [
+      "형용사"
+    ]
+  },
+  {
+    "id": "fr-b1-progressivement",
+    "lemma": "progressivement",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "점차적으로",
+    "level": "B1",
+    "exampleFr": "Son niveau de français a progressivement augmenté.",
+    "exampleKr": "그의 프랑스어 실력이 점차적으로 향상됐어요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-pourtant",
+    "lemma": "pourtant",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "그러나, 그럼에도 불구하고",
+    "level": "B1",
+    "exampleFr": "Il pleut beaucoup, et pourtant les gens sortent.",
+    "exampleKr": "비가 많이 오는데도 불구하고 사람들이 나가고 있어요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-cependant",
+    "lemma": "cependant",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "하지만, 그러나",
+    "level": "B1",
+    "exampleFr": "C'est une bonne idée, cependant il faudra du temps pour la réaliser.",
+    "exampleKr": "좋은 생각이지만 실현하는 데 시간이 걸릴 거예요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-meme-si",
+    "lemma": "même si",
+    "article": null,
+    "gender": null,
+    "pos": "conj",
+    "krMeaning": "비록 ~일지라도",
+    "level": "B1",
+    "exampleFr": "Je continuerai à étudier même si c'est difficile.",
+    "exampleKr": "어렵더라도 계속 공부할 거예요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-afin-de",
+    "lemma": "afin de",
+    "article": null,
+    "gender": null,
+    "pos": "phrase",
+    "krMeaning": "~하기 위해서",
+    "level": "B1",
+    "exampleFr": "Il travaille dur afin d'atteindre ses objectifs.",
+    "exampleKr": "그는 목표를 달성하기 위해 열심히 일해요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-en-revanche",
+    "lemma": "en revanche",
+    "article": null,
+    "gender": null,
+    "pos": "phrase",
+    "krMeaning": "반면에, 그 대신",
+    "level": "B1",
+    "exampleFr": "Le restaurant est cher, en revanche la qualité est excellente.",
+    "exampleKr": "식당은 비싸지만 그 대신 품질은 훌륭해요.",
+    "imagePrompt": null,
+    "tags": [
+      "기본 표현"
+    ]
+  },
+  {
+    "id": "fr-b1-retraite",
+    "lemma": "retraite",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "은퇴, 퇴직",
+    "level": "B1",
+    "exampleFr": "Mon grand-père a pris sa retraite après quarante ans de travail.",
+    "exampleKr": "저의 할아버지는 40년 동안 일하신 후 은퇴하셨어요.",
+    "imagePrompt": "An elderly man relaxing on a garden bench enjoying retirement, peaceful and content atmosphere, photographic, no text, no watermark",
+    "tags": [
+      "직업·일",
+      "생활"
+    ]
+  }
+]
