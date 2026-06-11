@@ -9,36 +9,37 @@ jest.mock('expo-router', () => ({
   router: { push: jest.fn() },
 }));
 
-// provider를 2단어 덱으로 모킹 (UoW-09: 화면은 currentProvider 경유).
-jest.mock('@/lib/content', () => ({
-  currentProvider: () => ({
-    getWords: () =>
-      Promise.resolve([
-        {
-          id: 'w1',
-          lemma: 'un',
-          article: 'le',
-          gender: 'm',
-          pos: 'n',
-          krMeaning: '하나',
-          level: 'A1',
-          exampleFr: 'Il y a un livre.',
-          exampleKr: '책이 한 권 있어요.',
-        },
-        {
-          id: 'w2',
-          lemma: 'deux',
-          article: null,
-          gender: null,
-          pos: 'num',
-          krMeaning: '둘',
-          level: 'A1',
-          exampleFr: "J'ai deux amis.",
-          exampleKr: '친구가 두 명 있어요.',
-        },
-      ]),
-  }),
-}));
+// 2단어 덱 mock (UoW-11: 화면은 useWords 경유).
+jest.mock('@/lib/content', () => {
+  const words = [
+    {
+      id: 'w1',
+      lemma: 'un',
+      article: 'le',
+      gender: 'm',
+      pos: 'n',
+      krMeaning: '하나',
+      level: 'A1',
+      exampleFr: 'Il y a un livre.',
+      exampleKr: '책이 한 권 있어요.',
+    },
+    {
+      id: 'w2',
+      lemma: 'deux',
+      article: null,
+      gender: null,
+      pos: 'num',
+      krMeaning: '둘',
+      level: 'A1',
+      exampleFr: "J'ai deux amis.",
+      exampleKr: '친구가 두 명 있어요.',
+    },
+  ];
+  return {
+    useWords: () => ({ words, level: 'A1' }),
+    currentProvider: () => ({ getWords: async () => words }),
+  };
+});
 
 beforeEach(() => {
   resetCards();

@@ -47,6 +47,17 @@ describe('WordCard', () => {
     expect(getByLabelText('북마크 해제')).toBeTruthy();
   });
 
+  it('shows 새 예문 button only when onNewExample is provided (UoW-11 G)', () => {
+    const onNewExample = jest.fn();
+    const withProp = render(<WordCard data={data} onNewExample={onNewExample} />);
+    fireEvent.press(withProp.getByLabelText('새 예문'));
+    expect(onNewExample).toHaveBeenCalledTimes(1);
+    withProp.unmount();
+
+    const withoutProp = render(<WordCard data={data} />);
+    expect(withoutProp.queryByLabelText('새 예문')).toBeNull();
+  });
+
   it('renders the deterministic image fallback (initial) when no image (UoW-10)', () => {
     const { getByText } = render(
       <WordCard data={data} imageFallback={{ color: '#FDE2E4', label: 'C' }} />,

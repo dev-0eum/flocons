@@ -10,6 +10,7 @@ import {
   resetSettingsForTest,
   saveKey,
   setLevel,
+  setOnboarded,
   setTtsRate,
   subscribeSettings,
 } from '@/store/settingsStore';
@@ -24,13 +25,24 @@ beforeEach(async () => {
 });
 
 describe('settingsStore — 설정 영속 (ttsRate·level)', () => {
-  it('직렬화에 키 플래그를 포함하지 않는다 (ADR-004)', async () => {
+  it('직렬화에 키 플래그·hydrated를 포함하지 않는다 (ADR-004)', async () => {
     setTtsRate(1.25);
     setLevel('A2');
     await flush();
     const parsed = JSON.parse((await AsyncStorage.getItem(SETTINGS_KEY)) as string);
     expect(parsed.version).toBe(SETTINGS_VERSION);
-    expect(parsed.state).toEqual({ ttsRate: 1.25, level: 'A2' }); // hasKey 비직렬화
+    expect(parsed.state).toEqual({ ttsRate: 1.25, level: 'A2', onboarded: false });
+  });
+
+  it('setOnboarded → 영속·rehydrate 복원 + hydrated 표시 (UoW-11)', async () => {
+    setOnboarded();
+    await flush();
+    resetSettingsForTest();
+    expect(getSettings().onboarded).toBe(false);
+    expect(getSettings().hydrated).toBe(false);
+    await rehydrateSettings();
+    expect(getSettings().onboarded).toBe(true);
+    expect(getSettings().hydrated).toBe(true);
   });
 
   it('라운드트립: 저장본 → 초기화 → rehydrate 복원', async () => {

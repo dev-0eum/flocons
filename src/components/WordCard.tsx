@@ -56,6 +56,8 @@ export interface WordCardProps {
   onPlayWord?: () => void;
   onPlayExample?: () => void;
   onToggleBookmark?: () => void;
+  /** "새 예문" 요청 콜백 (UoW-11 — AI enrich 보유 시에만 부모가 전달). */
+  onNewExample?: () => void;
 }
 
 /** 단어 카드 (프리젠테이셔널). 발음/북마크는 콜백만 받는다(스토어/expo-speech 직접 의존 없음). */
@@ -67,6 +69,7 @@ export function WordCard({
   onPlayWord,
   onPlayExample,
   onToggleBookmark,
+  onNewExample,
 }: WordCardProps) {
   const headword = data.article ? `${data.article} ${data.lemma}` : data.lemma;
 
@@ -142,14 +145,26 @@ export function WordCard({
             <Text style={styles.exampleFr}>{data.exampleFr}</Text>
             <Text style={styles.exampleKr}>{data.exampleKr}</Text>
           </View>
-          <Pressable
-            style={styles.audioBtn}
-            onPress={onPlayExample}
-            accessibilityRole="button"
-            accessibilityLabel="예문 발음 듣기"
-          >
-            <Ionicons name="volume-medium-outline" size={20} color={colors.textMuted} />
-          </Pressable>
+          <View style={styles.exampleActions}>
+            {onNewExample ? (
+              <Pressable
+                style={styles.audioBtn}
+                onPress={onNewExample}
+                accessibilityRole="button"
+                accessibilityLabel="새 예문"
+              >
+                <Ionicons name="refresh-outline" size={20} color={colors.textMuted} />
+              </Pressable>
+            ) : null}
+            <Pressable
+              style={styles.audioBtn}
+              onPress={onPlayExample}
+              accessibilityRole="button"
+              accessibilityLabel="예문 발음 듣기"
+            >
+              <Ionicons name="volume-medium-outline" size={20} color={colors.textMuted} />
+            </Pressable>
+          </View>
         </View>
       </View>
     </View>
@@ -196,6 +211,7 @@ const styles = StyleSheet.create({
   divider: { height: 1, backgroundColor: colors.border, marginVertical: spacing.xs },
   exampleRow: { flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'space-between' },
   exampleTexts: { flexShrink: 1, gap: spacing.xs },
+  exampleActions: { flexDirection: 'row', alignItems: 'center' },
   exampleFr: { ...typography.body, color: colors.text },
   exampleKr: { ...typography.caption, color: colors.textMuted },
 });

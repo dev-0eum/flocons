@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { fireEvent, render } from '@testing-library/react-native';
+import { router } from 'expo-router';
 
 import { classifyCard, getCard, resetCards, toggleBookmark } from '@/store/cardStore';
 import { resetStudyLog } from '@/store/studyLog';
@@ -14,38 +15,40 @@ jest.mock('@/components/SwipeDeck', () => ({
 let mockParams: Record<string, string> = {};
 jest.mock('expo-router', () => ({
   useLocalSearchParams: () => mockParams,
+  router: { push: jest.fn(), replace: jest.fn() },
 }));
 
-// provider를 2단어 덱으로 모킹 — due 필터를 검증 (UoW-09: 화면은 currentProvider 경유).
-jest.mock('@/lib/content', () => ({
-  currentProvider: () => ({
-    getWords: () =>
-      Promise.resolve([
-        {
-          id: 'w1',
-          lemma: 'un',
-          article: 'le',
-          gender: 'm',
-          pos: 'n',
-          krMeaning: '하나',
-          level: 'A1',
-          exampleFr: 'Il y a un livre.',
-          exampleKr: '책이 한 권 있어요.',
-        },
-        {
-          id: 'w2',
-          lemma: 'deux',
-          article: null,
-          gender: null,
-          pos: 'num',
-          krMeaning: '둘',
-          level: 'A1',
-          exampleFr: "J'ai deux amis.",
-          exampleKr: '친구가 두 명 있어요.',
-        },
-      ]),
-  }),
-}));
+// 2단어 덱 mock — due 필터를 검증 (UoW-11: 화면은 useWords 경유).
+jest.mock('@/lib/content', () => {
+  const words = [
+    {
+      id: 'w1',
+      lemma: 'un',
+      article: 'le',
+      gender: 'm',
+      pos: 'n',
+      krMeaning: '하나',
+      level: 'A1',
+      exampleFr: 'Il y a un livre.',
+      exampleKr: '책이 한 권 있어요.',
+    },
+    {
+      id: 'w2',
+      lemma: 'deux',
+      article: null,
+      gender: null,
+      pos: 'num',
+      krMeaning: '둘',
+      level: 'A1',
+      exampleFr: "J'ai deux amis.",
+      exampleKr: '친구가 두 명 있어요.',
+    },
+  ];
+  return {
+    useWords: () => ({ words, level: 'A1' }),
+    currentProvider: () => ({ getWords: async () => words }),
+  };
+});
 
 beforeEach(() => {
   resetCards();
@@ -98,12 +101,15 @@ describe('ReviewScreen — mode=bookmarks (북마크 복습, UoW-07)', () => {
     expect(await findByText('북마크한 단어가 없어요.')).toBeTruthy();
   });
 
-  it('큐 소진 시 북마크 전용 완료 문구', async () => {
+  it('큐 소진 시 북마크 전용 완료 문구 + 홈으로 액션 (UoW-11 F)', async () => {
     mockParams = { mode: 'bookmarks' };
     toggleBookmark('w1');
-    const { findByText, getByLabelText } = render(<ReviewScreen />);
+    const { findByText, getByLabelText, findByLabelText } = render(<ReviewScreen />);
     await findByText('하나');
     fireEvent.press(getByLabelText('알고 있어요'));
     expect(await findByText(/북마크 복습을 마쳤어요/)).toBeTruthy();
+
+    fireEvent.press(await findByLabelText('홈으로'));
+    expect(router.replace).toHaveBeenCalledWith('/(tabs)');
   });
 });

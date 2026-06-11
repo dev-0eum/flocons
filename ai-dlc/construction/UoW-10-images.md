@@ -12,8 +12,8 @@
 | **연결 마일스톤** | [docs/ROADMAP.md](../../docs/ROADMAP.md) M10 |
 | **리드** | **back-dev** (이미지 서비스 로직) |
 | **멤버** | front-dev(WordCard 배선) + content-gen(imagePrompt — 데이터셋에 기생성됨) + qa-dev + code-review |
-| **상태** | ⏸️ Awaiting Approval (체크포인트 B) |
-| **시작일 / 완료일** | 2026-06-11 / (미정) |
+| **상태** | ✅ Approved (체크포인트 B — 2026-06-11) |
+| **시작일 / 완료일** | 2026-06-11 / 2026-06-11 |
 
 > 의존성: UoW-02 ✅(Word.imagePrompt·tags) · UoW-08 ✅(hasImageKey) · DoD 요약: 키 없으면 플레이스홀더 · 키 있으면 생성·캐시·폴백(가짜 클라이언트 검증) · 게이트 4종 green.
 
@@ -138,14 +138,14 @@
 ## 5) Unit 완료
 
 ### ⏸️ 체크포인트 B — Unit 완료 승인
-- [ ] 검증 게이트 4종 통과 확인
-- [ ] code-review 머지 가능
-- 결정: <✅ Approved | 🔁 Changes Requested>
-- 승인자: <이름> · 날짜: <YYYY-MM-DD>
+- [x] 검증 게이트 4종 통과 확인
+- [x] code-review 머지 가능
+- 결정: ✅ Approved
+- 승인자: 0eum · 날짜: 2026-06-11
 
 ### 커밋 / 푸시 기록 ([docs/HARNESS.md](../../docs/HARNESS.md) §4 규약)
-- [ ] STATUS 갱신 · [ ] 커밋 · [ ] 푸시
-- 커밋 해시: <짧은 해시>
+- [x] STATUS 갱신 · [x] 커밋 · [x] 푸시 (사용자 수행)
+- 커밋 해시: `f29440d` (`feat: deterministic category placeholder + AIImageProvider skeleton with cache and fallback [UoW-10]`)
 
 ### 마무리
-- 후속 작업 / 다음 Unit: <...>
+- 후속 작업 / 다음 Unit: `UoW-11-onboarding-polish`. 이월: 이미지 실벤더 연동(벤더 결정 후 별도 Unit).

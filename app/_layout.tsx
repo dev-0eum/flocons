@@ -23,6 +23,7 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="onboarding" options={{ headerShown: false }} />
         <Stack.Screen name="learn" options={{ headerShown: false }} />
         <Stack.Screen name="review" options={{ headerShown: false }} />
         <Stack.Screen name="settings" options={{ title: '설정' }} />

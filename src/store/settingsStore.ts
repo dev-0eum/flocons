@@ -13,6 +13,10 @@ export const SETTINGS_VERSION = 1;
 export interface SettingsState {
   ttsRate: number;
   level: Level;
+  /** 첫 실행 온보딩 완료 여부 (UoW-11 — 영속). */
+  onboarded: boolean;
+  /** rehydrate 완료 여부 (비영속 — 온보딩 리다이렉트 오판 방지). */
+  hydrated: boolean;
   hasAnthropicKey: boolean;
   hasImageKey: boolean;
 }
@@ -20,14 +24,16 @@ export interface SettingsState {
 const DEFAULTS: SettingsState = {
   ttsRate: 1.0,
   level: 'A1',
+  onboarded: false,
+  hydrated: false,
   hasAnthropicKey: false,
   hasImageKey: false,
 };
 
-/** 직렬화 포맷 — 영속 대상은 ttsRate·level만 (키 플래그 제외, ADR-004). */
+/** 직렬화 포맷 — 영속 대상은 ttsRate·level·onboarded (키 플래그·hydrated 제외, ADR-004). */
 interface PersistedSettings {
   version: number;
-  state: { ttsRate: number; level: Level };
+  state: { ttsRate: number; level: Level; onboarded: boolean };
 }
 
 let settings: SettingsState = { ...DEFAULTS };
@@ -43,7 +49,7 @@ function persistNow(): void {
     SETTINGS_KEY,
     JSON.stringify({
       version: SETTINGS_VERSION,
-      state: { ttsRate: settings.ttsRate, level: settings.level },
+      state: { ttsRate: settings.ttsRate, level: settings.level, onboarded: settings.onboarded },
     } satisfies PersistedSettings),
   );
 }
@@ -55,9 +61,16 @@ export function setTtsRate(rate: number): void {
   emit();
 }
 
-/** 레벨 설정·영속 (학습 화면 연동은 UoW-11 — Q-I2). */
+/** 레벨 설정·영속 (UoW-11에서 useWords로 화면 연동 — Q-I2). */
 export function setLevel(level: Level): void {
   settings = { ...settings, level };
+  persistNow();
+  emit();
+}
+
+/** 온보딩 완료 표시·영속 (UoW-11). */
+export function setOnboarded(): void {
+  settings = { ...settings, onboarded: true };
   persistNow();
   emit();
 }
@@ -104,6 +117,7 @@ export async function rehydrateSettings(): Promise<void> {
           ...settings,
           ttsRate: parsed.state.ttsRate ?? DEFAULTS.ttsRate,
           level: parsed.state.level ?? DEFAULTS.level,
+          onboarded: parsed.state.onboarded ?? false, // 구 저장본 후방 호환
         };
       }
     }
@@ -111,6 +125,8 @@ export async function rehydrateSettings(): Promise<void> {
     // 저장 데이터 손상 시 기본값 유지
   }
   await refreshKeyFlags();
+  settings = { ...settings, hydrated: true }; // 리다이렉트 판단 가능 시점 표시
+  emit();
 }
 
 /** 테스트 전용: 메모리 상태만 기본값으로 (저장본·secure-store는 건드리지 않음). */

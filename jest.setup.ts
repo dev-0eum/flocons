@@ -29,6 +29,15 @@ jest.mock('expo-speech', () => ({
   isSpeakingAsync: jest.fn(async () => false),
 }));
 
+// expo-haptics: 호출 단언용 mock (UoW-11)
+jest.mock('expo-haptics', () => ({
+  impactAsync: jest.fn(async () => undefined),
+  notificationAsync: jest.fn(async () => undefined),
+  selectionAsync: jest.fn(async () => undefined),
+  ImpactFeedbackStyle: { Light: 'light', Medium: 'medium', Heavy: 'heavy' },
+  NotificationFeedbackType: { Success: 'success', Warning: 'warning', Error: 'error' },
+}));
+
 // @expo/vector-icons: jest에서 폰트 로드 없이 가벼운 stub으로 렌더 (상호작용은 부모 Pressable의 accessibilityLabel로 테스트)
 jest.mock('@expo/vector-icons', () => {
   const React = require('react');

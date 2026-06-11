@@ -10,16 +10,17 @@ jest.mock('expo-router', () => ({
   router: { push: jest.fn() },
 }));
 
-// provider를 2단어 덱으로 모킹 — 레벨 진척 분모(total=2)를 고정 (UoW-09: currentProvider 경유).
-jest.mock('@/lib/content', () => ({
-  currentProvider: () => ({
-    getWords: () =>
-      Promise.resolve([
-        { id: 'w1', lemma: 'un', level: 'A1' },
-        { id: 'w2', lemma: 'deux', level: 'A1' },
-      ]),
-  }),
-}));
+// 2단어 덱 mock — 레벨 진척 분모(total=2)를 고정 (UoW-11: 화면은 useWords 경유).
+jest.mock('@/lib/content', () => {
+  const words = [
+    { id: 'w1', lemma: 'un', level: 'A1' },
+    { id: 'w2', lemma: 'deux', level: 'A1' },
+  ];
+  return {
+    useWords: () => ({ words, level: 'A1' }),
+    currentProvider: () => ({ getWords: async () => words }),
+  };
+});
 
 beforeEach(() => {
   resetCards();

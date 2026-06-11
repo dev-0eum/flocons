@@ -1,32 +1,18 @@
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
-import { useEffect, useState } from 'react';
 import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
 
 import { StateView } from '@/components';
 import type { Word } from '@/content';
-import { currentProvider } from '@/lib/content';
+import { useWords } from '@/lib/content';
 import { toggleBookmark } from '@/store/cardStore';
 import { useCards } from '@/store/hooks';
 import { articleColor, colors, radius, spacing, typography } from '@/theme';
 
-// 북마크 목록 + 거기서 복습 시작 (DESIGN §3, UoW-07).
-// 레벨은 A1 고정 (레벨 선택은 UoW-11).
-const LEVEL = 'A1' as const;
-
+// 북마크 목록 + 거기서 복습 시작 (DESIGN §3, UoW-07). 레벨은 설정 연동 (UoW-11 C).
 export default function BookmarksScreen() {
   const cards = useCards(); // 토글 즉시 목록 반영 (영속 상태와 일치 — DoD)
-  const [words, setWords] = useState<Word[] | null>(null);
-
-  useEffect(() => {
-    let mounted = true;
-    currentProvider().getWords(LEVEL).then((loaded) => {
-      if (mounted) setWords(loaded);
-    });
-    return () => {
-      mounted = false;
-    };
-  }, []);
+  const { words } = useWords();
 
   if (!words) return <StateView variant="loading" />;
 

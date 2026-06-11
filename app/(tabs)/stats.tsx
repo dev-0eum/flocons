@@ -1,37 +1,24 @@
 import { router } from 'expo-router';
-import { useEffect, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 
-import { currentProvider } from '@/lib/content';
+import { useWords } from '@/lib/content';
 import { countByStatus, dueCount, levelProgress, streakDays, studiedCount } from '@/srs/stats';
 import { useCards, useStudyDays } from '@/store/hooks';
 import { colors, radius, spacing, typography } from '@/theme';
 
 // 통계: streak · 학습 단어 수 · 레벨 진척 · 오늘 복습 (DESIGN §3, UoW-06).
-// 레벨은 A1 고정 (레벨 선택은 UoW-11).
-const LEVEL = 'A1' as const;
-
+// 레벨은 설정 연동 (UoW-11 C).
 export default function StatsScreen() {
   const cards = useCards();
   const days = useStudyDays();
-  const [totalWords, setTotalWords] = useState<number | null>(null);
-
-  useEffect(() => {
-    let mounted = true;
-    currentProvider().getWords(LEVEL).then((words) => {
-      if (mounted) setTotalWords(words.length);
-    });
-    return () => {
-      mounted = false;
-    };
-  }, []);
+  const { words, level } = useWords();
 
   const now = Date.now();
   const counts = countByStatus(cards);
   const streak = streakDays(days, now);
   const studied = studiedCount(cards);
   const due = dueCount(cards, now);
-  const total = totalWords ?? 0;
+  const total = words?.length ?? 0;
   const progressPct = Math.round(levelProgress(counts.known, total) * 100);
 
   return (
@@ -43,9 +30,9 @@ export default function StatsScreen() {
         detail={`알고 있어요 ${counts.known} · 학습 중 ${counts.learning}`}
       />
       <StatRow
-        label={`${LEVEL} 진척`}
+        label={`${level} 진척`}
         value={`${progressPct}%`}
-        detail={totalWords === null ? '불러오는 중…' : `${counts.known} / ${total} 단어`}
+        detail={words === null ? '불러오는 중…' : `${counts.known} / ${total} 단어`}
       />
       <StatRow label="오늘 복습할 카드" value={`${due}장`} />
       <Pressable
