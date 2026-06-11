@@ -16,6 +16,7 @@ import {
 } from '@/lib/deck';
 import { toWordCardData } from '@/lib/toWordCardData';
 import { speak } from '@/lib/tts';
+import { placeholderFor, useWordImage } from '@/lib/wordImage';
 import { classifyCard, toggleBookmark } from '@/store/cardStore';
 import { useCards, useSettings } from '@/store/hooks';
 import { recordStudyDay } from '@/store/studyLog';
@@ -39,6 +40,8 @@ export function DeckSession({ words, doneMessage }: DeckSessionProps) {
   const { ttsRate } = useSettings(); // 발음 속도 설정 (UoW-08, ADR-005 — rate는 인자로 전달)
 
   const word = currentWord(state);
+  const imageUri = useWordImage(word); // imageUrl/캐시/생성 해상 — null이면 플레이스홀더 (UoW-10)
+
   if (isDone(state) || !word) {
     return <StateView variant="done" message={doneMessage} />;
   }
@@ -68,6 +71,8 @@ export function DeckSession({ words, doneMessage }: DeckSessionProps) {
         >
           <WordCard
             data={toWordCardData(word)}
+            imageSource={imageUri ? { uri: imageUri } : null}
+            imageFallback={placeholderFor(word)}
             bookmarked={cards[word.id]?.bookmarked ?? false}
             onToggleBookmark={() => toggleBookmark(word.id)}
             onPlayWord={() => speak(headword, { rate: ttsRate })}

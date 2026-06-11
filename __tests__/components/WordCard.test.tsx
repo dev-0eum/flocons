@@ -46,4 +46,12 @@ describe('WordCard', () => {
     const { getByLabelText } = render(<WordCard data={data} bookmarked />);
     expect(getByLabelText('북마크 해제')).toBeTruthy();
   });
+
+  it('renders the deterministic image fallback (initial) when no image (UoW-10)', () => {
+    const { getByText } = render(
+      <WordCard data={data} imageFallback={{ color: '#FDE2E4', label: 'C' }} />,
+    );
+    // 플레이스홀더는 장식 요소(accessibilityElementsHidden)라 숨김 포함 조회
+    expect(getByText('C', { includeHiddenElements: true })).toBeTruthy();
+  });
 });

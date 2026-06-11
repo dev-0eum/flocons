@@ -12,6 +12,17 @@ export const colors = {
   articleMasculine: '#2563EB', // m: 파랑
   articleFeminine: '#DB2777', // f: 로즈
   articleNeutral: '#6B7280', // null: 회색
+  // 카드 이미지 플레이스홀더 팔레트 (UoW-10 — 카테고리 해시로 결정적 선택, 라이트 테마 §9 조화)
+  imagePalette: [
+    '#FDE2E4', // rose
+    '#FFE5B4', // peach
+    '#FFF1C1', // butter
+    '#DCEDC8', // sage
+    '#C8E6F5', // sky
+    '#D7D0F0', // lavender
+    '#F5D5E5', // pink
+    '#D8E2DC', // mist
+  ],
 } as const;
 
 export type Colors = typeof colors;

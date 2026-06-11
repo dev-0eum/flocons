@@ -51,6 +51,8 @@ export interface WordCardProps {
   data: WordCardData;
   bookmarked?: boolean;
   imageSource?: { uri: string } | number | null;
+  /** 이미지가 없을 때의 결정적 플레이스홀더(카테고리 색 + 이니셜 — UoW-10). */
+  imageFallback?: { color: string; label: string };
   onPlayWord?: () => void;
   onPlayExample?: () => void;
   onToggleBookmark?: () => void;
@@ -61,6 +63,7 @@ export function WordCard({
   data,
   bookmarked = false,
   imageSource = null,
+  imageFallback,
   onPlayWord,
   onPlayExample,
   onToggleBookmark,
@@ -78,7 +81,16 @@ export function WordCard({
             accessibilityIgnoresInvertColors
           />
         ) : (
-          <View style={[styles.image, styles.imagePlaceholder]} accessibilityElementsHidden />
+          <View
+            style={[
+              styles.image,
+              styles.imagePlaceholder,
+              imageFallback ? { backgroundColor: imageFallback.color } : null,
+            ]}
+            accessibilityElementsHidden
+          >
+            {imageFallback ? <Text style={styles.imageInitial}>{imageFallback.label}</Text> : null}
+          </View>
         )}
         <Pressable
           style={styles.bookmark}
@@ -154,7 +166,12 @@ const styles = StyleSheet.create({
   },
   imageWrap: { position: 'relative' },
   image: { width: '100%', aspectRatio: 4 / 3 },
-  imagePlaceholder: { backgroundColor: colors.surface },
+  imagePlaceholder: {
+    backgroundColor: colors.surface,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  imageInitial: { fontSize: 56, fontWeight: '800', lineHeight: 64, color: colors.textMuted },
   bookmark: {
     position: 'absolute',
     right: spacing.md,

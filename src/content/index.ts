@@ -8,3 +8,5 @@ export type { ProviderKind } from './selectProvider';
 export { AIContentProvider, enrichCacheKey } from './AIContentProvider';
 export { AI_MODEL, AnthropicEnrichClient, NoApiKeyError, PROVIDER_VERSION } from './enrichClient';
 export type { EnrichClient, EnrichedExample } from './enrichClient';
+export { AIImageProvider, IMAGE_CACHE_VERSION, imageCacheKey, wordImageProvider } from './AIImageProvider';
+export type { ImageClient } from './imageClient';
