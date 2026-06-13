@@ -12,10 +12,10 @@
 
 | 항목 | 값 |
 |---|---|
-| **현재 단계** | Construction 완료 → Operations 대기 |
-| **현재 상태** | ✅ **Construction 완료** (UoW-00~12 전부 ✅, 2026-06-11) — Operations ⬜ Pending |
-| **대기 중인 체크포인트** | (없음 — Operations는 `/operations` 실행 시 시작, 실제 변경 전 사람 승인) |
-| **다음 액션** | `/operations` — EAS 빌드·CI/CD·관측성·런북 (cloud-dev 리드) |
+| **현재 단계** | **Construction (post-v1)** — 누적 구조 + 수익화 Unit 구현 (v1 ✅ 완료 · Operations ⬜ 대기) |
+| **현재 상태** | ✅ **post-v1 Inception 승인됨** (2026-06-13, 0eum) — UoW-13~19 백로그 + ADR-011~016 확정. **권장 실행: Phase 1(UoW-13→14) 먼저.** |
+| **대기 중인 체크포인트** | (없음 — 다음 Unit의 체크포인트 A(설계)에서 승인) |
+| **다음 액션** | `/construction UoW-13-sentence-layer` (Phase 1 시작). 각 Unit은 체크포인트 A·B에서 승인. UoW-19는 Operations(EAS prebuild) 선행 |
 
 > 원칙: **AI proposes, human disposes.** 모든 단계는 체크포인트에서 멈추고 사람 승인을 기다린다.
 
@@ -39,9 +39,13 @@
 
 | 단계 | 상태 | 리드 mob | 마지막 갱신 | 승인자 |
 |---|---|---|---|---|
-| Inception | ✅ Approved | app-pm | 2026-06-09 | 0eum |
-| Construction | ✅ Approved (UoW-00~12 전부 완료) | Unit 성격별 (UI→front-dev / 로직→back-dev / 데이터→db-dev) | 2026-06-11 | 0eum |
+| Inception (v1) | ✅ Approved | app-pm | 2026-06-09 | 0eum |
+| Construction (v1) | ✅ Approved (UoW-00~12 전부 완료) | Unit 성격별 (UI→front-dev / 로직→back-dev / 데이터→db-dev) | 2026-06-11 | 0eum |
+| **Inception (post-v1)** | ✅ **Approved** (UoW-13~19 백로그 + ADR-011~016) | app-pm | 2026-06-13 | 0eum |
+| **Construction (post-v1)** | 🔵 준비 (UoW-13~19 ⬜ Pending · 다음: UoW-13) | Unit 성격별 | 2026-06-13 | — |
 | Operations | ⬜ Pending | cloud-dev | (미정) | (미정) |
+
+> **라운드 구분**: v1(UoW-00~12)은 ✅ 완료. **post-v1**(누적 구조+수익화, UoW-13~19)은 별도 2차 Inception 라운드 — 산출물은 [inception/post-v1/](inception/post-v1/), v1 산출물([inception/01~04.md](inception/))은 보존. Construction(post-v1)·Operations는 post-v1 승인 후/별도 진행.
 
 ---
 
@@ -65,7 +69,19 @@
 | UoW-11-onboarding-polish | 온보딩 + 햅틱/접근성 | front-dev | ✅ Approved | [기록](construction/UoW-11-onboarding-polish.md) | 2026-06-11 | 0eum |
 | UoW-12-expand | A2/B1 확장 + README | db-dev (+content-gen) | ✅ Approved | [기록](construction/UoW-12-expand.md) | 2026-06-11 | 0eum |
 
-> UoW-00은 검증 게이트 4종(typecheck/lint/test/expo export) green + code-review 머지가능으로 ✅. **커밋·푸시는 사용자가 직접 수행**(`.git` 사고 후 정책).
+> **── post-v1 라운드 (✅ Inception 승인 2026-06-13, 백로그 [inception/post-v1/03](inception/post-v1/03-units-of-work.md)) ──** 권장 실행: Phase 1(13→14) → Phase 2(15·16·17·18) → Phase 3(19, Operations 선행). 각 Unit은 [/construction `<id>`](../.claude/commands/construction.md)로 체크포인트 A·B.
+
+| Unit ID | 제목 | 리드 | 상태 | 기록 | 마지막 갱신 | 승인자 |
+|---|---|---|---|---|---|---|
+| UoW-13-sentence-layer | 문장 층 (i+1 청크 문장) | back-dev (+front/content-gen) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
+| UoW-14-soft-gate-engine | soft-gate 엔진 (DAG·진척) | back-dev (+db-dev) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
+| UoW-15-grammar-cloze | 문법 cloze | back-dev (+content-gen/front) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
+| UoW-16-apply-production | 응용 산출 + BYOK 피드백 | back-dev (+front/content-gen) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
+| UoW-17-usage-output | 활용 자유 산출 | front-dev (+db/content-gen) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
+| UoW-18-snowscape-viz | 설경 시각화 (RN View 1차) | front-dev | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
+| UoW-19-monetization-iap | 수익화 IAP (Operations 선행) | cloud-dev (+back/front) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
+
+> UoW-00은 검증 게이트 4종(typecheck/lint/test/expo export) green + code-review 머지가능으로 ✅. **커밋·푸시는 사용자가 직접 수행**(`.git` 사고 후 정책). UoW-13~19는 백로그 승인 상태(⬜); 각 Unit의 설계/완료는 체크포인트 A·B에서 별도 승인.
 
 ---
 
@@ -75,8 +91,10 @@
 |---|---|---|---|
 | Construction | UoW-12 설계 승인 (체크포인트 A) | ✅ Approved (2026-06-11) | Q-N1~N4 권장값대로 승인 — A2/B1 각 60개(content-gen), README, 커버리지 점검, SQLite 이관 보류. |
 | Construction | UoW-12 완료 승인 (체크포인트 B) | ⏸️ Awaiting Approval | A2/B1 185단어·README·커버리지(93.5%/84%/97%/96.3%)·SQLite 보류 결론. 게이트 4종 green(33 suites/165 tests), code-review 머지 가능(콘텐츠 3건 수정 반영). **승인 시 Construction 완료.** |
+| **Inception (post-v1)** | **누적 구조 + 수익화 백로그 승인** (UoW-13~19) | ✅ **Approved** (2026-06-13, 0eum) | 7개 Unit(Phase 1~3)·ADR-011~016. mob 코드 근거 평가 + code-review 2 blocker 정정 반영. 권장 실행 Phase 1(UoW-13+14). 산출물 [inception/post-v1/03](inception/post-v1/03-units-of-work.md). |
+| **Inception (post-v1)** | **기술 스택 + ADR 승인** | ✅ **Approved** (2026-06-13, 0eum) | react-native-svg(선택·게이트)·IAP(미정, EAS prebuild 선행)·신규 스토어. [00-tech-stack §5](00-tech-stack.md) + [post-v1/04](inception/post-v1/04-architecture-decision.md). |
 
-> Inception은 ✅ 승인 완료(2026-06-09). 이후 각 Unit은 체크포인트 A·B에서 사람 승인.
+> Inception(v1)은 ✅ 승인(2026-06-09). **post-v1 라운드도 ✅ 승인(2026-06-13)** — 이후 각 Unit은 체크포인트 A·B에서 승인.
 
 ---
 
@@ -100,3 +118,5 @@
 | 2026-06-11 | Construction | **UoW-10-images ✅ 완료** (체크포인트 B, `f29440d` — 사용자 커밋·푸시). 카테고리 플레이스홀더(imagePalette 8색·tags 해시·이니셜) + AIImageProvider 골격(해상 순서·URL 캐시·전실패 폴백, 실벤더 보류 Q-K1). 게이트 4종 green(test 143/143), code-review 머지 가능(블로커 0). 다음: `UoW-11-onboarding-polish`. | 0eum |
 | 2026-06-11 | Construction | **UoW-11-onboarding-polish ✅ 완료** (체크포인트 B, `710cfee` — 사용자 커밋·푸시). 홈(진척·due·설정 진입)·온보딩(1페이지+영속 플래그)·레벨 연동(useWords)·햅틱(expo-haptics)·a11y 커스텀 액션·완료 액션·enrich ↻ UI — 이월 3건 흡수. 게이트 4종 green(test 155/155), code-review 머지 가능(블로커 0, 권고 3건 반영). 후속 백로그: SR play/bookmark 액션. 다음: `UoW-12-expand`(마지막). | 0eum |
 | 2026-06-11 | Construction | **UoW-12-expand ✅ 완료** (체크포인트 B, `ded4de2` — 사용자 커밋·푸시) — **Construction 단계 완료 (UoW-00~12 전부 ✅)**. A2/B1 각 60단어(content-gen, validate 0, A1 id 고정 스냅샷 가드)·README·커버리지(93.5/84/97/96.3%)·SQLite 이관 보류 결론. 게이트 4종 green(test 165/165), code-review 머지 가능(콘텐츠 3건 수정 반영). 다음: Operations(`/operations`). | 0eum |
+| 2026-06-13 | Inception(post-v1) | **post-v1 라운드 시작 — ⏸️ Awaiting Approval.** 누적 구조(단어→문장→문법→응용→활용) + 수익화(depth-paywall buy-once) 신규 Unit 백로그 **UoW-13~19(7개)** 제안. mob(back/front/db/cloud-dev) 코드 근거 평가 + code-review(changes_requested의 2 blocker 정정 반영: ①"볼드 타깃 재사용" 오전제→신규 하이라이트 인프라(ADR-013) ②Unit ID N1~N6→UoW-13~19 매핑표·설경 엔진/시각화 분리). 산출물 [inception/post-v1/01~04](inception/post-v1/) + [00-tech-stack §5](00-tech-stack.md). DESIGN §12.1 사실오류 정정. **사람 승인 대기(STATUS ✅ 미변경).** | (대기) |
+| 2026-06-13 | Inception(post-v1) | **✅ post-v1 Inception 승인** — UoW-13~19 백로그 + 기술 스택 + ADR-011~016 확정. 권장값 채택: **Q-P5** 단계적 실행(Phase 1=UoW-13→14 먼저), **Q-P1** i+1 임계 box≥2(UoW-13 체크포인트 A에서 재확인), **Q-P4** 설경 엔진(14)/시각화(18) 분리·RN View 1차, **Q-P3** ROADMAP/DESIGN의 N1~N6→UoW-13~19 치환. **Q-P7**(가격 베타검증·IAP 라이브러리·CNG·Apple Developer 가입)은 UoW-19/Operations에서 결정. Construction(post-v1) 진입 — 다음 `/construction UoW-13-sentence-layer`. | 0eum |

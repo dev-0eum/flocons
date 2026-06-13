@@ -84,3 +84,20 @@
 
 ## 백로그 (로드맵 소진 후 하네스가 다듬을 후보)
 - 다크 테마 · 위젯/알림(복습 리마인더) · 듣기/받아쓰기 모드 · 동사 활용 드릴 · 데이터 내보내기/가져오기 · 클라우드 동기화 · EAS 빌드/배포.
+
+---
+
+## 차기 (post-v1) — 누적 학습 구조 + 수익화 〔✅ Inception 승인 2026-06-13〕
+
+> v1(M0~M12) 완료. 아래는 [DESIGN §12](DESIGN.md) "차기 방향"의 Unit 백로그로, **post-v1 Inception 라운드에서 ✅ 승인(2026-06-13)** 됐다. 확정 ID·상세·ADR은 [ai-dlc/inception/post-v1/](../ai-dlc/inception/post-v1/), 진행 상태는 [ai-dlc/STATUS.md](../ai-dlc/STATUS.md). 각 Unit은 [/construction `<id>`](../.claude/commands/construction.md)로 체크포인트 A·B를 돈다.
+>
+> 가번호 매핑: N1→**UoW-13**, N5→**UoW-14**(엔진)+**UoW-18**(시각화), N2→**UoW-15**, N3→**UoW-16**, N4→**UoW-17**, N6→**UoW-19**.
+> 권장 실행 순서: **Phase 1**(UoW-13 문장 → UoW-14 엔진) → **Phase 2**(15·16·17·18) → **Phase 3**(19, EAS prebuild·Operations 선행).
+
+- [ ] **UoW-13 문장 층 — 어휘적 청크 빌더** (① 첫 결정): 익힌 단어 풀(box≥2) 기준 i+1 문장(미지 1~2개), 청크 중심. **신규 하이라이트 인프라**(볼드 재사용 아님, ADR-013) + BYOK 생성/폴백. 첫 레슨 무료 미리보기.
+- [ ] **UoW-14 soft-gate 엔진** (⑤ 척추·로직): 5층 DAG soft-unlock(Leitner box=굳기, hard-lock 아님), 진척="산출 가능 청크/문장 수", 신규 progressStore. 순수 함수(`srs/softGate.ts`).
+- [ ] **UoW-15 문법 cloze 드릴** (② 정렬된 격자): 청크 패턴 사후 추출, cloze(빈칸 산출), CEFR A1/A2/B1 게이팅. 예문 타깃 토큰 마스킹(순수 함수).
+- [ ] **UoW-16 응용 — 가이드 산출 + BYOK 피드백 루프** (③ 쌓아 올리기): 빈칸·재배열·KR→FR 번역. BYOK는 예문 보강이 아닌 **산출 교정 피드백** 경로(enrich 분리, 키 없으면 정답+해설 폴백, classifyCard 신호 오염 금지). BYOK 유료화 금지.
+- [ ] **UoW-17 활용 — 자유 산출 → 설경 편입** (④ 설경): 주제 작문 프롬프트, 산출물 로컬 보존(outputStore). 콘텐츠 생산비 큼 → content-gen + flocons-content 단계적 큐레이션 + 테마 팩.
+- [ ] **UoW-18 설경 시각화** (⑤ 척추·시각화): 눈송이→결정→격자→설경 진척 시각화(기본 무료). **RN View/그라데이션 1차**, react-native-svg는 검증 게이트(Context7+export+성능) 통과 시 선택. 비선형 열람·부드러운 감쇠.
+- [ ] **UoW-19 수익화 — EAS prebuild + StoreKit 평생 해금 IAP** (depth-paywall): 단일 비소비성 IAP "결정 평생 해금"(₩29,000, 출시 ₩19,000) + Restore(무계정 복원) + 정직 페이지. 보조: 테마 팩·❄️ 후원. non-negotiables는 [DESIGN §12.2](DESIGN.md) 준수. **EAS prebuild(Operations) + 팔 층(13~17) + Apple Developer Program 선행, 미구현 층 선판매 금지.**

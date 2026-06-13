@@ -94,3 +94,19 @@
 
 > 승인자: ________________ · 날짜: ____-__-__
 ```
+
+---
+
+## 5. post-v1 라운드 — 스택 추가 (✅ 승인, 2026-06-13)
+
+> ✅ 아래는 **post-v1 Inception 라운드**(누적 구조 + 수익화)의 스택 추가로, 2026-06-13 백로그·스택 승인에 포함됐다(개별 도입은 각 Unit 체크포인트에서). §1~§4(v1)는 ✅ Approved로 그대로 둔다. 근거 ADR: [inception/post-v1/04-architecture-decision.md](inception/post-v1/04-architecture-decision.md) (ADR-011~016). 상태의 SSOT는 [STATUS.md](STATUS.md).
+
+| 영역 | 추가/검토 | 관련 ADR | 비고 |
+|---|---|---|---|
+| 진척/산출/엔타이틀먼트 영속 | 신규 스토어(모듈 상태 + AsyncStorage persist, v1 패턴 계승) | ADR-012 | zustand 미사용, `version`+`migrate`, 키 `flocons:<domain>:v1` |
+| 예문 하이라이트 / cloze / soft-gate | `Word.chunks?`/`targetTokens?`/`grammarPattern?` 선택 필드 + `srs/cloze.ts`·`srs/softGate.ts` 순수함수 | ADR-013, ADR-011 | **신규 인프라**(볼드 재사용 아님), 단일 스키마 PR(db-dev) |
+| BYOK 산출 피드백 | 신규 `FeedbackClient`(enrich와 분리) | ADR-014 | 키 없으면 정적 폴백, classifyCard 신호 오염 금지 |
+| 설경 시각화 | RN View/그라데이션 1차 / `react-native-svg` 선택(게이트) | ADR-015 | Expo Go 호환(`expo install`)·Context7·`expo export`·디바이스 검증 |
+| 결제(IAP) | 비소비성 IAP + Restore(무계정), 라이브러리 **미정**(react-native-iap vs RevenueCat) | ADR-016 | **EAS prebuild(Operations) 선행** — Expo Go 불가. 구독 미채택 |
+
+**스택 리스크 추가**: R9 react-native-svg ↔ reanimated 4/newArch 호환(Context7 검증), R10 IAP는 Expo Go→EAS 비가역 워크플로 전환(CNG vs bare 결정), R11 신규 스토어 증가 → 패턴 명문화(`src/store/STORE_PATTERN.md`) 권장. 상세는 [post-v1/01-requirements.md §9](inception/post-v1/01-requirements.md).
