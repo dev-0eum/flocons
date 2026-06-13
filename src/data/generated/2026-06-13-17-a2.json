@@ -1,0 +1,962 @@
+[
+  {
+    "id": "fr-a2-agenda",
+    "lemma": "agenda",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "수첩, 일정표",
+    "level": "A2",
+    "exampleFr": "J'ai noté notre rendez-vous dans mon agenda.",
+    "exampleKr": "나는 수첩에 우리 약속을 적어 두었다.",
+    "imagePrompt": "A leather-bound planner open on a wooden desk with handwritten appointments, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "일상",
+      "사무용품"
+    ]
+  },
+  {
+    "id": "fr-a2-alliance",
+    "lemma": "alliance",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "결혼반지, 동맹",
+    "level": "A2",
+    "exampleFr": "Elle porte une belle alliance en or à la main gauche.",
+    "exampleKr": "그녀는 왼손에 아름다운 금 결혼반지를 끼고 있다.",
+    "imagePrompt": "A close-up of two golden wedding rings resting on a white cloth, soft cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "가족",
+      "결혼"
+    ]
+  },
+  {
+    "id": "fr-a2-anniversaire",
+    "lemma": "anniversaire",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "생일, 기념일",
+    "level": "A2",
+    "exampleFr": "Nous avons fêté son anniversaire avec un gâteau au chocolat.",
+    "exampleKr": "우리는 초콜릿 케이크로 그의 생일을 축하했다.",
+    "imagePrompt": "A birthday cake with lit candles on a festive table surrounded by friends, warm atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "축하",
+      "가족"
+    ]
+  },
+  {
+    "id": "fr-a2-arrêt",
+    "lemma": "arrêt",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "정류장, 멈춤",
+    "level": "A2",
+    "exampleFr": "Le bus s'est arrêté à l'arrêt devant l'école.",
+    "exampleKr": "버스가 학교 앞 정류장에 멈췄다.",
+    "imagePrompt": "A city bus stop sign on a sidewalk with a bus arriving in the background, natural daylight, photographic, no text, no watermark",
+    "tags": [
+      "교통",
+      "여행"
+    ]
+  },
+  {
+    "id": "fr-a2-bateau",
+    "lemma": "bateau",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "배, 보트",
+    "level": "A2",
+    "exampleFr": "Nous avons pris le bateau pour traverser la rivière.",
+    "exampleKr": "우리는 강을 건너기 위해 배를 탔다.",
+    "imagePrompt": "A small wooden boat floating on a calm river surrounded by lush green banks, cinematic atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "교통",
+      "여행"
+    ]
+  },
+  {
+    "id": "fr-a2-cabine",
+    "lemma": "cabine",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "탈의실, 선실",
+    "level": "A2",
+    "exampleFr": "Elle a essayé la robe dans la cabine d'essayage.",
+    "exampleKr": "그녀는 탈의실에서 원피스를 입어 봤다.",
+    "imagePrompt": "A dressing room with a curtain half-open showing a mirror inside a clothing store, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "쇼핑",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-camion",
+    "lemma": "camion",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "트럭",
+    "level": "A2",
+    "exampleFr": "Le camion a livré les meubles ce matin.",
+    "exampleKr": "트럭이 오늘 아침 가구를 배달했다.",
+    "imagePrompt": "A large delivery truck parked in front of a house with workers unloading furniture, bright daylight, photographic, no text, no watermark",
+    "tags": [
+      "교통",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-carrefour",
+    "lemma": "carrefour",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "교차로, 사거리",
+    "level": "A2",
+    "exampleFr": "Tournez à gauche au prochain carrefour.",
+    "exampleKr": "다음 교차로에서 왼쪽으로 도세요.",
+    "imagePrompt": "A busy urban intersection with traffic lights and crosswalks in a city, cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "교통",
+      "도시"
+    ]
+  },
+  {
+    "id": "fr-a2-chameau",
+    "lemma": "chameau",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "낙타",
+    "level": "A2",
+    "exampleFr": "Le chameau peut marcher longtemps sans boire.",
+    "exampleKr": "낙타는 물을 마시지 않고도 오랫동안 걸을 수 있다.",
+    "imagePrompt": "A camel standing in a sandy desert landscape under a bright blue sky, cinematic atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "동물",
+      "자연"
+    ]
+  },
+  {
+    "id": "fr-a2-foulard",
+    "lemma": "foulard",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "스카프",
+    "level": "A2",
+    "exampleFr": "Elle a mis un foulard coloré autour du cou avant de sortir.",
+    "exampleKr": "그녀는 나가기 전에 목에 알록달록한 스카프를 둘렀다.",
+    "imagePrompt": "A colorful silk scarf draped over a woman's shoulders outdoors in autumn, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "의복",
+      "패션"
+    ]
+  },
+  {
+    "id": "fr-a2-chemin",
+    "lemma": "chemin",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "길, 경로",
+    "level": "A2",
+    "exampleFr": "Nous avons pris un chemin à travers la forêt.",
+    "exampleKr": "우리는 숲을 가로지르는 길을 걸었다.",
+    "imagePrompt": "A narrow forest path winding through tall trees with dappled sunlight, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "자연",
+      "여행"
+    ]
+  },
+  {
+    "id": "fr-a2-ciel",
+    "lemma": "ciel",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "하늘",
+    "level": "A2",
+    "exampleFr": "Le ciel était bleu et sans nuages ce matin.",
+    "exampleKr": "오늘 아침 하늘은 파랗고 구름 한 점 없었다.",
+    "imagePrompt": "A clear blue sky with a warm sun over an open field, cinematic wide-angle, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "자연",
+      "날씨"
+    ]
+  },
+  {
+    "id": "fr-a2-collègue",
+    "lemma": "collègue",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "동료",
+    "level": "A2",
+    "exampleFr": "Mon collègue m'a aidé à finir le rapport.",
+    "exampleKr": "내 동료가 보고서를 마치는 것을 도와주었다.",
+    "imagePrompt": "Two colleagues collaborating at an office desk looking at a computer screen, bright professional lighting, photographic, no text, no watermark",
+    "tags": [
+      "직장",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-conduire",
+    "lemma": "conduire",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "운전하다",
+    "level": "A2",
+    "exampleFr": "Il a appris à conduire l'année dernière.",
+    "exampleKr": "그는 작년에 운전을 배웠다.",
+    "imagePrompt": "A person's hands on a steering wheel driving on an open road with scenery ahead, cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "교통",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-copain",
+    "lemma": "copain",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "친구, 남자친구",
+    "level": "A2",
+    "exampleFr": "J'ai retrouvé un vieux copain au café hier.",
+    "exampleKr": "나는 어제 카페에서 오랜 친구를 다시 만났다.",
+    "imagePrompt": "Two young men greeting each other warmly outside a café, natural daylight, photographic, no text, no watermark",
+    "tags": [
+      "사람",
+      "우정"
+    ]
+  },
+  {
+    "id": "fr-a2-couverture",
+    "lemma": "couverture",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "담요, 표지",
+    "level": "A2",
+    "exampleFr": "Elle s'est enveloppée dans une couverture chaude pour regarder un film.",
+    "exampleKr": "그녀는 영화를 보기 위해 따뜻한 담요로 몸을 감쌌다.",
+    "imagePrompt": "A person wrapped in a cozy blanket on a sofa watching TV in a warm living room, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "집",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-date",
+    "lemma": "date",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "날짜",
+    "level": "A2",
+    "exampleFr": "Quelle est la date de ton anniversaire ?",
+    "exampleKr": "너의 생일 날짜가 언제야?",
+    "imagePrompt": "A calendar page with a circled date on a wooden desk, soft natural light, photographic, no text, no watermark",
+    "tags": [
+      "일상",
+      "시간"
+    ]
+  },
+  {
+    "id": "fr-a2-dernier",
+    "lemma": "dernier",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "마지막의, 지난",
+    "level": "A2",
+    "exampleFr": "Il a pris le dernier train pour rentrer chez lui.",
+    "exampleKr": "그는 집으로 돌아가기 위해 마지막 기차를 탔다.",
+    "imagePrompt": null,
+    "tags": [
+      "시간",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-devenir",
+    "lemma": "devenir",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "되다, ~이 되어가다",
+    "level": "A2",
+    "exampleFr": "Elle veut devenir médecin quand elle sera grande.",
+    "exampleKr": "그녀는 어른이 되면 의사가 되고 싶어 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "일상",
+      "꿈"
+    ]
+  },
+  {
+    "id": "fr-a2-discuter",
+    "lemma": "discuter",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "토론하다, 이야기하다",
+    "level": "A2",
+    "exampleFr": "Nous avons discuté du voyage pendant le dîner.",
+    "exampleKr": "우리는 저녁 식사 중에 여행에 대해 이야기했다.",
+    "imagePrompt": null,
+    "tags": [
+      "대화",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-doucement",
+    "lemma": "doucement",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "부드럽게, 천천히",
+    "level": "A2",
+    "exampleFr": "Parle doucement, le bébé dort.",
+    "exampleKr": "아기가 자고 있으니 조용히 말해.",
+    "imagePrompt": null,
+    "tags": [
+      "감정",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-drapeau",
+    "lemma": "drapeau",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "깃발, 국기",
+    "level": "A2",
+    "exampleFr": "Le drapeau français est bleu, blanc et rouge.",
+    "exampleKr": "프랑스 국기는 파랑, 하양, 빨강이다.",
+    "imagePrompt": "A colorful national flag waving in the wind against a bright blue sky, cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "문화",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-a2-émotionner",
+    "lemma": "émotionner",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "감동시키다",
+    "level": "A2",
+    "exampleFr": "Ce film m'a beaucoup émotionné.",
+    "exampleKr": "이 영화는 나를 많이 감동시켰다.",
+    "imagePrompt": null,
+    "tags": [
+      "감정",
+      "문화"
+    ]
+  },
+  {
+    "id": "fr-a2-emploi",
+    "lemma": "emploi",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "일자리, 고용",
+    "level": "A2",
+    "exampleFr": "Il cherche un emploi depuis trois mois.",
+    "exampleKr": "그는 세 달째 일자리를 찾고 있다.",
+    "imagePrompt": "A person reviewing their resume at a desk with a laptop, professional office setting, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "직장",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-a2-envoyer",
+    "lemma": "envoyer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "보내다, 전송하다",
+    "level": "A2",
+    "exampleFr": "J'ai envoyé un message à mon ami pour son anniversaire.",
+    "exampleKr": "나는 친구 생일에 메시지를 보냈다.",
+    "imagePrompt": null,
+    "tags": [
+      "소통",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-fâché",
+    "lemma": "fâché",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "화난",
+    "level": "A2",
+    "exampleFr": "Il était fâché parce qu'il a raté son train.",
+    "exampleKr": "그는 기차를 놓쳐서 화가 났다.",
+    "imagePrompt": null,
+    "tags": [
+      "감정",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-faim",
+    "lemma": "faim",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "배고픔, 허기",
+    "level": "A2",
+    "exampleFr": "J'ai très faim après cette longue promenade.",
+    "exampleKr": "긴 산책 후에 나는 매우 배가 고프다.",
+    "imagePrompt": null,
+    "tags": [
+      "감정",
+      "음식"
+    ]
+  },
+  {
+    "id": "fr-a2-panier",
+    "lemma": "panier",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "바구니",
+    "level": "A2",
+    "exampleFr": "Elle a mis les fruits dans un panier en osier.",
+    "exampleKr": "그녀는 과일을 버들 바구니에 담았다.",
+    "imagePrompt": "A wicker basket filled with fresh colorful fruits on a wooden table, natural soft light, photographic, no text, no watermark",
+    "tags": [
+      "음식",
+      "쇼핑"
+    ]
+  },
+  {
+    "id": "fr-a2-gagner",
+    "lemma": "gagner",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "이기다, 벌다",
+    "level": "A2",
+    "exampleFr": "Notre équipe a gagné le match de football hier.",
+    "exampleKr": "우리 팀이 어제 축구 경기에서 이겼다.",
+    "imagePrompt": null,
+    "tags": [
+      "스포츠",
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-a2-siège",
+    "lemma": "siège",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "좌석, 자리",
+    "level": "A2",
+    "exampleFr": "J'ai réservé un siège près de la fenêtre dans le train.",
+    "exampleKr": "나는 기차에서 창가 좌석을 예약했다.",
+    "imagePrompt": "A row of empty seats with a window view on a train, soft natural light, photographic, no text, no watermark",
+    "tags": [
+      "교통",
+      "여행"
+    ]
+  },
+  {
+    "id": "fr-a2-grimper",
+    "lemma": "grimper",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "오르다, 기어오르다",
+    "level": "A2",
+    "exampleFr": "Les enfants ont grimpé sur l'arbre dans le jardin.",
+    "exampleKr": "아이들이 정원의 나무에 기어올랐다.",
+    "imagePrompt": "A child climbing a large tree in a sunny garden, natural daylight, photographic, no text, no watermark",
+    "tags": [
+      "자연",
+      "어린이"
+    ]
+  },
+  {
+    "id": "fr-a2-habiller",
+    "lemma": "habiller",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "옷을 입히다, 옷을 입다",
+    "level": "A2",
+    "exampleFr": "Elle s'est habillée en rouge pour la fête.",
+    "exampleKr": "그녀는 파티를 위해 빨간 옷을 입었다.",
+    "imagePrompt": "A woman choosing an outfit from a wardrobe in a bright bedroom, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "의복",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-immeuble",
+    "lemma": "immeuble",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "아파트 건물, 빌딩",
+    "level": "A2",
+    "exampleFr": "Il habite au cinquième étage d'un grand immeuble.",
+    "exampleKr": "그는 큰 빌딩 5층에 살고 있다.",
+    "imagePrompt": "A modern residential apartment building on a city street with balconies and windows, natural daylight, photographic, no text, no watermark",
+    "tags": [
+      "집",
+      "도시"
+    ]
+  },
+  {
+    "id": "fr-a2-invitation",
+    "lemma": "invitation",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "초대, 초대장",
+    "level": "A2",
+    "exampleFr": "J'ai reçu une invitation pour la fête de Marie.",
+    "exampleKr": "나는 마리의 파티 초대장을 받았다.",
+    "imagePrompt": "A decorated party invitation card on a table with colorful envelopes, soft lighting, photographic, no text, no watermark",
+    "tags": [
+      "축하",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-a2-journal",
+    "lemma": "journal",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "신문, 일기",
+    "level": "A2",
+    "exampleFr": "Mon père lit le journal chaque matin au petit déjeuner.",
+    "exampleKr": "아버지는 매일 아침 식사 때 신문을 읽는다.",
+    "imagePrompt": "A person reading a newspaper at a kitchen table with a cup of coffee in the morning light, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "일상",
+      "정보"
+    ]
+  },
+  {
+    "id": "fr-a2-laisser",
+    "lemma": "laisser",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "두다, 남기다, 내버려 두다",
+    "level": "A2",
+    "exampleFr": "Elle a laissé un message sur la table avant de partir.",
+    "exampleKr": "그녀는 떠나기 전에 식탁 위에 쪽지를 남겨 두었다.",
+    "imagePrompt": null,
+    "tags": [
+      "일상",
+      "소통"
+    ]
+  },
+  {
+    "id": "fr-a2-laver",
+    "lemma": "laver",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "씻다, 세탁하다",
+    "level": "A2",
+    "exampleFr": "J'ai lavé la vaisselle après le dîner.",
+    "exampleKr": "나는 저녁 식사 후 설거지를 했다.",
+    "imagePrompt": "Hands washing dishes under running water in a kitchen sink, warm lighting, photographic, no text, no watermark",
+    "tags": [
+      "집",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-salle",
+    "lemma": "salle",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "방, 홀, 강당",
+    "level": "A2",
+    "exampleFr": "La réunion a eu lieu dans la grande salle du bâtiment.",
+    "exampleKr": "회의는 건물의 큰 홀에서 열렸다.",
+    "imagePrompt": "A large meeting room with chairs and a projector screen, professional indoor lighting, photographic, no text, no watermark",
+    "tags": [
+      "직장",
+      "건물"
+    ]
+  },
+  {
+    "id": "fr-a2-soirée",
+    "lemma": "soirée",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "저녁 모임, 파티",
+    "level": "A2",
+    "exampleFr": "Nous avons organisé une soirée chez nous pour fêter le nouvel an.",
+    "exampleKr": "우리는 새해를 축하하기 위해 집에서 파티를 열었다.",
+    "imagePrompt": "A lively indoor evening party with friends gathered around a table with drinks and snacks, warm atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "축하",
+      "사교"
+    ]
+  },
+  {
+    "id": "fr-a2-trottoir",
+    "lemma": "trottoir",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "인도, 보도",
+    "level": "A2",
+    "exampleFr": "Les enfants marchent sur le trottoir pour aller à l'école.",
+    "exampleKr": "아이들이 학교에 가기 위해 인도를 걷는다.",
+    "imagePrompt": "A wide city sidewalk with people walking past café terraces on a sunny day, natural daylight, photographic, no text, no watermark",
+    "tags": [
+      "도시",
+      "교통"
+    ]
+  },
+  {
+    "id": "fr-a2-méchant",
+    "lemma": "méchant",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "못된, 나쁜",
+    "level": "A2",
+    "exampleFr": "Le chien n'est pas méchant, il veut juste jouer.",
+    "exampleKr": "그 개는 나쁜 게 아니라 그냥 놀고 싶은 것이다.",
+    "imagePrompt": null,
+    "tags": [
+      "감정",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-monde",
+    "lemma": "monde",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "세상, 세계, 사람들",
+    "level": "A2",
+    "exampleFr": "Il y avait beaucoup de monde au concert hier soir.",
+    "exampleKr": "어젯밤 콘서트에는 사람이 많았다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-moyen",
+    "lemma": "moyen",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "방법, 수단",
+    "level": "A2",
+    "exampleFr": "Il a trouvé un moyen simple de résoudre le problème.",
+    "exampleKr": "그는 문제를 해결하는 간단한 방법을 찾았다.",
+    "imagePrompt": null,
+    "tags": [
+      "일상",
+      "사고"
+    ]
+  },
+  {
+    "id": "fr-a2-natation",
+    "lemma": "natation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "수영",
+    "level": "A2",
+    "exampleFr": "Je fais de la natation deux fois par semaine.",
+    "exampleKr": "나는 일주일에 두 번 수영을 한다.",
+    "imagePrompt": "A swimmer doing laps in a clear indoor swimming pool with blue water, bright overhead lighting, photographic, no text, no watermark",
+    "tags": [
+      "스포츠",
+      "건강"
+    ]
+  },
+  {
+    "id": "fr-a2-objet",
+    "lemma": "objet",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "물건, 사물",
+    "level": "A2",
+    "exampleFr": "J'ai perdu un objet précieux dans le train.",
+    "exampleKr": "나는 기차에서 소중한 물건을 잃어버렸다.",
+    "imagePrompt": "Various everyday objects laid out neatly on a white surface, clean minimal lighting, photographic, no text, no watermark",
+    "tags": [
+      "일상",
+      "사물"
+    ]
+  },
+  {
+    "id": "fr-a2-offrir",
+    "lemma": "offrir",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "선물하다, 제공하다",
+    "level": "A2",
+    "exampleFr": "Il lui a offert un bouquet de fleurs pour la Saint-Valentin.",
+    "exampleKr": "그는 발렌타인데이에 그녀에게 꽃다발을 선물했다.",
+    "imagePrompt": "A person holding a bouquet of colorful flowers as a gift, warm natural light, photographic, no text, no watermark",
+    "tags": [
+      "선물",
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-a2-omelette",
+    "lemma": "omelette",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "오믈렛",
+    "level": "A2",
+    "exampleFr": "J'ai préparé une omelette aux champignons pour le déjeuner.",
+    "exampleKr": "나는 점심으로 버섯 오믈렛을 만들었다.",
+    "imagePrompt": "A golden omelette with mushrooms on a white plate on a kitchen table, natural morning light, photographic, no text, no watermark",
+    "tags": [
+      "음식",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-pays",
+    "lemma": "pays",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "나라, 국가",
+    "level": "A2",
+    "exampleFr": "Elle vient d'un pays étranger et apprend le français.",
+    "exampleKr": "그녀는 외국 출신으로 프랑스어를 배우고 있다.",
+    "imagePrompt": "A world map with multiple countries highlighted in warm colors, soft ambient lighting, photographic, no text, no watermark",
+    "tags": [
+      "지리",
+      "여행"
+    ]
+  },
+  {
+    "id": "fr-a2-photo",
+    "lemma": "photo",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "사진",
+    "level": "A2",
+    "exampleFr": "J'ai pris une photo de la tour Eiffel pendant mes vacances.",
+    "exampleKr": "나는 휴가 중 에펠탑 사진을 찍었다.",
+    "imagePrompt": "A person taking a photo with a camera at a famous landmark, warm afternoon sunlight, photographic, no text, no watermark",
+    "tags": [
+      "여행",
+      "취미"
+    ]
+  },
+  {
+    "id": "fr-a2-pleuvoir",
+    "lemma": "pleuvoir",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "비가 오다",
+    "level": "A2",
+    "exampleFr": "Il a beaucoup plu hier, donc je suis resté à la maison.",
+    "exampleKr": "어제 비가 많이 와서 나는 집에 있었다.",
+    "imagePrompt": "Heavy rain falling on a city street with wet reflections on the pavement, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "날씨",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-profiter",
+    "lemma": "profiter",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "즐기다, 활용하다",
+    "level": "A2",
+    "exampleFr": "On a bien profité du beau temps ce week-end.",
+    "exampleKr": "우리는 이번 주말 좋은 날씨를 마음껏 즐겼다.",
+    "imagePrompt": null,
+    "tags": [
+      "여가",
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-a2-question",
+    "lemma": "question",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "질문",
+    "level": "A2",
+    "exampleFr": "L'élève a posé une question intéressante en classe.",
+    "exampleKr": "학생이 수업 시간에 흥미로운 질문을 했다.",
+    "imagePrompt": null,
+    "tags": [
+      "교육",
+      "소통"
+    ]
+  },
+  {
+    "id": "fr-a2-rencontrer",
+    "lemma": "rencontrer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "만나다, 우연히 만나다",
+    "level": "A2",
+    "exampleFr": "J'ai rencontré une ancienne amie par hasard au supermarché.",
+    "exampleKr": "나는 슈퍼마켓에서 우연히 옛 친구를 만났다.",
+    "imagePrompt": null,
+    "tags": [
+      "사교",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-chaussette",
+    "lemma": "chaussette",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "양말",
+    "level": "A2",
+    "exampleFr": "Il a mis une chaussette de chaque couleur par erreur ce matin.",
+    "exampleKr": "그는 오늘 아침 실수로 색이 다른 양말을 짝짝이로 신었다.",
+    "imagePrompt": "A pair of colorful woolen socks on a wooden floor beside a warm fireplace, cozy atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "의복",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-soif",
+    "lemma": "soif",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "갈증, 목마름",
+    "level": "A2",
+    "exampleFr": "Après le sport, j'avais très soif.",
+    "exampleKr": "운동 후에 나는 매우 목이 말랐다.",
+    "imagePrompt": null,
+    "tags": [
+      "감정",
+      "건강"
+    ]
+  },
+  {
+    "id": "fr-a2-téléphoner",
+    "lemma": "téléphoner",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "전화하다",
+    "level": "A2",
+    "exampleFr": "J'ai téléphoné à mes parents pour leur annoncer la bonne nouvelle.",
+    "exampleKr": "나는 부모님께 좋은 소식을 알리려고 전화했다.",
+    "imagePrompt": null,
+    "tags": [
+      "소통",
+      "가족"
+    ]
+  },
+  {
+    "id": "fr-a2-tomber",
+    "lemma": "tomber",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "넘어지다, 떨어지다",
+    "level": "A2",
+    "exampleFr": "Elle est tombée dans l'escalier mais elle n'a pas eu de mal.",
+    "exampleKr": "그녀는 계단에서 넘어졌지만 다치지 않았다.",
+    "imagePrompt": null,
+    "tags": [
+      "일상",
+      "건강"
+    ]
+  },
+  {
+    "id": "fr-a2-voisin",
+    "lemma": "voisin",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "이웃",
+    "level": "A2",
+    "exampleFr": "Mon voisin m'a aidé à déménager le week-end dernier.",
+    "exampleKr": "지난 주말에 이웃이 이사하는 것을 도와주었다.",
+    "imagePrompt": "Two neighbors chatting warmly at a garden fence on a sunny afternoon, natural daylight, photographic, no text, no watermark",
+    "tags": [
+      "사람",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-trajet",
+    "lemma": "trajet",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "이동, 노선, 가는 길",
+    "level": "A2",
+    "exampleFr": "Le trajet jusqu'au bureau dure environ trente minutes en métro.",
+    "exampleKr": "사무실까지 가는 길은 지하철로 약 30분 걸린다.",
+    "imagePrompt": "A commuter looking out the window of a moving metro train in the morning, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "교통",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-a2-reveil",
+    "lemma": "réveil",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "자명종; 기상",
+    "level": "A2",
+    "exampleFr": "Mon réveil sonne à sept heures tous les matins.",
+    "exampleKr": "내 자명종은 매일 아침 7시에 울린다.",
+    "imagePrompt": "A bedside alarm clock ringing in soft early morning light in a quiet bedroom, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "일상",
+      "집"
+    ]
+  }
+]

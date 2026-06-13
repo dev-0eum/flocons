@@ -13,9 +13,9 @@
 | 항목 | 값 |
 |---|---|
 | **현재 단계** | **Construction (post-v1)** — 누적 구조 + 수익화 Unit 구현 (v1 ✅ 완료 · Operations ⬜ 대기) |
-| **현재 상태** | ✅ **post-v1 Inception 승인됨** (2026-06-13, 0eum) — UoW-13~19 백로그 + ADR-011~016 확정. **권장 실행: Phase 1(UoW-13→14) 먼저.** |
-| **대기 중인 체크포인트** | (없음 — 다음 Unit의 체크포인트 A(설계)에서 승인) |
-| **다음 액션** | `/construction UoW-13-sentence-layer` (Phase 1 시작). 각 Unit은 체크포인트 A·B에서 승인. UoW-19는 Operations(EAS prebuild) 선행 |
+| **현재 상태** | 🔵 **UoW-13-sentence-layer 진행** — 체크포인트 A(설계) ⏸️ Awaiting Approval (2026-06-13) |
+| **대기 중인 체크포인트** | **UoW-13 체크포인트 A — 설계 승인** ([기록](construction/UoW-13-sentence-layer.md)). 승인 시 구현 착수 |
+| **다음 액션** | 사람이 UoW-13 설계 승인/수정요청. (이후 구현→테스트→리뷰→체크포인트 B) |
 
 > 원칙: **AI proposes, human disposes.** 모든 단계는 체크포인트에서 멈추고 사람 승인을 기다린다.
 
@@ -73,7 +73,7 @@
 
 | Unit ID | 제목 | 리드 | 상태 | 기록 | 마지막 갱신 | 승인자 |
 |---|---|---|---|---|---|---|
-| UoW-13-sentence-layer | 문장 층 (i+1 청크 문장) | back-dev (+front/content-gen) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
+| UoW-13-sentence-layer | 문장 층 (i+1 청크 문장) | back-dev (+front/content-gen) | 🔵 In Progress (체크포인트 A ⏸️) | [기록](construction/UoW-13-sentence-layer.md) | 2026-06-13 | — |
 | UoW-14-soft-gate-engine | soft-gate 엔진 (DAG·진척) | back-dev (+db-dev) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
 | UoW-15-grammar-cloze | 문법 cloze | back-dev (+content-gen/front) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |
 | UoW-16-apply-production | 응용 산출 + BYOK 피드백 | back-dev (+front/content-gen) | ⬜ Pending | (예정) | 2026-06-13 | 0eum(백로그) |

@@ -1,0 +1,956 @@
+[
+  {
+    "id": "fr-b2-argumentation",
+    "lemma": "argumentation",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "논증, 논거",
+    "level": "B2",
+    "exampleFr": "L'argumentation de ce philosophe repose sur des exemples historiques précis.",
+    "exampleKr": "이 철학자의 논증은 정확한 역사적 사례에 기반하고 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-hypothese",
+    "lemma": "hypothèse",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "가설",
+    "level": "B2",
+    "exampleFr": "Les chercheurs ont formulé plusieurs hypothèses pour expliquer ce phénomène inattendu.",
+    "exampleKr": "연구자들은 이 예상치 못한 현상을 설명하기 위해 여러 가설을 세웠다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "과학"
+    ]
+  },
+  {
+    "id": "fr-b2-paradoxe",
+    "lemma": "paradoxe",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "역설",
+    "level": "B2",
+    "exampleFr": "Il y a un paradoxe dans le fait de dépenser autant pour réduire les dépenses.",
+    "exampleKr": "지출을 줄이기 위해 그토록 많이 쓴다는 것에는 역설이 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-nuance",
+    "lemma": "nuance",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "뉘앙스, 미묘한 차이",
+    "level": "B2",
+    "exampleFr": "Apprendre les nuances d'une langue étrangère demande des années de pratique.",
+    "exampleKr": "외국어의 뉘앙스를 습득하는 데는 수년간의 연습이 필요하다.",
+    "imagePrompt": null,
+    "tags": [
+      "언어",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-biais",
+    "lemma": "biais",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "편향, 왜곡",
+    "level": "B2",
+    "exampleFr": "Il est difficile d'éviter tout biais cognitif quand on analyse ses propres résultats.",
+    "exampleKr": "자신의 결과를 분석할 때 모든 인지적 편향을 피하기는 어렵다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "심리"
+    ]
+  },
+  {
+    "id": "fr-b2-pertinence",
+    "lemma": "pertinence",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "타당성, 적절성",
+    "level": "B2",
+    "exampleFr": "On peut questionner la pertinence de cette mesure dans le contexte actuel.",
+    "exampleKr": "현재의 맥락에서 이 조치의 적절성에 의문을 제기할 수 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-ambiguite",
+    "lemma": "ambiguïté",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "모호함, 애매함",
+    "level": "B2",
+    "exampleFr": "L'ambiguïté du texte de loi a conduit à des interprétations contradictoires.",
+    "exampleKr": "법률 조문의 모호함이 서로 상충하는 해석들로 이어졌다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-resilience",
+    "lemma": "résilience",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "회복력",
+    "level": "B2",
+    "exampleFr": "La résilience de cet écosystème face aux perturbations climatiques est remarquable.",
+    "exampleKr": "기후 변화에 맞서는 이 생태계의 회복력은 놀랍다.",
+    "imagePrompt": "A green plant pushing through a crack in dry cracked earth, soft golden light, photographic, no text, no watermark",
+    "tags": [
+      "심리",
+      "환경"
+    ]
+  },
+  {
+    "id": "fr-b2-cohesion",
+    "lemma": "cohésion",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "결속, 화합",
+    "level": "B2",
+    "exampleFr": "Les activités sportives renforcent la cohésion sociale au sein des quartiers défavorisés.",
+    "exampleKr": "스포츠 활동은 불우한 지역 내에서 사회적 결속을 강화한다.",
+    "imagePrompt": "A group of people joining hands in a circle in a park on a sunny afternoon, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b2-cohérence",
+    "lemma": "cohérence",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "일관성",
+    "level": "B2",
+    "exampleFr": "La cohérence entre les décisions politiques et les objectifs environnementaux est indispensable.",
+    "exampleKr": "정책 결정과 환경 목표 간의 일관성은 필수적이다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-b2-hierarchie",
+    "lemma": "hiérarchie",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "위계, 계층 구조",
+    "level": "B2",
+    "exampleFr": "Certaines entreprises remplacent leur hiérarchie traditionnelle par une organisation horizontale.",
+    "exampleKr": "일부 기업들은 전통적인 위계 구조를 수평적 조직으로 대체하고 있다.",
+    "imagePrompt": "An organizational chart drawn on a whiteboard in a modern meeting room, soft office lighting, photographic, no text, no watermark",
+    "tags": [
+      "노동",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b2-remise-en-question",
+    "lemma": "remise en question",
+    "article": "la",
+    "gender": "f",
+    "pos": "phrase",
+    "krMeaning": "재검토, 의문 제기",
+    "level": "B2",
+    "exampleFr": "Cette crise oblige à une profonde remise en question des modèles économiques actuels.",
+    "exampleKr": "이 위기는 현재의 경제 모델을 근본적으로 재검토할 것을 요구한다.",
+    "imagePrompt": null,
+    "tags": [
+      "표현",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-porte-parole",
+    "lemma": "porte-parole",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "대변인",
+    "level": "B2",
+    "exampleFr": "Le porte-parole du ministère a refusé de commenter les informations publiées dans la presse.",
+    "exampleKr": "부처 대변인은 언론에 공개된 정보에 대한 논평을 거부했다.",
+    "imagePrompt": "A spokesperson standing at a podium giving a press statement in a formal hall, cameras focused on them, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "정치",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b2-interlocuteur",
+    "lemma": "interlocuteur",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "대화 상대자",
+    "level": "B2",
+    "exampleFr": "Pour aboutir à un accord, il faut identifier le bon interlocuteur au sein de l'organisation.",
+    "exampleKr": "합의에 이르려면 조직 내에서 올바른 대화 상대자를 찾아야 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-legitimite",
+    "lemma": "légitimité",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "정당성, 적법성",
+    "level": "B2",
+    "exampleFr": "La légitimité de cette décision a été remise en cause par plusieurs associations.",
+    "exampleKr": "이 결정의 정당성이 여러 단체에 의해 문제시되었다.",
+    "imagePrompt": null,
+    "tags": [
+      "정치",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-transparence",
+    "lemma": "transparence",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "투명성",
+    "level": "B2",
+    "exampleFr": "Les citoyens exigent davantage de transparence dans la gestion des fonds publics.",
+    "exampleKr": "시민들은 공금 운용에 있어 더 많은 투명성을 요구하고 있다.",
+    "imagePrompt": "Sunlight streaming through a clear glass building facade casting sharp geometric patterns on the floor, photographic, no text, no watermark",
+    "tags": [
+      "정치",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b2-decision",
+    "lemma": "décision",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "결정",
+    "level": "B2",
+    "exampleFr": "Toute décision prise à la hâte risque d'entraîner des conséquences regrettables.",
+    "exampleKr": "서둘러 내린 결정은 유감스러운 결과를 초래할 위험이 있다.",
+    "imagePrompt": "A person pausing at a fork in a forest path at dawn, misty atmosphere, cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-implication",
+    "lemma": "implication",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "함의, 관여",
+    "level": "B2",
+    "exampleFr": "Les implications éthiques de cette technologie méritent d'être examinées attentivement.",
+    "exampleKr": "이 기술의 윤리적 함의는 면밀히 검토될 가치가 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-ambivalence",
+    "lemma": "ambivalence",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "양가감정, 이중성",
+    "level": "B2",
+    "exampleFr": "Son ambivalence face à cette offre d'emploi traduit un conflit entre ambition et équilibre de vie.",
+    "exampleKr": "이 채용 제안에 대한 그의 양가감정은 야망과 삶의 균형 사이의 갈등을 나타낸다.",
+    "imagePrompt": null,
+    "tags": [
+      "심리",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-desillusion",
+    "lemma": "désillusion",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "환멸, 실망",
+    "level": "B2",
+    "exampleFr": "La désillusion des jeunes vis-à-vis du système politique est de plus en plus marquée.",
+    "exampleKr": "정치 체계에 대한 젊은 세대의 환멸이 점점 더 뚜렷해지고 있다.",
+    "imagePrompt": "A young person sitting alone on steps in front of a closed official building, overcast sky, melancholic mood, cinematic, photographic, no text, no watermark",
+    "tags": [
+      "심리",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-b2-mefiance",
+    "lemma": "méfiance",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "불신, 경계심",
+    "level": "B2",
+    "exampleFr": "La méfiance envers les médias traditionnels a favorisé la montée des réseaux alternatifs.",
+    "exampleKr": "전통 미디어에 대한 불신은 대안 미디어의 부상을 촉진했다.",
+    "imagePrompt": null,
+    "tags": [
+      "심리",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b2-equite",
+    "lemma": "équité",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "형평성, 공평",
+    "level": "B2",
+    "exampleFr": "La réforme vise à garantir une plus grande équité dans l'accès aux soins de santé.",
+    "exampleKr": "이 개혁은 의료 서비스 접근에 있어 더 큰 형평성을 보장하는 것을 목표로 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-b2-autonomie",
+    "lemma": "autonomie",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "자율성",
+    "level": "B2",
+    "exampleFr": "Les travailleurs réclament davantage d'autonomie dans l'organisation de leurs tâches quotidiennes.",
+    "exampleKr": "노동자들은 일상 업무 조직에 있어 더 많은 자율성을 요구하고 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "노동",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-mediation",
+    "lemma": "médiation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "중재, 조정",
+    "level": "B2",
+    "exampleFr": "La médiation a permis aux deux parties de trouver une solution sans passer par la justice.",
+    "exampleKr": "중재 덕분에 양측은 법원에 가지 않고도 해결책을 찾을 수 있었다.",
+    "imagePrompt": "A neutral mediator sitting between two parties at a round table in a calm room, warm lighting, photographic, no text, no watermark",
+    "tags": [
+      "사회",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-subvention",
+    "lemma": "subvention",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "보조금",
+    "level": "B2",
+    "exampleFr": "L'association culturelle a obtenu une subvention pour financer son nouveau festival.",
+    "exampleKr": "그 문화 협회는 새 축제를 위한 재정 지원으로 보조금을 받았다.",
+    "imagePrompt": "An arts administrator reviewing a grant approval letter at a desk in a small creative studio, soft daylight, photographic, no text, no watermark",
+    "tags": [
+      "경제",
+      "문화"
+    ]
+  },
+  {
+    "id": "fr-b2-endettement",
+    "lemma": "endettement",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "채무, 부채 증가",
+    "level": "B2",
+    "exampleFr": "L'endettement croissant des ménages préoccupe les économistes depuis plusieurs années.",
+    "exampleKr": "가계 부채의 지속적인 증가가 수년 전부터 경제학자들을 걱정시키고 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제"
+    ]
+  },
+  {
+    "id": "fr-b2-inversion",
+    "lemma": "inversion",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "역전, 반전",
+    "level": "B2",
+    "exampleFr": "On observe une inversion des tendances sur le marché immobilier des grandes villes.",
+    "exampleKr": "대도시 부동산 시장에서 트렌드의 역전 현상이 관찰되고 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-volte-face",
+    "lemma": "volte-face",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "갑작스러운 입장 전환",
+    "level": "B2",
+    "exampleFr": "Sa volte-face sur la question du nucléaire a surpris même ses propres partisans.",
+    "exampleKr": "핵 문제에 대한 그의 갑작스러운 입장 전환은 자신의 지지자들조차 놀라게 했다.",
+    "imagePrompt": null,
+    "tags": [
+      "정치",
+      "표현"
+    ]
+  },
+  {
+    "id": "fr-b2-intransigeant",
+    "lemma": "intransigeant",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "단호한, 타협하지 않는",
+    "level": "B2",
+    "exampleFr": "Il est resté intransigeant sur ses principes malgré les pressions extérieures.",
+    "exampleKr": "외부의 압력에도 불구하고 그는 자신의 원칙에 타협하지 않았다.",
+    "imagePrompt": null,
+    "tags": [
+      "성격",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-irrefutable",
+    "lemma": "irréfutable",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "반박할 수 없는",
+    "level": "B2",
+    "exampleFr": "Les analyses ADN ont fourni une preuve irréfutable de son innocence.",
+    "exampleKr": "DNA 분석은 그의 무죄에 대한 반박할 수 없는 증거를 제공했다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-subtil",
+    "lemma": "subtil",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "미묘한, 섬세한",
+    "level": "B2",
+    "exampleFr": "Sa méthode de négociation est subtile : elle sait écouter avant de répondre.",
+    "exampleKr": "그녀의 협상 방식은 미묘하다. 답하기 전에 먼저 귀를 기울일 줄 안다.",
+    "imagePrompt": null,
+    "tags": [
+      "성격",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-eloquent",
+    "lemma": "éloquent",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "웅변적인, 설득력 있는",
+    "level": "B2",
+    "exampleFr": "Son discours éloquent a convaincu même les opposants les plus farouches.",
+    "exampleKr": "그의 웅변적인 연설은 가장 완강한 반대파들마저 설득했다.",
+    "imagePrompt": "A confident speaker gesturing at a podium before a large attentive audience in a well-lit hall, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "언어",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-lucide",
+    "lemma": "lucide",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "냉철한, 명료한",
+    "level": "B2",
+    "exampleFr": "Il faut être lucide sur les limites de ce projet avant de le lancer officiellement.",
+    "exampleKr": "이 프로젝트를 공식적으로 출범시키기 전에 그 한계에 대해 냉철해야 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "성격",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-insolite",
+    "lemma": "insolite",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "이례적인, 기이한",
+    "level": "B2",
+    "exampleFr": "Ce café propose une expérience insolite : on peut y dîner dans l'obscurité totale.",
+    "exampleKr": "이 카페는 이례적인 경험을 제공한다. 완전한 어둠 속에서 저녁 식사를 할 수 있다.",
+    "imagePrompt": "Diners seated at tables in a completely darkened restaurant, only their silhouettes visible against a soft glow, cinematic, photographic, no text, no watermark",
+    "tags": [
+      "문화",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-efficience",
+    "lemma": "efficience",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "효율성",
+    "level": "B2",
+    "exampleFr": "L'efficience des nouvelles machines a permis de réduire les délais de production.",
+    "exampleKr": "새 기계들의 효율성 덕분에 생산 기간을 줄일 수 있었다.",
+    "imagePrompt": "A sleek modern factory floor with automated assembly line robots working precisely, bright industrial lighting, photographic, no text, no watermark",
+    "tags": [
+      "경제",
+      "노동"
+    ]
+  },
+  {
+    "id": "fr-b2-alienation",
+    "lemma": "aliénation",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "소외, 이질감",
+    "level": "B2",
+    "exampleFr": "L'aliénation au travail peut conduire à un profond sentiment d'inutilité.",
+    "exampleKr": "직장 내 소외는 깊은 무력감으로 이어질 수 있다.",
+    "imagePrompt": "A lone office worker staring blankly at a computer screen in an empty open-plan office at dusk, cold blue light, cinematic, photographic, no text, no watermark",
+    "tags": [
+      "심리",
+      "노동"
+    ]
+  },
+  {
+    "id": "fr-b2-stigmatisation",
+    "lemma": "stigmatisation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "낙인찍기",
+    "level": "B2",
+    "exampleFr": "La stigmatisation des personnes sans emploi peut freiner leur réinsertion professionnelle.",
+    "exampleKr": "실업자에 대한 낙인찍기는 그들의 직업 복귀를 방해할 수 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "심리"
+    ]
+  },
+  {
+    "id": "fr-b2-apprehension",
+    "lemma": "appréhension",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "불안감, 우려",
+    "level": "B2",
+    "exampleFr": "Elle abordait cet entretien avec une certaine appréhension mais beaucoup de préparation.",
+    "exampleKr": "그녀는 약간의 불안감을 품고 있었지만 충분한 준비를 갖춰 그 면접에 임했다.",
+    "imagePrompt": null,
+    "tags": [
+      "심리",
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b2-engouement",
+    "lemma": "engouement",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "열풍, 유행",
+    "level": "B2",
+    "exampleFr": "L'engouement pour les podcasts ne cesse de croître depuis quelques années.",
+    "exampleKr": "팟캐스트에 대한 열풍은 몇 년째 계속해서 커지고 있다.",
+    "imagePrompt": "A person on a city bus absorbed in listening through large headphones, relaxed and focused expression, warm light, photographic, no text, no watermark",
+    "tags": [
+      "문화",
+      "미디어"
+    ]
+  },
+  {
+    "id": "fr-b2-frugalite",
+    "lemma": "frugalité",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "절약, 검소함",
+    "level": "B2",
+    "exampleFr": "La frugalité est redevenue une vertu aux yeux de nombreux jeunes adultes soucieux de l'environnement.",
+    "exampleKr": "검소함은 환경을 의식하는 많은 젊은 어른들에게 다시 미덕이 되었다.",
+    "imagePrompt": null,
+    "tags": [
+      "가치관",
+      "경제"
+    ]
+  },
+  {
+    "id": "fr-b2-pragmatisme",
+    "lemma": "pragmatisme",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "실용주의",
+    "level": "B2",
+    "exampleFr": "Son pragmatisme lui permet de trouver des solutions concrètes là où d'autres restent bloqués.",
+    "exampleKr": "그의 실용주의는 다른 이들이 막혀 있는 곳에서 구체적인 해결책을 찾도록 해 준다.",
+    "imagePrompt": null,
+    "tags": [
+      "성격",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-discerner",
+    "lemma": "discerner",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "분별하다, 식별하다",
+    "level": "B2",
+    "exampleFr": "Il est parfois difficile de discerner la vérité dans un flot d'informations contradictoires.",
+    "exampleKr": "모순된 정보의 홍수 속에서 진실을 분별하기가 때로는 어렵다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-mediter",
+    "lemma": "méditer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "명상하다, 깊이 생각하다",
+    "level": "B2",
+    "exampleFr": "Il méditait sur les conséquences possibles de sa décision depuis plusieurs jours.",
+    "exampleKr": "그는 며칠째 자신의 결정이 가져올 수 있는 결과를 깊이 생각하고 있었다.",
+    "imagePrompt": "A person sitting cross-legged on a wooden floor by a large window, eyes closed in meditation, early morning light, photographic, no text, no watermark",
+    "tags": [
+      "심리",
+      "일상"
+    ]
+  },
+  {
+    "id": "fr-b2-palier",
+    "lemma": "pallier",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "(결함을) 보완하다, 완화하다",
+    "level": "B2",
+    "exampleFr": "Ces mesures d'urgence visent à pallier les lacunes du système de santé.",
+    "exampleKr": "이 긴급 조치들은 의료 시스템의 허점을 보완하기 위한 것이다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b2-attenuer",
+    "lemma": "atténuer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "완화하다, 줄이다",
+    "level": "B2",
+    "exampleFr": "Cette nouvelle politique devrait atténuer les effets négatifs de la réforme sur les plus fragiles.",
+    "exampleKr": "이 새 정책은 가장 취약한 계층에 대한 개혁의 부정적 효과를 완화해야 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-transcender",
+    "lemma": "transcender",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "초월하다",
+    "level": "B2",
+    "exampleFr": "Cette œuvre transcende les frontières culturelles pour toucher un public universel.",
+    "exampleKr": "이 작품은 문화적 경계를 초월하여 보편적인 관객에게 다가간다.",
+    "imagePrompt": null,
+    "tags": [
+      "문화",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-perseverer",
+    "lemma": "persévérer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "꾸준히 하다, 인내하다",
+    "level": "B2",
+    "exampleFr": "Pour maîtriser une langue étrangère, il faut persévérer même quand les progrès semblent lents.",
+    "exampleKr": "외국어를 마스터하려면 발전이 더딘 것처럼 느껴질 때도 꾸준히 해야 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "성격",
+      "언어"
+    ]
+  },
+  {
+    "id": "fr-b2-anticiper",
+    "lemma": "anticiper",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "예측하다, 선제적으로 대비하다",
+    "level": "B2",
+    "exampleFr": "La direction a su anticiper les changements du marché et adapter sa stratégie en conséquence.",
+    "exampleKr": "경영진은 시장 변화를 예측하고 그에 따라 전략을 조정할 줄 알았다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-peser",
+    "lemma": "peser",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "(영향을) 미치다, 고려하다, 무게를 달다",
+    "level": "B2",
+    "exampleFr": "Il faut peser le pour et le contre avant de prendre une décision aussi importante.",
+    "exampleKr": "이렇게 중요한 결정을 내리기 전에 장단점을 잘 따져 봐야 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "논증",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-paradoxalement",
+    "lemma": "paradoxalement",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "역설적으로",
+    "level": "B2",
+    "exampleFr": "Paradoxalement, cette politique d'austérité a conduit à une augmentation des dépenses publiques.",
+    "exampleKr": "역설적으로, 이 긴축 정책은 오히려 공공 지출 증가로 이어졌다.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-reciproquement",
+    "lemma": "réciproquement",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "상호적으로, 반대로도",
+    "level": "B2",
+    "exampleFr": "Chaque partenaire aide l'autre et, réciproquement, bénéficie de son soutien.",
+    "exampleKr": "각 파트너는 상대방을 돕고, 상호적으로 그 지원의 혜택을 받는다.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-incontestablement",
+    "lemma": "incontestablement",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "의심할 여지 없이",
+    "level": "B2",
+    "exampleFr": "Cette réforme a incontestablement amélioré les conditions de vie dans les zones rurales.",
+    "exampleKr": "이 개혁은 의심할 여지 없이 농촌 지역의 생활 수준을 향상시켰다.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어",
+      "논증"
+    ]
+  },
+  {
+    "id": "fr-b2-simultanement",
+    "lemma": "simultanément",
+    "article": null,
+    "gender": null,
+    "pos": "adv",
+    "krMeaning": "동시에",
+    "level": "B2",
+    "exampleFr": "La crise a touché simultanément plusieurs secteurs de l'économie nationale.",
+    "exampleKr": "위기는 국내 경제의 여러 분야에 동시에 타격을 입혔다.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어",
+      "추상"
+    ]
+  },
+  {
+    "id": "fr-b2-a-mesure-que",
+    "lemma": "à mesure que",
+    "article": null,
+    "gender": null,
+    "pos": "conj",
+    "krMeaning": "~함에 따라",
+    "level": "B2",
+    "exampleFr": "À mesure que la technologie progresse, de nouveaux défis éthiques émergent.",
+    "exampleKr": "기술이 발전함에 따라 새로운 윤리적 도전들이 등장한다.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어",
+      "문법"
+    ]
+  },
+  {
+    "id": "fr-b2-de-sorte-que",
+    "lemma": "de sorte que",
+    "article": null,
+    "gender": null,
+    "pos": "conj",
+    "krMeaning": "그 결과 ~하도록",
+    "level": "B2",
+    "exampleFr": "Il a préparé le dossier avec soin, de sorte que la réunion s'est déroulée sans accroc.",
+    "exampleKr": "그는 서류를 꼼꼼히 준비했고, 그 결과 회의가 아무 차질 없이 진행되었다.",
+    "imagePrompt": null,
+    "tags": [
+      "연결어",
+      "문법"
+    ]
+  },
+  {
+    "id": "fr-b2-faire-preuve-de",
+    "lemma": "faire preuve de",
+    "article": null,
+    "gender": null,
+    "pos": "phrase",
+    "krMeaning": "~을 보여 주다, ~을 발휘하다",
+    "level": "B2",
+    "exampleFr": "Dans cette période difficile, les soignants ont fait preuve d'un courage admirable.",
+    "exampleKr": "이 힘든 시기에 의료진은 감탄스러운 용기를 보여 주었다.",
+    "imagePrompt": null,
+    "tags": [
+      "표현",
+      "성격"
+    ]
+  },
+  {
+    "id": "fr-b2-mener-a-bien",
+    "lemma": "mener à bien",
+    "article": null,
+    "gender": null,
+    "pos": "phrase",
+    "krMeaning": "성공적으로 완수하다",
+    "level": "B2",
+    "exampleFr": "Malgré les obstacles, l'équipe a réussi à mener à bien ce projet ambitieux.",
+    "exampleKr": "장애물에도 불구하고 팀은 이 야심 찬 프로젝트를 성공적으로 완수해 냈다.",
+    "imagePrompt": null,
+    "tags": [
+      "표현",
+      "노동"
+    ]
+  },
+  {
+    "id": "fr-b2-consensus",
+    "lemma": "consensus",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "합의, 의견 일치",
+    "level": "B2",
+    "exampleFr": "Après de longues discussions, les membres sont enfin parvenus à un consensus.",
+    "exampleKr": "오랜 논의 끝에 구성원들은 마침내 합의에 이르렀다.",
+    "imagePrompt": "A group of people around a meeting table nodding in agreement, warm professional lighting, photographic, no text, no watermark",
+    "tags": [
+      "논증",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-b2-scepticisme",
+    "lemma": "scepticisme",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "회의(적 태도)",
+    "level": "B2",
+    "exampleFr": "Il a accueilli cette promesse avec un certain scepticisme.",
+    "exampleKr": "그는 그 약속을 어느 정도 회의적인 시선으로 받아들였다.",
+    "imagePrompt": "A person frowning skeptically while reading a document at a desk, dim contemplative lighting, photographic, no text, no watermark",
+    "tags": [
+      "논증",
+      "심리"
+    ]
+  },
+  {
+    "id": "fr-b2-indignation",
+    "lemma": "indignation",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "분개, 공분",
+    "level": "B2",
+    "exampleFr": "La hausse soudaine des loyers a suscité une vive indignation dans tout le quartier.",
+    "exampleKr": "갑작스러운 임대료 인상이 동네 전체에 거센 공분을 불러일으켰다.",
+    "imagePrompt": "A crowd protesting with raised fists in a city square at dusk, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "감정",
+      "사회"
+    ]
+  }
+]

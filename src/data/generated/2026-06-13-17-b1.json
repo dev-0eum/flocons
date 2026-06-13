@@ -1,0 +1,1015 @@
+[
+  {
+    "id": "fr-b1-acces",
+    "lemma": "accès",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "접근, 접근권; 입구",
+    "level": "B1",
+    "exampleFr": "L'accès à internet est devenu indispensable pour travailler depuis chez soi.",
+    "exampleKr": "인터넷 접근은 집에서 일하기 위해 필수적인 것이 되었다.",
+    "imagePrompt": null,
+    "tags": [
+      "기술",
+      "생활",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-accompagner",
+    "lemma": "accompagner",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "동반하다, 함께하다",
+    "level": "B1",
+    "exampleFr": "Le gouvernement doit accompagner les entreprises dans leur transition écologique.",
+    "exampleKr": "정부는 기업들의 생태적 전환을 지원해야 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "정치",
+      "환경",
+      "경제"
+    ]
+  },
+  {
+    "id": "fr-b1-accord",
+    "lemma": "accord",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "합의, 협정; 동의",
+    "level": "B1",
+    "exampleFr": "Les deux pays ont finalement signé un accord de coopération économique.",
+    "exampleKr": "두 나라는 마침내 경제 협력 협정에 서명했다.",
+    "imagePrompt": "Two diplomats shaking hands at a formal signing ceremony, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "정치",
+      "경제",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-actuel",
+    "lemma": "actuel",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "현재의, 현행의",
+    "level": "B1",
+    "exampleFr": "La situation actuelle du marché du travail préoccupe de nombreux économistes.",
+    "exampleKr": "현재 노동 시장 상황이 많은 경제학자들을 걱정시키고 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "사회",
+      "직업"
+    ]
+  },
+  {
+    "id": "fr-b1-adaptation",
+    "lemma": "adaptation",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "적응, 변환",
+    "level": "B1",
+    "exampleFr": "L'adaptation au changement climatique est désormais une priorité pour les villes.",
+    "exampleKr": "기후 변화에 대한 적응은 이제 도시들의 우선 과제가 되었다.",
+    "imagePrompt": null,
+    "tags": [
+      "환경",
+      "도시",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-affaiblir",
+    "lemma": "affaiblir",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "약화시키다",
+    "level": "B1",
+    "exampleFr": "La crise économique a considérablement affaibli le pouvoir d'achat des ménages modestes.",
+    "exampleKr": "경제 위기는 저소득 가정의 구매력을 크게 약화시켰다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "사회",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-b1-appel",
+    "lemma": "appel",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "호소, 요청; 전화",
+    "level": "B1",
+    "exampleFr": "L'association a lancé un appel aux dons pour aider les populations sinistrées.",
+    "exampleKr": "그 단체는 피해 주민들을 돕기 위해 기부 호소를 시작했다.",
+    "imagePrompt": "A donation collection box at a community event with people contributing, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "사회",
+      "관계",
+      "문화"
+    ]
+  },
+  {
+    "id": "fr-b1-atout",
+    "lemma": "atout",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "강점, 장점",
+    "level": "B1",
+    "exampleFr": "Parler plusieurs langues est un atout majeur sur le marché du travail international.",
+    "exampleKr": "여러 언어를 구사하는 것은 국제 노동 시장에서 큰 강점이다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "교육",
+      "성장"
+    ]
+  },
+  {
+    "id": "fr-b1-autonome",
+    "lemma": "autonome",
+    "article": null,
+    "gender": null,
+    "pos": "adj",
+    "krMeaning": "자율적인, 독립적인",
+    "level": "B1",
+    "exampleFr": "Les élèves doivent apprendre à être autonomes dans leur travail personnel.",
+    "exampleKr": "학생들은 개인 학습에서 자율적으로 행동하는 법을 배워야 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "교육",
+      "성장",
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-benefice",
+    "lemma": "bénéfice",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "이익, 혜택",
+    "level": "B1",
+    "exampleFr": "Les bénéfices de l'activité physique régulière sur la santé sont prouvés scientifiquement.",
+    "exampleKr": "규칙적인 신체 활동이 건강에 미치는 혜택은 과학적으로 입증되어 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "건강",
+      "생활",
+      "경제"
+    ]
+  },
+  {
+    "id": "fr-b1-cadre",
+    "lemma": "cadre",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "틀, 환경; 간부, 관리자",
+    "level": "B1",
+    "exampleFr": "Dans le cadre de ce projet, chacun aura des responsabilités bien définies.",
+    "exampleKr": "이 프로젝트의 틀 안에서 각자는 명확히 정의된 책임을 지게 될 것이다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "업무",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-capacite",
+    "lemma": "capacité",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "능력, 역량; 용량",
+    "level": "B1",
+    "exampleFr": "Il a la capacité de s'adapter rapidement à de nouvelles situations professionnelles.",
+    "exampleKr": "그는 새로운 직업적 상황에 빠르게 적응할 능력을 갖추고 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "성장",
+      "교육"
+    ]
+  },
+  {
+    "id": "fr-b1-citoyennete",
+    "lemma": "citoyenneté",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "시민권, 시민 정신",
+    "level": "B1",
+    "exampleFr": "L'école joue un rôle fondamental dans l'apprentissage de la citoyenneté.",
+    "exampleKr": "학교는 시민 정신 학습에서 근본적인 역할을 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "교육",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-b1-competition",
+    "lemma": "compétition",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "경쟁",
+    "level": "B1",
+    "exampleFr": "La compétition entre les entreprises stimule l'innovation mais peut aussi générer des inégalités.",
+    "exampleKr": "기업 간 경쟁은 혁신을 촉진하지만 불평등을 낳을 수도 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "사회",
+      "업무"
+    ]
+  },
+  {
+    "id": "fr-b1-condition",
+    "lemma": "condition",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "조건, 상황",
+    "level": "B1",
+    "exampleFr": "Les conditions de travail se sont améliorées grâce aux négociations syndicales.",
+    "exampleKr": "노동 조건은 노조 협상 덕분에 개선되었다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "사회",
+      "경제"
+    ]
+  },
+  {
+    "id": "fr-b1-conscience",
+    "lemma": "conscience",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "의식, 자각; 양심",
+    "level": "B1",
+    "exampleFr": "Avoir conscience de ses propres limites est une qualité essentielle chez un bon dirigeant.",
+    "exampleKr": "자신의 한계를 의식하는 것은 훌륭한 지도자에게 필수적인 자질이다.",
+    "imagePrompt": null,
+    "tags": [
+      "감정",
+      "사회",
+      "성장"
+    ]
+  },
+  {
+    "id": "fr-b1-conviction",
+    "lemma": "conviction",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "신념, 확신",
+    "level": "B1",
+    "exampleFr": "Elle défend ses convictions politiques avec beaucoup de courage et de détermination.",
+    "exampleKr": "그녀는 많은 용기와 결단력으로 자신의 정치적 신념을 옹호한다.",
+    "imagePrompt": null,
+    "tags": [
+      "정치",
+      "감정",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-cooperer",
+    "lemma": "coopérer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "협력하다, 협조하다",
+    "level": "B1",
+    "exampleFr": "Les pays membres ont accepté de coopérer pour résoudre la crise humanitaire.",
+    "exampleKr": "회원국들은 인도주의적 위기를 해결하기 위해 협력하기로 합의했다.",
+    "imagePrompt": null,
+    "tags": [
+      "정치",
+      "사회",
+      "관계"
+    ]
+  },
+  {
+    "id": "fr-b1-courant",
+    "lemma": "courant",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "흐름, 경향; 현재의",
+    "level": "B1",
+    "exampleFr": "Un courant d'opinion favorable aux énergies renouvelables se développe dans la société.",
+    "exampleKr": "재생 에너지에 우호적인 여론의 흐름이 사회에서 발전하고 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "환경",
+      "미디어"
+    ]
+  },
+  {
+    "id": "fr-b1-crise",
+    "lemma": "crise",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "위기",
+    "level": "B1",
+    "exampleFr": "La crise du logement touche de plus en plus de familles dans les grandes villes.",
+    "exampleKr": "주거 위기가 대도시에서 점점 더 많은 가족들에게 영향을 미치고 있다.",
+    "imagePrompt": "A row of worn-down apartment buildings in an urban area, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "사회",
+      "경제",
+      "도시"
+    ]
+  },
+  {
+    "id": "fr-b1-demontrer",
+    "lemma": "démontrer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "입증하다, 증명하다",
+    "level": "B1",
+    "exampleFr": "Cette étude démontre que la lecture régulière améliore les capacités cognitives.",
+    "exampleKr": "이 연구는 규칙적인 독서가 인지 능력을 향상시킨다는 것을 입증한다.",
+    "imagePrompt": null,
+    "tags": [
+      "교육",
+      "사회",
+      "기술"
+    ]
+  },
+  {
+    "id": "fr-b1-dependance",
+    "lemma": "dépendance",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "의존, 중독",
+    "level": "B1",
+    "exampleFr": "La dépendance aux écrans est un phénomène préoccupant chez les jeunes générations.",
+    "exampleKr": "화면 중독은 젊은 세대에서 우려되는 현상이다.",
+    "imagePrompt": "A teenager sitting alone in a dark room illuminated only by a phone screen, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "기술",
+      "사회",
+      "건강"
+    ]
+  },
+  {
+    "id": "fr-b1-desertion",
+    "lemma": "désertion",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "이탈, 탈주; 공동화",
+    "level": "B1",
+    "exampleFr": "La désertion médicale dans les zones rurales aggrave les inégalités d'accès aux soins.",
+    "exampleKr": "농촌 지역의 의료 공동화는 의료 접근 불평등을 악화시킨다.",
+    "imagePrompt": "An abandoned rural clinic building with overgrown weeds around the entrance, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "건강",
+      "사회",
+      "지역"
+    ]
+  },
+  {
+    "id": "fr-b1-determination",
+    "lemma": "détermination",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "결단력, 의지",
+    "level": "B1",
+    "exampleFr": "Sa détermination à réussir lui a permis de surmonter de nombreux obstacles.",
+    "exampleKr": "성공하겠다는 그녀의 결단력이 많은 장애물을 극복할 수 있게 해주었다.",
+    "imagePrompt": null,
+    "tags": [
+      "감정",
+      "성장",
+      "직업"
+    ]
+  },
+  {
+    "id": "fr-b1-discrimination",
+    "lemma": "discrimination",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "차별",
+    "level": "B1",
+    "exampleFr": "La loi interdit toute forme de discrimination fondée sur l'origine ou le genre.",
+    "exampleKr": "법은 출신이나 성별에 근거한 모든 형태의 차별을 금지한다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "법",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-b1-efficacite",
+    "lemma": "efficacité",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "효율성, 효과",
+    "level": "B1",
+    "exampleFr": "L'efficacité de ce traitement médical a été confirmée par plusieurs essais cliniques.",
+    "exampleKr": "이 의학적 치료의 효과는 여러 임상 시험에 의해 확인되었다.",
+    "imagePrompt": null,
+    "tags": [
+      "건강",
+      "기술",
+      "교육"
+    ]
+  },
+  {
+    "id": "fr-b1-egalite",
+    "lemma": "égalité",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "평등",
+    "level": "B1",
+    "exampleFr": "L'égalité des chances est un idéal que la société doit continuellement s'efforcer d'atteindre.",
+    "exampleKr": "기회의 평등은 사회가 지속적으로 달성하려 노력해야 할 이상이다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "정치",
+      "교육"
+    ]
+  },
+  {
+    "id": "fr-b1-evolution",
+    "lemma": "évolution",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "진화, 변화, 발전",
+    "level": "B1",
+    "exampleFr": "L'évolution rapide des technologies oblige les travailleurs à se former en permanence.",
+    "exampleKr": "기술의 빠른 진화는 근로자들이 지속적으로 교육을 받도록 강요한다.",
+    "imagePrompt": null,
+    "tags": [
+      "기술",
+      "직업",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-financement",
+    "lemma": "financement",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "자금 조달, 재원",
+    "level": "B1",
+    "exampleFr": "Le financement des retraites est un enjeu central du débat politique actuel.",
+    "exampleKr": "연금 재원 조달은 현재 정치 토론의 핵심 과제이다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "정치",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-flexibilite",
+    "lemma": "flexibilité",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "유연성",
+    "level": "B1",
+    "exampleFr": "La flexibilité des horaires de travail est très appréciée par les jeunes professionnels.",
+    "exampleKr": "근무 시간의 유연성은 젊은 전문직 종사자들에게 매우 호평받고 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "생활",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-immigration",
+    "lemma": "immigration",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "이민, 이주",
+    "level": "B1",
+    "exampleFr": "L'immigration contribue à l'économie du pays en apportant de nouvelles compétences.",
+    "exampleKr": "이민은 새로운 역량을 가져옴으로써 국가 경제에 기여한다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "정치",
+      "문화"
+    ]
+  },
+  {
+    "id": "fr-b1-initiative",
+    "lemma": "initiative",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "주도권, 솔선; 이니셔티브",
+    "level": "B1",
+    "exampleFr": "Elle a pris l'initiative d'organiser une réunion pour résoudre le problème rapidement.",
+    "exampleKr": "그녀는 문제를 빨리 해결하기 위해 솔선하여 회의를 조직했다.",
+    "imagePrompt": null,
+    "tags": [
+      "업무",
+      "직업",
+      "성장"
+    ]
+  },
+  {
+    "id": "fr-b1-insister",
+    "lemma": "insister",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "강조하다, 고집하다",
+    "level": "B1",
+    "exampleFr": "Le médecin a insisté sur l'importance de dormir au moins huit heures par nuit.",
+    "exampleKr": "의사는 하루 최소 8시간 수면의 중요성을 강조했다.",
+    "imagePrompt": null,
+    "tags": [
+      "건강",
+      "생활",
+      "소통"
+    ]
+  },
+  {
+    "id": "fr-b1-interet",
+    "lemma": "intérêt",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "관심, 이익; 이자",
+    "level": "B1",
+    "exampleFr": "Il est dans l'intérêt de tous de trouver une solution durable à ce problème.",
+    "exampleKr": "이 문제에 대한 지속 가능한 해결책을 찾는 것이 모두의 이익에 부합한다.",
+    "imagePrompt": null,
+    "tags": [
+      "사회",
+      "경제",
+      "토론"
+    ]
+  },
+  {
+    "id": "fr-b1-justifier",
+    "lemma": "justifier",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "정당화하다, 해명하다",
+    "level": "B1",
+    "exampleFr": "Il doit justifier ses absences répétées auprès de son supérieur hiérarchique.",
+    "exampleKr": "그는 직속 상관에게 반복적인 결근을 해명해야 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "업무",
+      "소통"
+    ]
+  },
+  {
+    "id": "fr-b1-localisation",
+    "lemma": "localisation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "위치, 현지화",
+    "level": "B1",
+    "exampleFr": "La localisation de l'entreprise en centre-ville facilite l'accès pour les clients.",
+    "exampleKr": "도심에 위치한 회사는 고객들의 접근을 편리하게 한다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "도시",
+      "업무"
+    ]
+  },
+  {
+    "id": "fr-b1-logement",
+    "lemma": "logement",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "주거, 주택",
+    "level": "B1",
+    "exampleFr": "Le coût du logement dans les grandes villes est devenu un obstacle pour les jeunes actifs.",
+    "exampleKr": "대도시의 주거 비용이 젊은 직장인들에게 장벽이 되고 있다.",
+    "imagePrompt": "A row of city apartment buildings at dusk with lit windows, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "경제",
+      "도시",
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-modele",
+    "lemma": "modèle",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "모델, 모범; 유형",
+    "level": "B1",
+    "exampleFr": "Le modèle économique de cette start-up a séduit de nombreux investisseurs.",
+    "exampleKr": "이 스타트업의 경제 모델은 많은 투자자들을 매료시켰다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "업무",
+      "기술"
+    ]
+  },
+  {
+    "id": "fr-b1-motivation",
+    "lemma": "motivation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "동기, 의욕",
+    "level": "B1",
+    "exampleFr": "La motivation des employés est un facteur clé pour la performance d'une entreprise.",
+    "exampleKr": "직원들의 동기 부여는 기업 성과를 위한 핵심 요소이다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "업무",
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-negociation",
+    "lemma": "négociation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "협상, 교섭",
+    "level": "B1",
+    "exampleFr": "Les négociations salariales entre syndicats et direction ont abouti à un accord.",
+    "exampleKr": "노조와 경영진 간의 임금 협상이 합의에 이르렀다.",
+    "imagePrompt": "Business representatives seated across a table in a formal meeting room, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "직업",
+      "경제",
+      "정치"
+    ]
+  },
+  {
+    "id": "fr-b1-opposition",
+    "lemma": "opposition",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "반대, 야당; 대립",
+    "level": "B1",
+    "exampleFr": "L'opposition a vivement critiqué les nouvelles mesures fiscales proposées par le gouvernement.",
+    "exampleKr": "야당은 정부가 제안한 새로운 세금 조치를 강하게 비판했다.",
+    "imagePrompt": null,
+    "tags": [
+      "정치",
+      "사회",
+      "토론"
+    ]
+  },
+  {
+    "id": "fr-b1-parcours",
+    "lemma": "parcours",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "경력, 여정; 코스",
+    "level": "B1",
+    "exampleFr": "Son parcours professionnel atypique lui a permis d'acquérir des compétences variées.",
+    "exampleKr": "그의 비정형적인 경력 여정은 다양한 역량을 쌓게 해주었다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "성장",
+      "교육"
+    ]
+  },
+  {
+    "id": "fr-b1-participation",
+    "lemma": "participation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "참여, 참가",
+    "level": "B1",
+    "exampleFr": "La participation citoyenne aux élections est essentielle dans une démocratie.",
+    "exampleKr": "선거에 대한 시민 참여는 민주주의에서 필수적이다.",
+    "imagePrompt": "People standing in a long queue at a polling station on election day, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "정치",
+      "사회",
+      "문화"
+    ]
+  },
+  {
+    "id": "fr-b1-perte",
+    "lemma": "perte",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "손실, 상실",
+    "level": "B1",
+    "exampleFr": "La perte d'emploi peut entraîner des difficultés psychologiques importantes.",
+    "exampleKr": "실직은 심각한 심리적 어려움을 초래할 수 있다.",
+    "imagePrompt": null,
+    "tags": [
+      "직업",
+      "경제",
+      "감정"
+    ]
+  },
+  {
+    "id": "fr-b1-position",
+    "lemma": "position",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "입장, 위치; 자세",
+    "level": "B1",
+    "exampleFr": "Le gouvernement a clarifié sa position sur la réforme des retraites lors d'une conférence.",
+    "exampleKr": "정부는 기자 회견에서 연금 개혁에 대한 입장을 명확히 했다.",
+    "imagePrompt": null,
+    "tags": [
+      "정치",
+      "사회",
+      "토론"
+    ]
+  },
+  {
+    "id": "fr-b1-prevenir",
+    "lemma": "prévenir",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "예방하다; 통지하다",
+    "level": "B1",
+    "exampleFr": "Il vaut mieux prévenir les maladies que les traiter une fois qu'elles apparaissent.",
+    "exampleKr": "질병이 발생한 후에 치료하는 것보다 예방하는 것이 더 낫다.",
+    "imagePrompt": null,
+    "tags": [
+      "건강",
+      "사회",
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-promotion",
+    "lemma": "promotion",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "승진; 홍보, 판촉",
+    "level": "B1",
+    "exampleFr": "Elle a obtenu une promotion après cinq ans de travail assidu dans l'entreprise.",
+    "exampleKr": "그녀는 회사에서 5년간의 성실한 근무 끝에 승진했다.",
+    "imagePrompt": "An employee receiving a handshake and a congratulations from a manager in a bright office, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "직업",
+      "업무",
+      "성장"
+    ]
+  },
+  {
+    "id": "fr-b1-reclamation",
+    "lemma": "réclamation",
+    "article": "la",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "요청, 항의; 클레임",
+    "level": "B1",
+    "exampleFr": "Le service client a traité toutes les réclamations dans un délai de quarante-huit heures.",
+    "exampleKr": "고객 서비스팀은 모든 요청을 48시간 안에 처리했다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "생활",
+      "업무"
+    ]
+  },
+  {
+    "id": "fr-b1-reformer",
+    "lemma": "réformer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "개혁하다",
+    "level": "B1",
+    "exampleFr": "Le nouveau gouvernement souhaite réformer le système éducatif pour le rendre plus équitable.",
+    "exampleKr": "새 정부는 교육 시스템을 더 공평하게 만들기 위해 개혁하기를 원한다.",
+    "imagePrompt": null,
+    "tags": [
+      "정치",
+      "교육",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-remplacer",
+    "lemma": "remplacer",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "대체하다, 교체하다",
+    "level": "B1",
+    "exampleFr": "L'intelligence artificielle pourrait bientôt remplacer certaines tâches répétitives.",
+    "exampleKr": "인공 지능이 곧 일부 반복적인 작업들을 대체할 수 있을 것이다.",
+    "imagePrompt": "A robotic arm working on an assembly line alongside human workers, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "기술",
+      "직업",
+      "경제"
+    ]
+  },
+  {
+    "id": "fr-b1-resoudre",
+    "lemma": "résoudre",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "해결하다",
+    "level": "B1",
+    "exampleFr": "Il est difficile de résoudre ce problème sans l'aide de toutes les parties concernées.",
+    "exampleKr": "모든 관련 당사자들의 도움 없이 이 문제를 해결하기는 어렵다.",
+    "imagePrompt": null,
+    "tags": [
+      "토론",
+      "사회",
+      "업무"
+    ]
+  },
+  {
+    "id": "fr-b1-risque",
+    "lemma": "risque",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "위험, 리스크",
+    "level": "B1",
+    "exampleFr": "Investir en bourse comporte toujours un risque qu'il faut évaluer avec prudence.",
+    "exampleKr": "주식에 투자하는 것은 항상 신중하게 평가해야 할 위험을 수반한다.",
+    "imagePrompt": null,
+    "tags": [
+      "경제",
+      "생활",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-soutien",
+    "lemma": "soutien",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "지원, 지지",
+    "level": "B1",
+    "exampleFr": "Le soutien psychologique proposé aux victimes a été jugé insuffisant par les associations.",
+    "exampleKr": "피해자들에게 제공된 심리적 지원이 단체들에 의해 불충분하다고 판단되었다.",
+    "imagePrompt": null,
+    "tags": [
+      "건강",
+      "사회",
+      "관계"
+    ]
+  },
+  {
+    "id": "fr-b1-reussir",
+    "lemma": "réussir",
+    "article": null,
+    "gender": null,
+    "pos": "v",
+    "krMeaning": "성공하다, 해내다, 합격하다",
+    "level": "B1",
+    "exampleFr": "Elle a travaillé dur toute l'année pour réussir son examen final.",
+    "exampleKr": "그녀는 기말 시험에 합격하기 위해 일 년 내내 열심히 공부했다.",
+    "imagePrompt": "A young student smiling with relief while reading good exam results on a sheet of paper, warm cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "성장",
+      "교육"
+    ]
+  },
+  {
+    "id": "fr-b1-gaspillage",
+    "lemma": "gaspillage",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "낭비",
+    "level": "B1",
+    "exampleFr": "Le gaspillage alimentaire est un véritable problème dans nos sociétés modernes.",
+    "exampleKr": "음식물 낭비는 현대 사회의 심각한 문제이다.",
+    "imagePrompt": "Fresh edible food being thrown into a kitchen waste bin, highlighting waste, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "환경",
+      "사회"
+    ]
+  },
+  {
+    "id": "fr-b1-embouteillage",
+    "lemma": "embouteillage",
+    "article": "l'",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "교통 체증",
+    "level": "B1",
+    "exampleFr": "Nous sommes restés bloqués dans un embouteillage pendant plus d'une heure.",
+    "exampleKr": "우리는 한 시간 넘게 교통 체증에 갇혀 있었다.",
+    "imagePrompt": "A long line of cars stuck in heavy traffic on a city avenue at dusk, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "교통",
+      "도시"
+    ]
+  },
+  {
+    "id": "fr-b1-demenagement",
+    "lemma": "déménagement",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "이사",
+    "level": "B1",
+    "exampleFr": "Le déménagement dans un nouvel appartement nous a pris tout le week-end.",
+    "exampleKr": "새 아파트로의 이사는 우리에게 주말 내내 걸렸다.",
+    "imagePrompt": "Cardboard moving boxes stacked in an empty apartment with sunlight through bare windows, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "생활",
+      "집"
+    ]
+  },
+  {
+    "id": "fr-b1-benevolat",
+    "lemma": "bénévolat",
+    "article": "le",
+    "gender": "m",
+    "pos": "n",
+    "krMeaning": "자원봉사",
+    "level": "B1",
+    "exampleFr": "Le bénévolat dans une association lui apporte beaucoup de satisfaction.",
+    "exampleKr": "한 단체에서 하는 자원봉사는 그에게 큰 만족감을 준다.",
+    "imagePrompt": "Volunteers wearing aprons serving warm meals at a community kitchen, warm cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "사회",
+      "관계"
+    ]
+  },
+  {
+    "id": "fr-b1-epargne",
+    "lemma": "épargne",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "저축",
+    "level": "B1",
+    "exampleFr": "Il met chaque mois une partie de son salaire de côté pour son épargne.",
+    "exampleKr": "그는 매달 급여의 일부를 저축을 위해 떼어 둔다.",
+    "imagePrompt": "Coins and bank notes being placed into a glass savings jar on a wooden table, cinematic, atmospheric lighting, photographic, no text, no watermark",
+    "tags": [
+      "경제",
+      "생활"
+    ]
+  },
+  {
+    "id": "fr-b1-entraide",
+    "lemma": "entraide",
+    "article": "l'",
+    "gender": "f",
+    "pos": "n",
+    "krMeaning": "상호 부조, 서로 돕기",
+    "level": "B1",
+    "exampleFr": "L'entraide entre voisins est précieuse dans les moments difficiles.",
+    "exampleKr": "어려운 시기에 이웃끼리 서로 돕는 것은 소중하다.",
+    "imagePrompt": "Neighbours helping each other carry boxes up an apartment staircase, warm cinematic lighting, photographic, no text, no watermark",
+    "tags": [
+      "관계",
+      "사회"
+    ]
+  }
+]
